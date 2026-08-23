@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Progetto, metodo e documentazione{% endblock %}
+{% block content %}
+<section class="page-header">
+  <div class="container">
+    <p class="eyebrow">Presentazione del progetto</p>
+    <h1>Progetto e metodo</h1>
+    <p>Obiettivi, architettura documentale, modello XML, criteri di associazione delle fonti e materiali per la discussione d’esame.</p>
+  </div>
+</section>
+<section class="container section prose">
+  <h2>Obiettivo e perimetro</h2>
+  <p>Il progetto trasforma fonti eterogenee relative ai contratti pubblici in una collezione di documenti XML validati, ne estrae informazioni territoriali, cronologiche ed economiche e genera un sito HTML statico. Il campione contiene <strong>{{ analysis.metadata.record_count }} documenti XML</strong>, tutti verificati rispetto alla DTD.</p>
+
+  <h2>Pipeline riproducibile</h2>
+  <ol class="process">
+    <li><strong>Preparazione</strong><span>CSV, JSON, HTML, PDF e altri documenti testuali vengono ricondotti al CIG pertinente.</span></li>
+    <li><strong>Validazione</strong><span>Ogni XML è analizzato e validato rispetto a <code>contratto_cig.dtd</code>; un errore interrompe la build.</span></li>
+    <li><strong>Estrazione</strong><span>Gli XPath alimentano un modello intermedio uniforme, indipendente dai template HTML.</span></li>
+    <li><strong>Analisi</strong><span>Territorio, date, importi, testo e PDF confluiscono nei risultati JSON e nella relazione.</span></li>
+    <li><strong>Pubblicazione</strong><span>Jinja2 genera pagine navigabili, download locali, grafici SVG e annotazioni microdata.</span></li>
+  </ol>
+
+  <h2>Content model misto</h2>
+  <p>La DTD non descrive soltanto campi strutturati. Due elementi alternano testo discorsivo ed elementi semantici ripetibili, secondo la forma prevista da XML per un content model misto.</p>
+  <pre><code>&lt;!ELEMENT descrizioneDocumentale
+  (#PCDATA | tipologia | oggetto | categoria | termine | luogo)*&gt;</code></pre>
+  <pre><code>&lt;!ELEMENT fonteWeb
+  (#PCDATA | titoloFonte | enteFonte | faseFonte | nessoFonte | datoFonte)*&gt;</code></pre>
+  <p><code>descrizioneDocumentale</code> sintetizza il contratto; ogni <code>fonteWeb</code> intreccia invece titolo, ente, fase, riscontro e dato utile in una frase leggibile. Gli attributi conservano tipo documentale, MIME type, URL, classe di relazione e data di verifica. La separazione fra struttura, contenuto e presentazione rimane così esplicita.</p>
+
+  <h2>Associazione dei documenti ai CIG</h2>
+  <p>Il mapping non dipende da una lista inserita nel codice. Per ogni fonte viene cercato anzitutto un CIG noto nel nome del file; quando il nome è descrittivo, il sistema esamina il testo estraibile. Questo consente di collegare anche lettere, disciplinari e ulteriori allegati PDF, purché riportino il CIG nel contenuto.</p>
+  <p>Le fonti reperite online sono invece governate da un manifesto dati versionato, caricato dalla medesima pipeline per tutti i record. Il catalogo copre <strong>{{ analysis.metadata.web_source_coverage.available }} CIG su {{ analysis.metadata.record_count }}</strong> e collega <strong>{{ analysis.metadata.web_source_coverage.linked_sources }} risorse web</strong>. Ogni voce dichiara se il riscontro riguarda il CIG esatto, un lotto o accordo quadro, CUP e oggetto, una fase antecedente o soltanto il contesto istituzionale o tecnico.</p>
+  <p>Sono stati inoltre analizzati <strong>{{ pdf_analysis|length }} PDF locali</strong>. Il controllo testuale comprende <strong>{{ text_analysis.documents }} descrizioni documentali</strong> e {{ text_analysis.tokens }} token selezionati.</p>
+
+  <h2>Criteri di provenienza</h2>
+  <ul>
+    <li><strong>Priorità alle fonti primarie:</strong> albo, portale di gara, determina, programma, relazione o pagina dell’amministrazione competente.</li>
+    <li><strong>Nesso dichiarato:</strong> il sito mostra perché la fonte è pertinente e non equipara un documento contestuale a un atto con CIG esatto.</li>
+    <li><strong>Minimizzazione:</strong> i collegamenti esterni evitano duplicazioni massive e, nei procedimenti riguardanti minori, la ripubblicazione di documenti potenzialmente sensibili.</li>
+    <li><strong>Riproducibilità:</strong> URL, metadati, sintesi e data di verifica sono conservati nel manifesto JSON scaricabile e poi serializzati negli XML validati.</li>
+  </ul>
+
+  <h2>Documentazione</h2>
+  <p>La precedente voce generica “PDF” è stata ricondotta a questa sezione, che esplicita la natura di ogni risorsa.</p>
+  <div class="actions">
+    {% if report_available %}<a class="button" href="downloads/report/report_progetto.pdf">Scarica la relazione di progetto (PDF)</a>{% endif %}
+    <a class="button secondary" href="downloads/documentazione/contratto_cig.dtd">Scarica la DTD</a>
+    {% if web_manifest_available %}<a class="button secondary" href="downloads/documentazione/fonti_web.json">Scarica il catalogo delle fonti web</a>{% endif %}
+    <a class="button secondary" href="downloads/documentazione/prompts_utilizzati.md">Consulta i prompt documentati</a>
+  </div>
+
+  <h2>Comandi essenziali</h2>
+  <pre><code>python -m pip install -r requirements.txt -r requirements-dev.txt
+python scripts/build_all.py
+python -m pytest</code></pre>
+</section>
+{% endblock %}
