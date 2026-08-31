@@ -2,7 +2,7 @@
 
 Progetto universitario di elaborazione documentale che trasforma fonti CSV, JSON, HTML e PDF in documenti XML, integra un catalogo qualificato di fonti web istituzionali, valida il corpus mediante DTD, estrae un modello intermedio normalizzato e genera analisi territoriali, cronologiche ed economiche. La build produce un sito statico autonomo in `dist/`, pubblicato su GitHub Pages senza backend o database.
 
-Sito: [https://paracool.github.io/anac-progetto-team/](https://paracool.github.io/anac-progetto-team/)
+Sito: [[https://paracool.github.io/anac-progetto-team/](https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/)](https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/)
 
 ## Requisiti
 
@@ -125,7 +125,7 @@ Il workflow `.github/workflows/pages.yml` viene eseguito a ogni push su `main` e
 
 Nel repository, la sorgente di pubblicazione deve essere impostata una sola volta su **Settings → Pages → Source: GitHub Actions**. Il sito viene quindi aggiornato automaticamente all'indirizzo:
 
-<https://paracool.github.io/anac-progetto-team/>
+<https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/>
 
 I riferimenti interni sono relativi e restano validi sotto il percorso di progetto `/anac-progetto-team/`. La directory `dist/` non viene versionata: è ricostruita in modo riproducibile dal workflow, evitando la duplicazione delle fonti e degli artefatti.
 
@@ -139,18 +139,6 @@ python -m http.server 8000 --directory dist
 
 Il sito è disponibile su <http://localhost:8000/>.
 
-## Risoluzione dei problemi
-
-- **XML non valido:** consultare `output_data/validation.xml`; la build si interrompe prima della pubblicazione.
-- **Link interrotto:** il messaggio indica pagina e percorso inesistente dentro `dist/`.
-- **Report PDF assente:** installare una distribuzione LaTeX ed eseguire `python scripts/build_report.py`; il sito funziona comunque.
-- **Fonte non trovata:** verificare che il CIG compaia nel nome oppure nel testo estraibile del documento. Per i PDF acquisiti come sole immagini è necessaria una versione con testo OCR.
-- **Ambiente Windows non attivato:** usare `.venv\Scripts\Activate.ps1` in PowerShell oppure `.venv\Scripts\activate.bat` nel Prompt dei comandi.
-
 ## Provenienza e limiti dei dati
 
-Il campione coincide con i documenti conservati nel progetto e non rappresenta necessariamente l'intero sistema degli appalti pubblici. Le incongruenze cronologiche vengono segnalate senza correggere i dati e senza attribuirle automaticamente a errori della fonte. Le differenze tra importo di gara e aggiudicazione sono descrittive e non vengono denominate automaticamente ribassi. Le fonti web sono state verificate nella data dichiarata dal manifesto; disponibilità e contenuto delle pagine esterne possono mutare. Il tipo di nesso resta quindi sempre visibile nel sito e negli XML.
-
-## Modifiche principali
-
-La versione corrente introduce 26 fonti web qualificate per tutti i 15 CIG, un secondo content model misto dedicato agli approfondimenti, associazione generalizzata delle fonti locali, navigazione orientata alla discussione d’esame, pagina unificata “Progetto e metodo”, relazione sintetica conforme al limite di tre pagine, modello `ContractRecord`, analisi territoriali/temporali/economiche, microdata, pubblicazione automatica su GitHub Pages e test automatici. Il dettaglio è riportato in `CHANGELOG.md`.
+Il campione coincide con i documenti conservati nel progetto e non rappresenta l'intero sistema degli appalti pubblici. Le incongruenze cronologiche vengono segnalate senza correggere i dati e senza attribuirle automaticamente a errori della fonte. Le differenze tra importo di gara e aggiudicazione sono descrittive e non vengono denominate automaticamente ribassi. Le fonti web sono state verificate nella data dichiarata dal manifesto; disponibilità e contenuto delle pagine esterne possono mutare. Il tipo di nesso resta quindi sempre visibile nel sito e negli XML.
