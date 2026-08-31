@@ -2,7 +2,7 @@
 
 Progetto universitario di elaborazione documentale che trasforma fonti CSV, JSON, HTML e PDF in documenti XML, integra un catalogo qualificato di fonti web istituzionali, valida il corpus mediante DTD, estrae un modello intermedio normalizzato e genera analisi territoriali, cronologiche ed economiche. La build produce un sito statico autonomo in `dist/`, pubblicato su GitHub Pages senza backend o database.
 
-Sito: [[https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/](https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/)](https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/)
+Sito: [https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/](https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/)
 
 ## Requisiti
 
