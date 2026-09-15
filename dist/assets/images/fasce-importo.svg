@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="370" viewBox="0 0 920 370" role="img" aria-labelledby="title desc">
+<title id="title">Distribuzione per fascia di importo</title>
+<desc id="desc">Grafico a barre degli importi di gara raggruppati per fascia.</desc>
+<style>.label{font:15px system-ui,sans-serif;fill:#17202a}.value{font:bold 14px system-ui,sans-serif;fill:#17202a}.bar{fill:#1f5f74}.grid{stroke:#d7e0e5;stroke-width:1}.chart-title{font:bold 22px system-ui,sans-serif;fill:#17202a}</style>
+<text class="chart-title" x="20" y="35">Distribuzione per fascia di importo</text>
+<line class="grid" x1="255" x2="830" y1="114" y2="114"/>
+<text class="label" x="20" y="110">Meno di 50.000 €</text>
+<rect class="bar" x="255" y="93" width="82.1" height="24" rx="4"><title>Meno di 50.000 €: 1</title></rect>
+<text class="value" x="346.1" y="111">1</text>
+<line class="grid" x1="255" x2="830" y1="156" y2="156"/>
+<text class="label" x="20" y="152">50.000–99.999 €</text>
+<rect class="bar" x="255" y="135" width="575.0" height="24" rx="4"><title>50.000–99.999 €: 7</title></rect>
+<text class="value" x="839.0" y="153">7</text>
+<line class="grid" x1="255" x2="830" y1="198" y2="198"/>
+<text class="label" x="20" y="194">100.000–249.999 €</text>
+<rect class="bar" x="255" y="177" width="164.3" height="24" rx="4"><title>100.000–249.999 €: 2</title></rect>
+<text class="value" x="428.3" y="195">2</text>
+<line class="grid" x1="255" x2="830" y1="240" y2="240"/>
+<text class="label" x="20" y="236">250.000–499.999 €</text>
+<rect class="bar" x="255" y="219" width="246.4" height="24" rx="4"><title>250.000–499.999 €: 3</title></rect>
+<text class="value" x="510.4" y="237">3</text>
+<line class="grid" x1="255" x2="830" y1="282" y2="282"/>
+<text class="label" x="20" y="278">500.000 € e oltre</text>
+<rect class="bar" x="255" y="261" width="164.3" height="24" rx="4"><title>500.000 € e oltre: 2</title></rect>
+<text class="value" x="428.3" y="279">2</text>
+</svg>

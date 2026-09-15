@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WebCig: esplora i documenti XML dei contratti pubblici, consulta tutti i campi e risali alle fonti del progetto universitario.">
+  <title>Qualità dei dati · WebCig</title>
+  <link rel="stylesheet" href="assets/css/stile.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#contenuto">Salta al contenuto</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="WebCig, pagina iniziale">
+      <span class="brand-mark">WebCig</span>
+    </a>
+    <nav aria-label="Navigazione principale">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <ul id="main-nav" class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="archivio.html">Archivio XML</a></li>
+        <li><a href="report.html">Analisi del campione</a></li>
+        <li><a href="qualita-dati.html">Qualità dei dati</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenuto">
+<section class="page-header">
+  <div class="container">
+    <p class="eyebrow">Controlli e trasparenza</p>
+    <h1>Qualità dei dati</h1>
+    <p>Copertura delle fonti, completezza dei campi e criteri adottati per non sovrainterpretare i dati.</p>
+  </div>
+</section>
+<section class="container section">
+  <h2>Copertura delle fonti locali</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Formato</th><th>CIG coperti</th><th>File collegati</th><th>Mancanti</th><th>Copertura</th></tr></thead>
+      <tbody><tr><td>CSV</td><td>15</td><td>15</td><td>0</td><td>100,0%</td></tr><tr><td>JSON</td><td>15</td><td>15</td><td>0</td><td>100,0%</td></tr><tr><td>HTML</td><td>15</td><td>16</td><td>0</td><td>100,0%</td></tr><tr><td>PDF</td><td>15</td><td>22</td><td>0</td><td>100,0%</td></tr></tbody>
+    </table>
+  </div>
+  <p class="note">“CIG coperti” conta ogni record una sola volta; “File collegati” conserva anche più documenti dello stesso formato associati al medesimo CIG.</p>
+
+  <h2>Copertura delle fonti web qualificate</h2>
+  <div class="kpi-grid">
+    <article class="kpi"><span>15</span><h3>CIG arricchiti</h3><p>su 15 record</p></article>
+    <article class="kpi"><span>26</span><h3>Risorse collegate</h3><p>fonti istituzionali o primarie</p></article>
+    <article class="kpi"><span>100,0%</span><h3>Copertura</h3><p>record con almeno una risorsa</p></article>
+    <article class="kpi"><span>0</span><h3>CIG privi di fonte</h3><p>controllo bloccante in preparazione</p></article>
+  </div>
+  <div class="table-wrap compact-table">
+    <table>
+      <thead><tr><th>Classe di relazione</th><th>Fonti</th></tr></thead>
+      <tbody><tr><td>Accordo quadro</td><td>1</td></tr><tr><td>CIG esatto</td><td>6</td></tr><tr><td>CIG padre / lotto</td><td>3</td></tr><tr><td>Contesto istituzionale</td><td>2</td></tr><tr><td>Contesto tecnico</td><td>1</td></tr><tr><td>CUP e oggetto</td><td>2</td></tr><tr><td>Fase antecedente</td><td>2</td></tr><tr><td>Oggetto ed ente</td><td>5</td></tr><tr><td>Procedura e oggetto</td><td>3</td></tr><tr><td>Repertorio istituzionale</td><td>1</td></tr></tbody>
+    </table>
+  </div>
+  <p class="note">La classe di relazione impedisce di presentare un repertorio, una fonte contestuale o una procedura antecedente come se fosse un atto recante il CIG esatto.</p>
+
+  <h2>Copertura dei campi data</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Campo</th><th>Disponibili</th><th>Mancanti</th><th>Copertura</th></tr></thead>
+      <tbody><tr><td>creation_date</td><td>15</td><td>0</td><td>100,0%</td></tr><tr><td>publication_date</td><td>15</td><td>0</td><td>100,0%</td></tr><tr><td>offer_deadline</td><td>14</td><td>1</td><td>93,3%</td></tr><tr><td>award_date</td><td>10</td><td>5</td><td>66,7%</td></tr><tr><td>start_date</td><td>3</td><td>12</td><td>20,0%</td></tr><tr><td>expected_end_date</td><td>4</td><td>11</td><td>26,7%</td></tr></tbody>
+    </table>
+  </div>
+
+  <h2>Valori economici mancanti</h2>
+  <div class="kpi-grid">
+    <article class="kpi"><span>0</span><h3>Importo gara</h3></article>
+    <article class="kpi"><span>0</span><h3>Importo lotto</h3></article>
+    <article class="kpi"><span>5</span><h3>Importo aggiudicazione</h3></article>
+  </div>
+  <p class="note warning">Le durate negative sono escluse dalle medie e mediane, ma restano elencate nel report e nelle pagine di dettaglio.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-identity"><a class="footer-brand" href="index.html">WebCig</a><p>Un archivio XML per leggere, esplorare<br>e comprendere i contratti pubblici.</p></div>
+    <div><p class="footer-label">Progetto universitario</p><p><a href="https://www.unibo.it/">Alma Mater Studiorum · Università di Bologna</a></p><p>Corso di Elaborazione Testi e Gestione Documentale</p></div>
+    <nav aria-label="Risorse del progetto"><p class="footer-label">Risorse</p><ul class="footer-links"><li><a href="index.html#progetto-e-metodo">Progetto e metodo</a></li><li><a href="index.html#documentazione">Documentazione</a></li><li><a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale">Repository GitHub ↗</a></li></ul></nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Massimiliano Ricchiuti · Codice con <a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale/blob/development/LICENSE">licenza MIT</a>.</p>
+    <p>Progetto didattico. Fonti e documenti appartengono ai rispettivi titolari. Il campione di 15 CIG non rappresenta l’intero sistema dei contratti pubblici.</p>
+  </div>
+</footer>
+</body>
+</html>

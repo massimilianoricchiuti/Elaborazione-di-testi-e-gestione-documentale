@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="496" viewBox="0 0 920 496" role="img" aria-labelledby="title desc">
+<title id="title">Scadenze per mese</title>
+<desc id="desc">Grafico a barre del numero di scadenze delle offerte per mese.</desc>
+<style>.label{font:15px system-ui,sans-serif;fill:#17202a}.value{font:bold 14px system-ui,sans-serif;fill:#17202a}.bar{fill:#1f5f74}.grid{stroke:#d7e0e5;stroke-width:1}.chart-title{font:bold 22px system-ui,sans-serif;fill:#17202a}</style>
+<text class="chart-title" x="20" y="35">Scadenze per mese</text>
+<line class="grid" x1="255" x2="830" y1="114" y2="114"/>
+<text class="label" x="20" y="110">2024-11</text>
+<rect class="bar" x="255" y="93" width="191.7" height="24" rx="4"><title>2024-11: 1</title></rect>
+<text class="value" x="455.7" y="111">1</text>
+<line class="grid" x1="255" x2="830" y1="156" y2="156"/>
+<text class="label" x="20" y="152">2025-01</text>
+<rect class="bar" x="255" y="135" width="191.7" height="24" rx="4"><title>2025-01: 1</title></rect>
+<text class="value" x="455.7" y="153">1</text>
+<line class="grid" x1="255" x2="830" y1="198" y2="198"/>
+<text class="label" x="20" y="194">2025-03</text>
+<rect class="bar" x="255" y="177" width="575.0" height="24" rx="4"><title>2025-03: 3</title></rect>
+<text class="value" x="839.0" y="195">3</text>
+<line class="grid" x1="255" x2="830" y1="240" y2="240"/>
+<text class="label" x="20" y="236">2025-04</text>
+<rect class="bar" x="255" y="219" width="383.3" height="24" rx="4"><title>2025-04: 2</title></rect>
+<text class="value" x="647.3" y="237">2</text>
+<line class="grid" x1="255" x2="830" y1="282" y2="282"/>
+<text class="label" x="20" y="278">2025-05</text>
+<rect class="bar" x="255" y="261" width="383.3" height="24" rx="4"><title>2025-05: 2</title></rect>
+<text class="value" x="647.3" y="279">2</text>
+<line class="grid" x1="255" x2="830" y1="324" y2="324"/>
+<text class="label" x="20" y="320">2025-07</text>
+<rect class="bar" x="255" y="303" width="191.7" height="24" rx="4"><title>2025-07: 1</title></rect>
+<text class="value" x="455.7" y="321">1</text>
+<line class="grid" x1="255" x2="830" y1="366" y2="366"/>
+<text class="label" x="20" y="362">2025-08</text>
+<rect class="bar" x="255" y="345" width="191.7" height="24" rx="4"><title>2025-08: 1</title></rect>
+<text class="value" x="455.7" y="363">1</text>
+<line class="grid" x1="255" x2="830" y1="408" y2="408"/>
+<text class="label" x="20" y="404">2025-09</text>
+<rect class="bar" x="255" y="387" width="575.0" height="24" rx="4"><title>2025-09: 3</title></rect>
+<text class="value" x="839.0" y="405">3</text>
+</svg>
