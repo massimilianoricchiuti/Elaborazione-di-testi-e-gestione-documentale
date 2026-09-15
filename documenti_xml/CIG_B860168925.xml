@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<contratto cig="B860168925" fonte="ANAC">
+  <fonti>
+    <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B860168925.html">Documento HTML collegato al CIG: B860168925</fonte>
+    <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B860168925.json">Fonte originale JSON del CIG</fonte>
+    <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/B860168925_determina.pdf">Documento PDF collegato al CIG: B860168925 determina</fonte>
+  </fonti>
+  <approfondimentiWeb>
+    <fonteWeb tipo="scheda di affidamento e documentazione dell'accordo quadro" formato="text/html" url="https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-accordo-quadro-per-la-fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-CIG-B860168925" relazione="cig-esatto" verificataIl="2026-09-15">La fonte <titoloFonte>Accordo quadro per pneumatici e prestazioni tecniche correlate — CIG B860168925</titoloFonte>, pubblicata da <enteFonte>Comune di Verona</enteFonte>, riguarda la fase <faseFonte>affidamento dell'accordo quadro</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>La pubblicazione comunale del 31 ottobre 2025 indica il CIG B860168925 e l'accordo quadro per i mezzi comunali con B.R. Pneumatici S.p.A.</nessoFonte>. In sintesi, <datoFonte>La scheda istituzionale collega la procedura alla BDNCP e rende consultabile la documentazione dell'accordo quadro per la fornitura di pneumatici e i servizi tecnici correlati.</datoFonte>.</fonteWeb>
+    <fonteWeb tipo="scheda di stipula del contratto applicativo" formato="text/html" url="https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-Fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-primo-contratto-applicativo-accordo-quadro-CIG-DERIVATO-B8E24C68E3" relazione="accordo-quadro" verificataIl="2026-09-15">La fonte <titoloFonte>Primo contratto applicativo dell'accordo quadro — CIG derivato B8E24C68E3</titoloFonte>, pubblicata da <enteFonte>Comune di Verona</enteFonte>, riguarda la fase <faseFonte>attuazione mediante contratto applicativo</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>La scheda del 17 novembre 2025 collega esplicitamente il CIG derivato B8E24C68E3 al CIG padre B860168925 e allo stesso fornitore.</nessoFonte>. In sintesi, <datoFonte>La fonte documenta il primo contratto applicativo e rende visibile il rapporto fra accordo quadro e ordinativi successivi. Il CIG derivato identifica un contratto collegato distinto dal record del campione.</datoFonte>.</fonteWeb>
+  </approfondimentiWeb>
+  <informazioniGara>
+    <numeroGara>CONSIP_RDO_5584493</numeroGara>
+    <tipoCig>ORDINARIO</tipoCig>
+    <stato>ATTIVO</stato>
+    <oggettoGara>FORNITURA DI PNEUMATICI E PRESTAZIONI TECNICHE CORRELATE</oggettoGara>
+    <oggettoLotto>FORNITURA DI PNEUMATICI E PRESTAZIONI TECNICHE CORRELATE</oggettoLotto>
+    <importoGara valuta="EUR">66000</importoGara>
+    <importoLotto valuta="EUR">66000</importoLotto>
+    <provincia>VERONA</provincia>
+    <settore>SETTORI ORDINARI</settore>
+    <cup/>
+    <oggettoPrincipaleContratto>FORNITURE</oggettoPrincipaleContratto>
+    <tipologiaContratto>FORNITURE</tipologiaContratto>
+    <localizzazione>Verona</localizzazione>
+    <scadenzaOfferte>2025-09-24T18:55</scadenzaOfferte>
+    <dataAggiudicazione>2025-10-15</dataAggiudicazione>
+  </informazioniGara>
+  <stazioneAppaltante>
+    <codiceFiscale>00215150236</codiceFiscale>
+    <denominazione>COMUNE DI VERONA</denominazione>
+    <centroCosto>A24 - PROVVEDITORATO E UTENZE</centroCosto>
+    <citta>VERONA</citta>
+    <regione>VENETO</regione>
+    <indirizzo>PIAZZA BRA 1</indirizzo>
+  </stazioneAppaltante>
+  <incaricati>
+    <incaricato ruolo="RESPONSABILE UNICO DEL PROCEDIMENTO">
+      <nome>DONATELLA</nome>
+      <cognome>QUARANTOTTO</cognome>
+      <codiceFiscale>QRNDTL64H48L424F</codiceFiscale>
+    </incaricato>
+  </incaricati>
+  <pubblicazioni>
+    <dataCreazione>2025-09-24</dataCreazione>
+    <dataPubblicazione>2025-09-25</dataPubblicazione>
+  </pubblicazioni>
+  <partecipanti>
+    <partecipante aggiudicatario="17864978">
+      <denominazione>B.R. PNEUMATICI S.P.A.</denominazione>
+      <tipoSoggetto>IMPRESA</tipoSoggetto>
+      <codiceFiscale>01800220244</codiceFiscale>
+      <ruolo>OPERATORE ECONOMICO MONOSOGGETTIVO</ruolo>
+    </partecipante>
+  </partecipanti>
+  <aggiudicazione>
+    <aggiudicatario>
+      <denominazione/>
+      <codiceFiscale/>
+      <importoAggiudicazione valuta="EUR">66000</importoAggiudicazione>
+    </aggiudicatario>
+  </aggiudicazione>
+  <contrattoEsecuzione>
+    <dataAvvio>2025-10-29</dataAvvio>
+    <dataFinePrevista>2028-10-28</dataFinePrevista>
+  </contrattoEsecuzione>
+  <quadroEconomico>
+    <voceEconomica nome="IMPORTO_FORNITURE" valuta="EUR">66000</voceEconomica>
+    <voceEconomica nome="SOMME_A_DISPOSIZIONE" valuta="EUR">14520</voceEconomica>
+  </quadroEconomico>
+  <categorieOpera>
+    <categoriaOpera tipo="PREVALENTE">
+      <idCategoria>FB</idCategoria>
+      <descrizione>FORNITURA DI BENI</descrizione>
+    </categoriaOpera>
+  </categorieOpera>
+  <cpv>
+    <voceCpv tipo="Prevalente">
+      <codice>34350000-5</codice>
+      <descrizione>PNEUMATICI LEGGERI E PESANTI</descrizione>
+    </voceCpv>
+  </cpv>
+  <descrizioneDocumentale>Procedura relativa a <tipologia>forniture</tipologia> avente per oggetto <oggetto>FORNITURA DI PNEUMATICI E PRESTAZIONI TECNICHE CORRELATE</oggetto>. <termine>pneumatici leggeri e pesanti</termine>. <categoria>fornitura di beni</categoria>. <luogo>Verona</luogo>.</descrizioneDocumentale>
+</contratto>

@@ -2,14 +2,14 @@
   {
     "file": "B387047A20_determina.pdf",
     "pages": 12,
-    "text_chars": 33611,
+    "text_chars": 33607,
     "method": "pypdf",
     "note": ""
   },
   {
     "file": "B4B5B163A0_determina.pdf",
     "pages": 4,
-    "text_chars": 10257,
+    "text_chars": 10305,
     "method": "pypdf",
     "note": ""
   },
@@ -23,7 +23,7 @@
   {
     "file": "B6DD95EE23_determina_aggiudicazione_2475.pdf",
     "pages": 5,
-    "text_chars": 11467,
+    "text_chars": 11690,
     "method": "pypdf",
     "note": ""
   },
@@ -79,7 +79,7 @@
   {
     "file": "B860168925_determina.pdf",
     "pages": 7,
-    "text_chars": 19611,
+    "text_chars": 19614,
     "method": "pypdf",
     "note": ""
   },

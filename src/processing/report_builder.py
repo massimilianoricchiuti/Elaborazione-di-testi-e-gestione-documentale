@@ -179,6 +179,14 @@ Città & CIG & Percentuale & Importo complessivo & Mediana \\\\
 
 def generate_report_fragments(paths: ProjectPaths, analysis: dict) -> list[Path]:
     ensure_dir(paths.report_generated)
+    metadata = analysis["metadata"]
+    web = metadata["web_source_coverage"]
+    write_text(
+        paths.report_generated / "consistenza.tex",
+        f"\\newcommand{{\\numeroContratti}}{{{metadata['record_count']}}}\n"
+        f"\\newcommand{{\\numeroFontiWeb}}{{{web['linked_sources']}}}\n"
+        f"\\newcommand{{\\contrattiConFontiWeb}}{{{web['available']}}}\n",
+    )
     _write_statistics(paths, analysis)
     _write_coverage(paths, analysis)
     _write_anomalies(paths, analysis)

@@ -4,43 +4,43 @@
 <style>.label{font:15px system-ui,sans-serif;fill:#17202a}.value{font:bold 14px system-ui,sans-serif;fill:#17202a}.bar{fill:#1f5f74}.grid{stroke:#d7e0e5;stroke-width:1}.chart-title{font:bold 22px system-ui,sans-serif;fill:#17202a}</style>
 <text class="chart-title" x="20" y="35">CIG per città della stazione appaltante</text>
 <line class="grid" x1="255" x2="830" y1="114" y2="114"/>
-<text class="label" x="20" y="110">Torino</text>
-<rect class="bar" x="255" y="93" width="575.0" height="24" rx="4"><title>Torino: 2</title></rect>
-<text class="value" x="839.0" y="111">2</text>
+<text class="label" x="20" y="110">Roma</text>
+<rect class="bar" x="255" y="93" width="575.0" height="24" rx="4"><title>Roma: 3</title></rect>
+<text class="value" x="839.0" y="111">3</text>
 <line class="grid" x1="255" x2="830" y1="156" y2="156"/>
-<text class="label" x="20" y="152">Roma</text>
-<rect class="bar" x="255" y="135" width="575.0" height="24" rx="4"><title>Roma: 2</title></rect>
-<text class="value" x="839.0" y="153">2</text>
+<text class="label" x="20" y="152">Torino</text>
+<rect class="bar" x="255" y="135" width="383.3" height="24" rx="4"><title>Torino: 2</title></rect>
+<text class="value" x="647.3" y="153">2</text>
 <line class="grid" x1="255" x2="830" y1="198" y2="198"/>
-<text class="label" x="20" y="194">Grosseto</text>
-<rect class="bar" x="255" y="177" width="287.5" height="24" rx="4"><title>Grosseto: 1</title></rect>
-<text class="value" x="551.5" y="195">1</text>
+<text class="label" x="20" y="194">Carlino</text>
+<rect class="bar" x="255" y="177" width="191.7" height="24" rx="4"><title>Carlino: 1</title></rect>
+<text class="value" x="455.7" y="195">1</text>
 <line class="grid" x1="255" x2="830" y1="240" y2="240"/>
-<text class="label" x="20" y="236">Firenze</text>
-<rect class="bar" x="255" y="219" width="287.5" height="24" rx="4"><title>Firenze: 1</title></rect>
-<text class="value" x="551.5" y="237">1</text>
+<text class="label" x="20" y="236">Grosseto</text>
+<rect class="bar" x="255" y="219" width="191.7" height="24" rx="4"><title>Grosseto: 1</title></rect>
+<text class="value" x="455.7" y="237">1</text>
 <line class="grid" x1="255" x2="830" y1="282" y2="282"/>
-<text class="label" x="20" y="278">Latina</text>
-<rect class="bar" x="255" y="261" width="287.5" height="24" rx="4"><title>Latina: 1</title></rect>
-<text class="value" x="551.5" y="279">1</text>
+<text class="label" x="20" y="278">Cremona</text>
+<rect class="bar" x="255" y="261" width="191.7" height="24" rx="4"><title>Cremona: 1</title></rect>
+<text class="value" x="455.7" y="279">1</text>
 <line class="grid" x1="255" x2="830" y1="324" y2="324"/>
-<text class="label" x="20" y="320">Spoleto</text>
-<rect class="bar" x="255" y="303" width="287.5" height="24" rx="4"><title>Spoleto: 1</title></rect>
-<text class="value" x="551.5" y="321">1</text>
+<text class="label" x="20" y="320">Firenze</text>
+<rect class="bar" x="255" y="303" width="191.7" height="24" rx="4"><title>Firenze: 1</title></rect>
+<text class="value" x="455.7" y="321">1</text>
 <line class="grid" x1="255" x2="830" y1="366" y2="366"/>
-<text class="label" x="20" y="362">Milano</text>
-<rect class="bar" x="255" y="345" width="287.5" height="24" rx="4"><title>Milano: 1</title></rect>
-<text class="value" x="551.5" y="363">1</text>
+<text class="label" x="20" y="362">Latina</text>
+<rect class="bar" x="255" y="345" width="191.7" height="24" rx="4"><title>Latina: 1</title></rect>
+<text class="value" x="455.7" y="363">1</text>
 <line class="grid" x1="255" x2="830" y1="408" y2="408"/>
-<text class="label" x="20" y="404">San Fratello</text>
-<rect class="bar" x="255" y="387" width="287.5" height="24" rx="4"><title>San Fratello: 1</title></rect>
-<text class="value" x="551.5" y="405">1</text>
+<text class="label" x="20" y="404">Spoleto</text>
+<rect class="bar" x="255" y="387" width="191.7" height="24" rx="4"><title>Spoleto: 1</title></rect>
+<text class="value" x="455.7" y="405">1</text>
 <line class="grid" x1="255" x2="830" y1="450" y2="450"/>
-<text class="label" x="20" y="446">Frascati</text>
-<rect class="bar" x="255" y="429" width="287.5" height="24" rx="4"><title>Frascati: 1</title></rect>
-<text class="value" x="551.5" y="447">1</text>
+<text class="label" x="20" y="446">Milano</text>
+<rect class="bar" x="255" y="429" width="191.7" height="24" rx="4"><title>Milano: 1</title></rect>
+<text class="value" x="455.7" y="447">1</text>
 <line class="grid" x1="255" x2="830" y1="492" y2="492"/>
-<text class="label" x="20" y="488">Colleferro</text>
-<rect class="bar" x="255" y="471" width="287.5" height="24" rx="4"><title>Colleferro: 1</title></rect>
-<text class="value" x="551.5" y="489">1</text>
+<text class="label" x="20" y="488">San Fratello</text>
+<rect class="bar" x="255" y="471" width="191.7" height="24" rx="4"><title>San Fratello: 1</title></rect>
+<text class="value" x="455.7" y="489">1</text>
 </svg>

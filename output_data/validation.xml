@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <validazione date="2026-09-15" docs_dir="documenti_xml">
+  <file name="CIG_B387047A20.xml" wellformed="true" valid="true"/>
   <file name="CIG_B474D3250C.xml" wellformed="true" valid="true"/>
+  <file name="CIG_B4B5B163A0.xml" wellformed="true" valid="true"/>
   <file name="CIG_B55BB8E397.xml" wellformed="true" valid="true"/>
   <file name="CIG_B5F0937C10.xml" wellformed="true" valid="true"/>
   <file name="CIG_B5F77EC7CD.xml" wellformed="true" valid="true"/>
@@ -9,10 +11,14 @@
   <file name="CIG_B675CE0615.xml" wellformed="true" valid="true"/>
   <file name="CIG_B6A106A32A.xml" wellformed="true" valid="true"/>
   <file name="CIG_B6DD95EE23.xml" wellformed="true" valid="true"/>
+  <file name="CIG_B6E9DE9F63.xml" wellformed="true" valid="true"/>
+  <file name="CIG_B6EDEAC0D4.xml" wellformed="true" valid="true"/>
   <file name="CIG_B74941928B.xml" wellformed="true" valid="true"/>
+  <file name="CIG_B7A3D70B00.xml" wellformed="true" valid="true"/>
   <file name="CIG_B7B0353822.xml" wellformed="true" valid="true"/>
   <file name="CIG_B8297EE856.xml" wellformed="true" valid="true"/>
   <file name="CIG_B82A8FBA72.xml" wellformed="true" valid="true"/>
   <file name="CIG_B82CB38B8D.xml" wellformed="true" valid="true"/>
   <file name="CIG_B85DEBAAC9.xml" wellformed="true" valid="true"/>
+  <file name="CIG_B860168925.xml" wellformed="true" valid="true"/>
 </validazione>

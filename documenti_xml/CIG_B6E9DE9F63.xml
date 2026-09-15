@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<contratto cig="B6E9DE9F63" fonte="ANAC">
+  <fonti>
+    <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B6E9DE9F63.html">Documento HTML collegato al CIG: B6E9DE9F63</fonte>
+    <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B6E9DE9F63.json">Fonte originale JSON del CIG</fonte>
+    <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/B6E9DE9F63_determina.pdf">Documento PDF collegato al CIG: B6E9DE9F63 determina</fonte>
+  </fonti>
+  <approfondimentiWeb>
+    <fonteWeb tipo="decisione a contrarre e determina di affidamento" formato="application/pdf" url="https://www.gdf.gov.it/it/stazioni-appaltanti/bandi-di-gara/archivio/anno-2025/centro-di-aviazione/giugno/affidamento-incarico-di-direzione-dei-lavori-e-coordinatore-della-sicurezza/esiti/decisione-a-contrarre-e-determina-di-affidamento.pdf/%40%40download/file" relazione="cig-esatto" verificataIl="2026-09-15">La fonte <titoloFonte>Decisione a contrarre e affidamento — direzione lavori e sicurezza dell'hangar L</titoloFonte>, pubblicata da <enteFonte>Guardia di Finanza — Centro di Aviazione</enteFonte>, riguarda la fase <faseFonte>affidamento dell'incarico professionale</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>Il PDF pubblicato dal Centro di Aviazione riporta il CIG B6E9DE9F63, la RDO 5347942 e l'incarico relativo agli impianti elettrici dell'hangar L a Pratica di Mare.</nessoFonte>. In sintesi, <datoFonte>L'atto documenta la direzione lavori e il coordinamento della sicurezza in esecuzione, distinguendo il compenso di 48.000 euro dagli ulteriori oneri del quadro economico.</datoFonte>.</fonteWeb>
+  </approfondimentiWeb>
+  <informazioniGara>
+    <numeroGara>CONSIP_RDO_5347942</numeroGara>
+    <tipoCig>ORDINARIO</tipoCig>
+    <stato>ATTIVO</stato>
+    <oggettoGara>AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE</oggettoGara>
+    <oggettoLotto>AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE</oggettoLotto>
+    <importoGara valuta="EUR">48000</importoGara>
+    <importoLotto valuta="EUR">48000</importoLotto>
+    <provincia>ROMA</provincia>
+    <settore>SETTORI ORDINARI</settore>
+    <cup/>
+    <oggettoPrincipaleContratto>SERVIZI</oggettoPrincipaleContratto>
+    <tipologiaContratto>SERVIZI</tipologiaContratto>
+    <localizzazione>Roma</localizzazione>
+    <scadenzaOfferte>2025-05-19T15:36</scadenzaOfferte>
+    <dataAggiudicazione>2025-05-19</dataAggiudicazione>
+  </informazioniGara>
+  <stazioneAppaltante>
+    <codiceFiscale>97061500589</codiceFiscale>
+    <denominazione>CENTRO DI AVIAZIONE GUARDIA DI FINANZA</denominazione>
+    <centroCosto>CENTRO DI AVIAZIONE</centroCosto>
+    <citta>POMEZIA</citta>
+    <regione>LAZIO</regione>
+    <indirizzo>VIA PRATICA DI MARE 45</indirizzo>
+  </stazioneAppaltante>
+  <incaricati>
+    <incaricato ruolo="RESPONSABILE UNICO DEL PROCEDIMENTO">
+      <nome>GIANMARCO COSIMO</nome>
+      <cognome>DI LORENZO</cognome>
+      <codiceFiscale>DLRGMR85H17F799W</codiceFiscale>
+    </incaricato>
+  </incaricati>
+  <pubblicazioni>
+    <dataCreazione>2025-05-19</dataCreazione>
+    <dataPubblicazione>2025-05-20</dataPubblicazione>
+  </pubblicazioni>
+  <partecipanti>
+    <partecipante aggiudicatario="21515330">
+      <denominazione>ING. ENRICO IOVANE</denominazione>
+      <tipoSoggetto>NON PRESENTE IN ANAGRAFE</tipoSoggetto>
+      <codiceFiscale>07664421216</codiceFiscale>
+      <ruolo>OPERATORE ECONOMICO MONOSOGGETTIVO</ruolo>
+    </partecipante>
+  </partecipanti>
+  <aggiudicazione>
+    <aggiudicatario>
+      <denominazione/>
+      <codiceFiscale/>
+      <importoAggiudicazione valuta="EUR">48000</importoAggiudicazione>
+    </aggiudicatario>
+  </aggiudicazione>
+  <contrattoEsecuzione>
+    <dataAvvio>2025-06-16</dataAvvio>
+    <dataFinePrevista/>
+  </contrattoEsecuzione>
+  <quadroEconomico>
+    <voceEconomica nome="IMPORTO_SERVIZI" valuta="EUR">48000</voceEconomica>
+  </quadroEconomico>
+  <categorieOpera>
+    <categoriaOpera tipo="PREVALENTE">
+      <idCategoria>FS</idCategoria>
+      <descrizione>FORNITURA DI SERVIZI</descrizione>
+    </categoriaOpera>
+  </categorieOpera>
+  <cpv>
+    <voceCpv tipo="Prevalente">
+      <codice>71323200-0</codice>
+      <descrizione>SERVIZI DI PROGETTAZIONE TECNICA DI IMPIANTI</descrizione>
+    </voceCpv>
+  </cpv>
+  <descrizioneDocumentale>Procedura relativa a <tipologia>servizi</tipologia> avente per oggetto <oggetto>AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE</oggetto>. <termine>servizi di progettazione tecnica di impianti</termine>. <categoria>fornitura di servizi</categoria>. <luogo>Roma</luogo>.</descrizioneDocumentale>
+</contratto>

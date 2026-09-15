@@ -31,3 +31,10 @@ Gli output generati sono stati verificati mediante esecuzione della pipeline com
 Per ogni CIG presente nell’archivio, reperisci documenti, determine o altre fonti web autorevoli riferibili alla gara. Le risorse devono arricchire le fonti originarie e consolidare il content model misto. Evita soluzioni limitate a un CIG: conserva provenienza, formato, fase e criterio di collegamento, distinguendo un riscontro esatto da una fonte relativa a lotto, accordo quadro, CUP, fase antecedente o contesto.
 
 Le risorse selezionate sono state registrate in un manifesto dati e integrate nella pipeline comune. La verifica non si limita alla raggiungibilità del collegamento: il nesso dichiarato evita di attribuire a una gara un atto che documenta soltanto il suo contesto. Per i procedimenti relativi a minori è stata inoltre privilegiata la minimizzazione, collegando fonti istituzionali senza ripubblicare documenti potenzialmente sensibili.
+
+
+## Prompt 8 — Aggiornamento del corpus su development
+
+Dopo l’aggiunta dei documenti locali, cercare autonomamente i riferimenti istituzionali per i nuovi CIG, aggiornare le fonti web e ricompilare il progetto affinché i documenti compaiano nell’archivio. Operare esclusivamente sul branch `development`.
+
+I sei nuovi CIG sono stati confrontati con i JSON e le determine locali. Sono state aggiunte sette risorse istituzionali, distinguendo l’accordo quadro di Verona dal suo primo contratto applicativo. Le date di verifica precedenti sono conservate; il problema di accesso remoto al PDF di Cremona è dichiarato nel riscontro. La build ha rigenerato XML, sito, analisi e report, con validazione DTD e controlli automatici.

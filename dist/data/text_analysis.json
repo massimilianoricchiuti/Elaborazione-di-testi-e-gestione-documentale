@@ -1,42 +1,98 @@
 {
-  "documents": 15,
-  "tokens": 278,
+  "documents": 21,
+  "tokens": 405,
   "top_terms": [
     {
       "term": "servizi",
-      "count": 22
+      "count": 31
     },
     {
       "term": "oggetto",
-      "count": 15
+      "count": 21
     },
     {
       "term": "fornitura",
-      "count": 12
+      "count": 16
     },
     {
       "term": "lavori",
-      "count": 6
+      "count": 10
     },
     {
       "term": "forniture",
-      "count": 5
-    },
-    {
-      "term": "beni",
-      "count": 5
+      "count": 8
     },
     {
       "term": "2025",
-      "count": 4
+      "count": 6
+    },
+    {
+      "term": "beni",
+      "count": 6
     },
     {
       "term": "roma",
+      "count": 6
+    },
+    {
+      "term": "affidamento",
       "count": 4
+    },
+    {
+      "term": "non",
+      "count": 4
+    },
+    {
+      "term": "impianti",
+      "count": 4
+    },
+    {
+      "term": "2024",
+      "count": 3
+    },
+    {
+      "term": "energia",
+      "count": 3
+    },
+    {
+      "term": "milano",
+      "count": 3
+    },
+    {
+      "term": "categoria",
+      "count": 3
+    },
+    {
+      "term": "definita",
+      "count": 3
+    },
+    {
+      "term": "progettazione",
+      "count": 3
     },
     {
       "term": "torino",
       "count": 3
+    },
+    {
+      "term": "dell",
+      "count": 3
+    },
+    {
+      "term": "coordinamento",
+      "count": 2
+    },
+    {
+      "term": "dal",
+      "count": 2
+    },
+    {
+      "term": "comune",
+      "count": 2
+    },
+    {
+      "term": "2026",
+      "count": 2
     },
     {
       "term": "manutenzione",
@@ -55,72 +111,16 @@
       "count": 2
     },
     {
-      "term": "2024",
+      "term": "elettrica",
       "count": 2
     },
     {
-      "term": "progettazione",
+      "term": "pratica",
       "count": 2
     },
     {
       "term": "ingegneria",
       "count": 2
-    },
-    {
-      "term": "lotto",
-      "count": 2
-    },
-    {
-      "term": "buoni",
-      "count": 2
-    },
-    {
-      "term": "pasto",
-      "count": 2
-    },
-    {
-      "term": "negli",
-      "count": 2
-    },
-    {
-      "term": "milano",
-      "count": 2
-    },
-    {
-      "term": "affidamento",
-      "count": 2
-    },
-    {
-      "term": "dell",
-      "count": 2
-    },
-    {
-      "term": "edifici",
-      "count": 2
-    },
-    {
-      "term": "trasporto",
-      "count": 2
-    },
-    {
-      "term": "non",
-      "count": 2
-    },
-    {
-      "term": "straordinaria",
-      "count": 1
-    },
-    {
-      "term": "bianca",
-      "count": 1
-    },
-    {
-      "term": "accesso",
-      "count": 1
-    },
-    {
-      "term": "trattamento",
-      "count": 1
     }
   ]
 }

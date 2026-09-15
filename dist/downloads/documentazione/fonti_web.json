@@ -1,8 +1,104 @@
 {
   "schema_version": 1,
   "verified_on": "2026-08-23",
-  "methodology": "Fonti web istituzionali o primarie selezionate per integrare i documenti ANAC locali. Il campo relazione distingue un riscontro diretto da un collegamento per lotto, CUP, procedura, oggetto o contesto; una fonte contestuale non è presentata come atto della gara.",
+  "methodology": "Fonti web istituzionali o primarie selezionate per integrare i documenti ANAC locali. Il campo relazione distingue un riscontro diretto da un collegamento per lotto, CUP, procedura, oggetto o contesto; una fonte contestuale non è presentata come atto della gara. La data verified_on della singola fonte, quando presente, prevale sulla data generale del catalogo: l'aggiunta di nuove fonti non modifica le date delle verifiche precedenti.",
   "records": {
+    "B387047A20": [
+      {
+        "title": "Determina 281 del 17 ottobre 2024 — servizi per la Fiera dei Sapori 2024–2026",
+        "publisher": "Comune di Carlino",
+        "document_type": "determina a contrarre e di affidamento",
+        "mime_type": "application/pdf",
+        "url": "https://www.comune.carlino.ud.it/media/files/030018/attachment/20241017_281_B387047A20_ARTEVENTI.pdf",
+        "relation": "cig-esatto",
+        "phase": "affidamento e impegno di spesa",
+        "evidence": "La determina riporta il CIG B387047A20 e affida ad Arteventi Società Cooperativa i servizi per la Fiera dei Sapori del Comune di Carlino negli anni 2024, 2025 e 2026.",
+        "summary": "Il documento descrive coordinamento, promozione, safety e squadra antincendio, con motivazione dell'affidamento e ripartizione degli impegni di spesa.",
+        "verified_on": "2026-09-15"
+      }
+    ],
+    "B4B5B163A0": [
+      {
+        "title": "Determina 2/2025 del 7 gennaio 2025 — energia elettrica fuori dalle convenzioni Consip",
+        "publisher": "Comune di Cremona",
+        "document_type": "determinazione dirigenziale",
+        "mime_type": "application/pdf",
+        "url": "https://pubblicazioneatti.comune.cremona.it/jattipubblicazioni/AttiPubblicazioni?idDocumentale=393091&servizio=Allegato",
+        "relation": "cig-esatto",
+        "phase": "affidamento e approvazione della spesa",
+        "evidence": "L'atto 2/2025 riguarda il CIG B4B5B163A0 e la fornitura A2A Energia per i punti di prelievo comunali non previsti nelle convenzioni Consip, dal 1° gennaio al 30 giugno 2025. Il titolo, il numero e la data della pubblicazione sono stati confrontati con il PDF locale; durante la verifica il download remoto ha restituito HTTP 502.",
+        "summary": "La determina spiega il ricorso alla fornitura esterna alle convenzioni e dettaglia la spesa prevista per il primo semestre 2025, con i relativi capitoli di bilancio.",
+        "verified_on": "2026-09-15"
+      }
+    ],
+    "B6E9DE9F63": [
+      {
+        "title": "Decisione a contrarre e affidamento — direzione lavori e sicurezza dell'hangar L",
+        "publisher": "Guardia di Finanza — Centro di Aviazione",
+        "document_type": "decisione a contrarre e determina di affidamento",
+        "mime_type": "application/pdf",
+        "url": "https://www.gdf.gov.it/it/stazioni-appaltanti/bandi-di-gara/archivio/anno-2025/centro-di-aviazione/giugno/affidamento-incarico-di-direzione-dei-lavori-e-coordinatore-della-sicurezza/esiti/decisione-a-contrarre-e-determina-di-affidamento.pdf/%40%40download/file",
+        "relation": "cig-esatto",
+        "phase": "affidamento dell'incarico professionale",
+        "evidence": "Il PDF pubblicato dal Centro di Aviazione riporta il CIG B6E9DE9F63, la RDO 5347942 e l'incarico relativo agli impianti elettrici dell'hangar L a Pratica di Mare.",
+        "summary": "L'atto documenta la direzione lavori e il coordinamento della sicurezza in esecuzione, distinguendo il compenso di 48.000 euro dagli ulteriori oneri del quadro economico.",
+        "verified_on": "2026-09-15"
+      }
+    ],
+    "B6EDEAC0D4": [
+      {
+        "title": "Avviso di post-informazione — contratto 1196 del 31 ottobre 2025",
+        "publisher": "Ministero della Difesa — Direzione degli Armamenti Aeronautici e per l'Aeronavigabilità",
+        "document_type": "avviso di post-informazione",
+        "mime_type": "application/pdf",
+        "url": "https://www.difesa.it/assets/allegati/68768/avviso_postinformazione_ctr1196.pdf",
+        "relation": "cig-esatto",
+        "phase": "stipula e pubblicazione dell'esito",
+        "evidence": "L'avviso identifica espressamente il CIG B6EDEAC0D4 e il contratto 1196 del 31 ottobre 2025 per l'acquisizione di parti di ricambio PMG Dillon M-134D.",
+        "summary": "La fonte aggiunge i dati di stipula e il contraente Leonardo S.p.A., con importo di 143.146,50 euro IVA esente, integrando la fotografia iniziale della procedura conservata nei JSON ANAC.",
+        "verified_on": "2026-09-15"
+      }
+    ],
+    "B7A3D70B00": [
+      {
+        "title": "Gara aggiudicata — efficientamento energetico del Villaggio Scolastico P. De Stefano",
+        "publisher": "Comune di Castiglione Cosentino — piattaforma Traspare",
+        "document_type": "pagina di gara e fascicolo degli atti",
+        "mime_type": "text/html",
+        "url": "https://castiglionecosentino.traspare.com/announcements/39",
+        "relation": "cig-esatto",
+        "phase": "gara e aggiudicazione",
+        "evidence": "La scheda espone il CIG B7A3D70B00, il CUP H24D25000660001, l'intervento in via Lanza e l'aggiudicatario Consorzio Stabile Ganosis.",
+        "summary": "Il fascicolo raccoglie determina a contrarre, DGUE XML, comunicazioni, verbali, determina di aggiudicazione 407 del 5 agosto 2025 ed esito; permette di seguire la sequenza documentale della gara.",
+        "verified_on": "2026-09-15"
+      }
+    ],
+    "B860168925": [
+      {
+        "title": "Accordo quadro per pneumatici e prestazioni tecniche correlate — CIG B860168925",
+        "publisher": "Comune di Verona",
+        "document_type": "scheda di affidamento e documentazione dell'accordo quadro",
+        "mime_type": "text/html",
+        "url": "https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-accordo-quadro-per-la-fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-CIG-B860168925",
+        "relation": "cig-esatto",
+        "phase": "affidamento dell'accordo quadro",
+        "evidence": "La pubblicazione comunale del 31 ottobre 2025 indica il CIG B860168925 e l'accordo quadro per i mezzi comunali con B.R. Pneumatici S.p.A.",
+        "summary": "La scheda istituzionale collega la procedura alla BDNCP e rende consultabile la documentazione dell'accordo quadro per la fornitura di pneumatici e i servizi tecnici correlati.",
+        "verified_on": "2026-09-15"
+      },
+      {
+        "title": "Primo contratto applicativo dell'accordo quadro — CIG derivato B8E24C68E3",
+        "publisher": "Comune di Verona",
+        "document_type": "scheda di stipula del contratto applicativo",
+        "mime_type": "text/html",
+        "url": "https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-Fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-primo-contratto-applicativo-accordo-quadro-CIG-DERIVATO-B8E24C68E3",
+        "relation": "accordo-quadro",
+        "phase": "attuazione mediante contratto applicativo",
+        "evidence": "La scheda del 17 novembre 2025 collega esplicitamente il CIG derivato B8E24C68E3 al CIG padre B860168925 e allo stesso fornitore.",
+        "summary": "La fonte documenta il primo contratto applicativo e rende visibile il rapporto fra accordo quadro e ordinativi successivi. Il CIG derivato identifica un contratto collegato distinto dal record del campione.",
+        "verified_on": "2026-09-15"
+      }
+    ],
     "B474D3250C": [
       {
         "title": "Manutenzione straordinaria per la strada verso l’impianto delle Strillaie",

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<contratto cig="B6EDEAC0D4" fonte="ANAC">
+  <fonti>
+    <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B6EDEAC0D4.html">Documento HTML collegato al CIG: B6EDEAC0D4</fonte>
+    <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B6EDEAC0D4.json">Fonte originale JSON del CIG</fonte>
+    <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/B6EDEAC0D4_determina.pdf">Documento PDF collegato al CIG: B6EDEAC0D4 determina</fonte>
+  </fonti>
+  <approfondimentiWeb>
+    <fonteWeb tipo="avviso di post-informazione" formato="application/pdf" url="https://www.difesa.it/assets/allegati/68768/avviso_postinformazione_ctr1196.pdf" relazione="cig-esatto" verificataIl="2026-09-15">La fonte <titoloFonte>Avviso di post-informazione — contratto 1196 del 31 ottobre 2025</titoloFonte>, pubblicata da <enteFonte>Ministero della Difesa — Direzione degli Armamenti Aeronautici e per l'Aeronavigabilità</enteFonte>, riguarda la fase <faseFonte>stipula e pubblicazione dell'esito</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>L'avviso identifica espressamente il CIG B6EDEAC0D4 e il contratto 1196 del 31 ottobre 2025 per l'acquisizione di parti di ricambio PMG Dillon M-134D.</nessoFonte>. In sintesi, <datoFonte>La fonte aggiunge i dati di stipula e il contraente Leonardo S.p.A., con importo di 143.146,50 euro IVA esente, integrando la fotografia iniziale della procedura conservata nei JSON ANAC.</datoFonte>.</fonteWeb>
+  </approfondimentiWeb>
+  <informazioniGara>
+    <numeroGara>PCP-20250520-02018</numeroGara>
+    <tipoCig>ORDINARIO</tipoCig>
+    <stato>ATTIVO</stato>
+    <oggettoGara>ACQUISIZIONE PARTI DI RICAMBIO RELATIVE AL PINTLE MACHINE GUN (PMG) PER M-134D MARINIZED MINIGUN</oggettoGara>
+    <oggettoLotto>ACQUISIZIONE PARTI DI RICAMBIO RELATIVE AL PINTLE MACHINE GUN (PMG) PER M-134D MARINIZED MINIGUN</oggettoLotto>
+    <importoGara valuta="EUR">143146.5</importoGara>
+    <importoLotto valuta="EUR">143146.5</importoLotto>
+    <provincia/>
+    <settore>SETTORI ORDINARI</settore>
+    <cup/>
+    <oggettoPrincipaleContratto>FORNITURE</oggettoPrincipaleContratto>
+    <tipologiaContratto>FORNITURE</tipologiaContratto>
+    <localizzazione>Roma</localizzazione>
+    <scadenzaOfferte/>
+    <dataAggiudicazione/>
+  </informazioniGara>
+  <stazioneAppaltante>
+    <codiceFiscale>80238390589</codiceFiscale>
+    <denominazione>SEGRETARIATO GENERALE DELLA DIFESA -DIREZIONE NAZIONALE ARMAMENTI-DIREZIONE ARMAMENTI AERONAUTICI</denominazione>
+    <centroCosto>7 DIVISIONE</centroCosto>
+    <citta>ROMA</citta>
+    <regione>LAZIO</regione>
+    <indirizzo>VIA DI CENTOCELLE 301</indirizzo>
+  </stazioneAppaltante>
+  <incaricati>
+    <incaricato ruolo="RESPONSABILE UNICO DEL PROCEDIMENTO">
+      <nome>LORIS</nome>
+      <cognome>DE LUCA</cognome>
+      <codiceFiscale>DLCLRS74H13A489O</codiceFiscale>
+    </incaricato>
+  </incaricati>
+  <pubblicazioni>
+    <dataCreazione>2025-05-20</dataCreazione>
+    <dataPubblicazione>2025-05-20</dataPubblicazione>
+  </pubblicazioni>
+  <categorieOpera>
+    <categoriaOpera tipo="PREVALENTE">
+      <idCategoria>999</idCategoria>
+      <descrizione>OO.CC. - Categoria non definita</descrizione>
+    </categoriaOpera>
+  </categorieOpera>
+  <descrizioneDocumentale>Procedura relativa a <tipologia>forniture</tipologia> avente per oggetto <oggetto>ACQUISIZIONE PARTI DI RICAMBIO RELATIVE AL PINTLE MACHINE GUN (PMG) PER M-134D MARINIZED MINIGUN</oggetto>. <categoria>oo.cc. - categoria non definita</categoria>. <luogo>Roma</luogo>.</descrizioneDocumentale>
+</contratto>

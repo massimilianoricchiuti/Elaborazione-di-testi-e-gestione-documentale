@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<contratto cig="B7A3D70B00" fonte="ANAC">
+  <fonti>
+    <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B7A3D70B00.html">Documento HTML collegato al CIG: B7A3D70B00</fonte>
+    <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B7A3D70B00.json">Fonte originale JSON del CIG</fonte>
+    <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/B7A3D70B00_determina.pdf">Documento PDF collegato al CIG: B7A3D70B00 determina</fonte>
+  </fonti>
+  <approfondimentiWeb>
+    <fonteWeb tipo="pagina di gara e fascicolo degli atti" formato="text/html" url="https://castiglionecosentino.traspare.com/announcements/39" relazione="cig-esatto" verificataIl="2026-09-15">La fonte <titoloFonte>Gara aggiudicata — efficientamento energetico del Villaggio Scolastico P. De Stefano</titoloFonte>, pubblicata da <enteFonte>Comune di Castiglione Cosentino — piattaforma Traspare</enteFonte>, riguarda la fase <faseFonte>gara e aggiudicazione</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>La scheda espone il CIG B7A3D70B00, il CUP H24D25000660001, l'intervento in via Lanza e l'aggiudicatario Consorzio Stabile Ganosis.</nessoFonte>. In sintesi, <datoFonte>Il fascicolo raccoglie determina a contrarre, DGUE XML, comunicazioni, verbali, determina di aggiudicazione 407 del 5 agosto 2025 ed esito; permette di seguire la sequenza documentale della gara.</datoFonte>.</fonteWeb>
+  </approfondimentiWeb>
+  <informazioniGara>
+    <numeroGara>company_805_procurement_33</numeroGara>
+    <tipoCig>ORDINARIO</tipoCig>
+    <stato>ATTIVO</stato>
+    <oggettoGara>EFFICIENTAMENTO ENERGETICO VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)</oggettoGara>
+    <oggettoLotto>INTERVENTO DI EFFICIENTAMENTO ENERGETICO VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)</oggettoLotto>
+    <importoGara valuta="EUR">715471.24</importoGara>
+    <importoLotto valuta="EUR">715471.24</importoLotto>
+    <provincia>COSENZA</provincia>
+    <settore>SETTORI ORDINARI</settore>
+    <cup>[{'CUP': 'H24D25000660001'}]</cup>
+    <oggettoPrincipaleContratto>LAVORI</oggettoPrincipaleContratto>
+    <tipologiaContratto>LAVORI</tipologiaContratto>
+    <localizzazione>Cosenza</localizzazione>
+    <scadenzaOfferte>2025-07-29T14:00</scadenzaOfferte>
+    <dataAggiudicazione>2025-08-05</dataAggiudicazione>
+  </informazioniGara>
+  <stazioneAppaltante>
+    <codiceFiscale>00391420783</codiceFiscale>
+    <denominazione>COMUNE DI CASTIGLIONE COSENTINO</denominazione>
+    <centroCosto>COMUNE DI CASTIGLIONE COSENTINO</centroCosto>
+    <citta>CASTIGLIONE COSENTINO</citta>
+    <regione>CALABRIA</regione>
+    <indirizzo>PZA VITTORIO VENETO</indirizzo>
+  </stazioneAppaltante>
+  <incaricati>
+    <incaricato ruolo="RESPONSABILE UNICO DEL PROCEDIMENTO">
+      <nome>FRANCESCO SAVERIO</nome>
+      <cognome>SMERIGLIO</cognome>
+      <codiceFiscale>SMRFNC69L28D086F</codiceFiscale>
+    </incaricato>
+  </incaricati>
+  <pubblicazioni>
+    <dataCreazione>2025-07-14</dataCreazione>
+    <dataPubblicazione>2025-07-14</dataPubblicazione>
+  </pubblicazioni>
+  <partecipanti>
+    <partecipante aggiudicatario="22477083">
+      <denominazione>CONSORZIO STABILE GANOSIS - SOCIETA' CONSORTILE A R.L.</denominazione>
+      <tipoSoggetto>IMPRESA</tipoSoggetto>
+      <codiceFiscale>01375260625</codiceFiscale>
+      <ruolo>CONSORZIO STABILE</ruolo>
+    </partecipante>
+    <partecipante>
+      <denominazione>SO.CO.SA. SOCIETA' COSTRUZIONI SAVINO S.R.L.</denominazione>
+      <tipoSoggetto>IMPRESA</tipoSoggetto>
+      <codiceFiscale>00271230633</codiceFiscale>
+      <ruolo>OPERATORE ECONOMICO MONOSOGGETTIVO</ruolo>
+    </partecipante>
+  </partecipanti>
+  <aggiudicazione>
+    <aggiudicatario>
+      <denominazione/>
+      <codiceFiscale/>
+      <importoAggiudicazione valuta="EUR">710880.3</importoAggiudicazione>
+    </aggiudicatario>
+  </aggiudicazione>
+  <contrattoEsecuzione>
+    <dataAvvio>2025-08-25</dataAvvio>
+    <dataFinePrevista>2026-12-31</dataFinePrevista>
+  </contrattoEsecuzione>
+  <categorieOpera>
+    <categoriaOpera tipo="SCORPORABILE">
+      <idCategoria>OG 11</idCategoria>
+      <descrizione>OG 11 - IMPIANTI TECNOLOGICI</descrizione>
+    </categoriaOpera>
+    <categoriaOpera tipo="PREVALENTE">
+      <idCategoria>OG 1</idCategoria>
+      <descrizione>OG 1 - EDIFICI CIVILI E INDUSTRIALI</descrizione>
+    </categoriaOpera>
+  </categorieOpera>
+  <cpv>
+    <voceCpv tipo="Prevalente">
+      <codice>45262500-6</codice>
+      <descrizione>LAVORI EDILI E DI MURATURA</descrizione>
+    </voceCpv>
+  </cpv>
+  <descrizioneDocumentale>Procedura relativa a <tipologia>lavori</tipologia> avente per oggetto <oggetto>INTERVENTO DI EFFICIENTAMENTO ENERGETICO VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)</oggetto>. <termine>lavori edili e di muratura</termine>. <categoria>og 11 - impianti tecnologici</categoria>. <luogo>Cosenza</luogo>.</descrizioneDocumentale>
+</contratto>

@@ -1,8 +1,10 @@
 import json
+from dataclasses import replace
 from datetime import datetime
 from decimal import Decimal
 
 from lxml import etree
+import pytest
 
 from src.processing.analysis import amount_statistics, classify_chronology
 from src.processing.extraction import extract_record
@@ -52,10 +54,32 @@ def test_web_source_manifest_covers_every_cig():
     catalog = load_web_sources(PATHS, known_cigs)
     raw_catalog = json.loads(PATHS.web_sources_file.read_text(encoding="utf-8"))
     assert set(catalog) == known_cigs
-    assert len(catalog) == 15
     assert sum(len(sources) for sources in catalog.values()) >= len(catalog)
     assert all(sources for sources in catalog.values())
     assert raw_catalog["methodology"]
+
+
+def test_web_source_verification_dates_preserve_previous_checks(tmp_path):
+    payload = json.loads(PATHS.web_sources_file.read_text(encoding="utf-8"))
+    legacy = dict(next(iter(payload["records"].values()))[0])
+    legacy.pop("verified_on", None)
+    recent = {**legacy, "url": "https://example.org/nuovo-atto", "verified_on": "2026-09-15"}
+    payload["records"] = {"TEST": [legacy, recent]}
+    manifest = tmp_path / "fonti_web.json"
+    manifest.write_text(json.dumps(payload), encoding="utf-8")
+    sources = load_web_sources(replace(PATHS, web_sources_file=manifest), {"TEST"})["TEST"]
+    assert [source.verified_on for source in sources] == [payload["verified_on"], "2026-09-15"]
+
+
+@pytest.mark.parametrize("invalid_date", ["", "2026-02-30", "data non valida"])
+def test_web_source_rejects_invalid_individual_verification_date(tmp_path, invalid_date):
+    payload = json.loads(PATHS.web_sources_file.read_text(encoding="utf-8"))
+    source = {**next(iter(payload["records"].values()))[0], "verified_on": invalid_date}
+    payload["records"] = {"TEST": [source]}
+    manifest = tmp_path / "fonti_web.json"
+    manifest.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(ValueError, match="Fonte web TEST: data di verifica non valida"):
+        load_web_sources(replace(PATHS, web_sources_file=manifest), {"TEST"})
 
 
 def test_b6dd_web_source_exposes_official_gara_acts():

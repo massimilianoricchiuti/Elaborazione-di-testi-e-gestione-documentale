@@ -1,51 +1,51 @@
 {
   "metadata": {
-    "record_count": 15,
-    "valid_xml_count": 15,
+    "record_count": 21,
+    "valid_xml_count": 21,
     "source_coverage": [
       {
         "format": "csv",
-        "available": 15,
-        "linked_files": 15,
-        "missing": 0,
-        "percent": 100.0
+        "available": 20,
+        "linked_files": 20,
+        "missing": 1,
+        "percent": 95.24
       },
       {
         "format": "json",
-        "available": 15,
-        "linked_files": 15,
+        "available": 21,
+        "linked_files": 21,
         "missing": 0,
         "percent": 100.0
       },
       {
         "format": "html",
-        "available": 15,
-        "linked_files": 16,
-        "missing": 0,
-        "percent": 100.0
+        "available": 20,
+        "linked_files": 21,
+        "missing": 1,
+        "percent": 95.24
       },
       {
         "format": "pdf",
-        "available": 15,
-        "linked_files": 22,
+        "available": 21,
+        "linked_files": 28,
         "missing": 0,
         "percent": 100.0
       }
     ],
     "web_source_coverage": {
-      "available": 15,
-      "linked_sources": 26,
+      "available": 21,
+      "linked_sources": 33,
       "missing": 0,
       "percent": 100.0
     },
     "web_source_relations": [
       {
         "relation": "accordo-quadro",
-        "count": 1
+        "count": 2
       },
       {
         "relation": "cig-esatto",
-        "count": 6
+        "count": 12
       },
       {
         "relation": "cig-padre-lotto",
@@ -90,7 +90,15 @@
         "count": 1
       },
       {
+        "type": "avviso di post-informazione",
+        "count": 1
+      },
+      {
         "type": "comunicato istituzionale",
+        "count": 1
+      },
+      {
+        "type": "decisione a contrarre e determina di affidamento",
         "count": 1
       },
       {
@@ -103,6 +111,14 @@
       },
       {
         "type": "determina a contrarre e affidamento",
+        "count": 1
+      },
+      {
+        "type": "determina a contrarre e di affidamento",
+        "count": 1
+      },
+      {
+        "type": "determinazione dirigenziale",
         "count": 1
       },
       {
@@ -120,6 +136,10 @@
       {
         "type": "pagina di gara",
         "count": 3
+      },
+      {
+        "type": "pagina di gara e fascicolo degli atti",
+        "count": 1
       },
       {
         "type": "pagina di procedura",
@@ -162,22 +182,30 @@
         "count": 3
       },
       {
+        "type": "scheda di affidamento e documentazione dell'accordo quadro",
+        "count": 1
+      },
+      {
         "type": "scheda di procedimento ambientale",
         "count": 1
       },
       {
         "type": "scheda di servizio",
         "count": 1
+      },
+      {
+        "type": "scheda di stipula del contratto applicativo",
+        "count": 1
       }
     ],
     "web_source_formats": [
       {
         "format": "application/pdf",
-        "count": 6
+        "count": 10
       },
       {
         "format": "text/html",
-        "count": 20
+        "count": 23
       }
     ]
   },
@@ -186,197 +214,252 @@
       "rows": [
         {
           "label": "Roma",
-          "count": 4,
-          "percent": 26.67
+          "count": 6,
+          "percent": 28.57
+        },
+        {
+          "label": "Dati mancanti",
+          "count": 2,
+          "percent": 9.52
         },
         {
           "label": "Torino",
           "count": 2,
-          "percent": 13.33
+          "percent": 9.52
+        },
+        {
+          "label": "Udine",
+          "count": 1,
+          "percent": 4.76
         },
         {
           "label": "Grosseto",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Firenze",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Latina",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Perugia",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Milano",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Messina",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
-          "label": "Dati mancanti",
+          "label": "Cosenza",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Napoli",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Bolzano/Bozen",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
+        },
+        {
+          "label": "Verona",
+          "count": 1,
+          "percent": 4.76
         }
       ],
-      "missing": 1,
-      "missing_percent": 6.67,
+      "missing": 2,
+      "missing_percent": 9.52,
       "top": {
         "label": "Roma",
-        "count": 4,
-        "percent": 26.67
+        "count": 6,
+        "percent": 28.57
       }
     },
     "authority_cities": {
       "rows": [
         {
-          "label": "Torino",
-          "count": 2,
-          "percent": 13.33
+          "label": "Roma",
+          "count": 3,
+          "percent": 14.29
         },
         {
-          "label": "Roma",
+          "label": "Torino",
           "count": 2,
-          "percent": 13.33
+          "percent": 9.52
+        },
+        {
+          "label": "Carlino",
+          "count": 1,
+          "percent": 4.76
         },
         {
           "label": "Grosseto",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
+        },
+        {
+          "label": "Cremona",
+          "count": 1,
+          "percent": 4.76
         },
         {
           "label": "Firenze",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Latina",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Spoleto",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Milano",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "San Fratello",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Frascati",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
+        },
+        {
+          "label": "Pomezia",
+          "count": 1,
+          "percent": 4.76
+        },
+        {
+          "label": "Castiglione Cosentino",
+          "count": 1,
+          "percent": 4.76
         },
         {
           "label": "Colleferro",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Torriana",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Napoli",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Bressanone",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
+        },
+        {
+          "label": "Verona",
+          "count": 1,
+          "percent": 4.76
         }
       ],
       "missing": 0,
       "missing_percent": 0.0,
       "top": {
-        "label": "Torino",
-        "count": 2,
-        "percent": 13.33
+        "label": "Roma",
+        "count": 3,
+        "percent": 14.29
       }
     },
     "regions": {
       "rows": [
         {
           "label": "Lazio",
-          "count": 5,
+          "count": 7,
           "percent": 33.33
         },
         {
           "label": "Toscana",
           "count": 2,
-          "percent": 13.33
+          "percent": 9.52
+        },
+        {
+          "label": "Lombardia",
+          "count": 2,
+          "percent": 9.52
         },
         {
           "label": "Piemonte",
           "count": 2,
-          "percent": 13.33
+          "percent": 9.52
+        },
+        {
+          "label": "Friuli-Venezia Giulia",
+          "count": 1,
+          "percent": 4.76
         },
         {
           "label": "Umbria",
           "count": 1,
-          "percent": 6.67
-        },
-        {
-          "label": "Lombardia",
-          "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Sicilia",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
+        },
+        {
+          "label": "Calabria",
+          "count": 1,
+          "percent": 4.76
         },
         {
           "label": "Emilia-Romagna",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Campania",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
         },
         {
           "label": "Trentino-Alto Adige",
           "count": 1,
-          "percent": 6.67
+          "percent": 4.76
+        },
+        {
+          "label": "Veneto",
+          "count": 1,
+          "percent": 4.76
         }
       ],
       "missing": 0,
       "missing_percent": 0.0,
       "top": {
         "label": "Lazio",
-        "count": 5,
+        "count": 7,
         "percent": 33.33
       }
     },
@@ -384,7 +467,7 @@
       {
         "area": "Roma",
         "contract_type": "FORNITURE",
-        "count": 2
+        "count": 3
       },
       {
         "area": "Bressanone",
@@ -392,7 +475,22 @@
         "count": 1
       },
       {
+        "area": "Carlino",
+        "contract_type": "SERVIZI",
+        "count": 1
+      },
+      {
+        "area": "Castiglione Cosentino",
+        "contract_type": "LAVORI",
+        "count": 1
+      },
+      {
         "area": "Colleferro",
+        "contract_type": "SERVIZI",
+        "count": 1
+      },
+      {
+        "area": "Cremona",
         "contract_type": "SERVIZI",
         "count": 1
       },
@@ -427,6 +525,11 @@
         "count": 1
       },
       {
+        "area": "Pomezia",
+        "contract_type": "SERVIZI",
+        "count": 1
+      },
+      {
         "area": "San Fratello",
         "contract_type": "FORNITURE",
         "count": 1
@@ -450,18 +553,33 @@
         "area": "Torriana",
         "contract_type": "SERVIZI",
         "count": 1
+      },
+      {
+        "area": "Verona",
+        "contract_type": "FORNITURE",
+        "count": 1
       }
     ],
     "contract_types_by_region": [
       {
         "area": "Lazio",
         "contract_type": "FORNITURE",
-        "count": 3
+        "count": 4
       },
       {
         "area": "Lazio",
         "contract_type": "SERVIZI",
+        "count": 3
+      },
+      {
+        "area": "Lombardia",
+        "contract_type": "SERVIZI",
         "count": 2
+      },
+      {
+        "area": "Calabria",
+        "contract_type": "LAVORI",
+        "count": 1
       },
       {
         "area": "Campania",
@@ -474,7 +592,7 @@
         "count": 1
       },
       {
-        "area": "Lombardia",
+        "area": "Friuli-Venezia Giulia",
         "contract_type": "SERVIZI",
         "count": 1
       },
@@ -512,9 +630,28 @@
         "area": "Umbria",
         "contract_type": "SERVIZI",
         "count": 1
+      },
+      {
+        "area": "Veneto",
+        "contract_type": "FORNITURE",
+        "count": 1
       }
     ],
     "amounts_by_city": [
+      {
+        "label": "Roma",
+        "records": 3,
+        "available": 3,
+        "missing": 0,
+        "sum": "950921.5",
+        "mean": "316973.8333333333333333333333",
+        "median": "400000",
+        "min": "143146.5",
+        "max": "407775",
+        "q1": "271573.250",
+        "q3": "403887.50",
+        "iqr": "132314.250"
+      },
       {
         "label": "Torino",
         "records": 2,
@@ -530,18 +667,18 @@
         "iqr": "187427.1700"
       },
       {
-        "label": "Roma",
-        "records": 2,
-        "available": 2,
+        "label": "Carlino",
+        "records": 1,
+        "available": 1,
         "missing": 0,
-        "sum": "807775",
-        "mean": "403887.5",
-        "median": "403887.5",
-        "min": "400000",
-        "max": "407775",
-        "q1": "401943.75",
-        "q3": "405831.25",
-        "iqr": "3887.50"
+        "sum": "45001.02",
+        "mean": "45001.02",
+        "median": "45001.02",
+        "min": "45001.02",
+        "max": "45001.02",
+        "q1": "45001.02",
+        "q3": "45001.02",
+        "iqr": "0.00"
       },
       {
         "label": "Grosseto",
@@ -555,6 +692,20 @@
         "max": "76216.47",
         "q1": "76216.47",
         "q3": "76216.47",
+        "iqr": "0.00"
+      },
+      {
+        "label": "Cremona",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "4918.03",
+        "mean": "4918.03",
+        "median": "4918.03",
+        "min": "4918.03",
+        "max": "4918.03",
+        "q1": "4918.03",
+        "q3": "4918.03",
         "iqr": "0.00"
       },
       {
@@ -642,6 +793,34 @@
         "iqr": "0.00"
       },
       {
+        "label": "Pomezia",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "48000",
+        "mean": "48000",
+        "median": "48000",
+        "min": "48000",
+        "max": "48000",
+        "q1": "48000",
+        "q3": "48000",
+        "iqr": "0"
+      },
+      {
+        "label": "Castiglione Cosentino",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "715471.24",
+        "mean": "715471.24",
+        "median": "715471.24",
+        "min": "715471.24",
+        "max": "715471.24",
+        "q1": "715471.24",
+        "q3": "715471.24",
+        "iqr": "0.00"
+      },
+      {
         "label": "Colleferro",
         "records": 1,
         "available": 1,
@@ -696,22 +875,36 @@
         "q1": "84236.15",
         "q3": "84236.15",
         "iqr": "0.00"
+      },
+      {
+        "label": "Verona",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "66000",
+        "mean": "66000",
+        "median": "66000",
+        "min": "66000",
+        "max": "66000",
+        "q1": "66000",
+        "q3": "66000",
+        "iqr": "0"
       }
     ],
     "amounts_by_region": [
       {
         "label": "Lazio",
-        "records": 5,
-        "available": 5,
+        "records": 7,
+        "available": 7,
         "missing": 0,
-        "sum": "1894496.17",
-        "mean": "378899.234",
-        "median": "400000",
-        "min": "76500",
+        "sum": "2085642.67",
+        "mean": "297948.9528571428571428571429",
+        "median": "143146.5",
+        "min": "48000",
         "max": "872727.27",
-        "q1": "137493.900",
-        "q3": "407775.0000",
-        "iqr": "270281.1000"
+        "q1": "106996.950",
+        "q3": "403887.50",
+        "iqr": "296890.550"
       },
       {
         "label": "Toscana",
@@ -728,6 +921,20 @@
         "iqr": "121791.7650"
       },
       {
+        "label": "Lombardia",
+        "records": 2,
+        "available": 2,
+        "missing": 0,
+        "sum": "79918.03",
+        "mean": "39959.015",
+        "median": "39959.015",
+        "min": "4918.03",
+        "max": "75000",
+        "q1": "22438.5225",
+        "q3": "57479.5075",
+        "iqr": "35040.9850"
+      },
+      {
         "label": "Piemonte",
         "records": 2,
         "available": 2,
@@ -740,6 +947,20 @@
         "q1": "282413.5850",
         "q3": "469840.7550",
         "iqr": "187427.1700"
+      },
+      {
+        "label": "Friuli-Venezia Giulia",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "45001.02",
+        "mean": "45001.02",
+        "median": "45001.02",
+        "min": "45001.02",
+        "max": "45001.02",
+        "q1": "45001.02",
+        "q3": "45001.02",
+        "iqr": "0.00"
       },
       {
         "label": "Umbria",
@@ -756,20 +977,6 @@
         "iqr": "0"
       },
       {
-        "label": "Lombardia",
-        "records": 1,
-        "available": 1,
-        "missing": 0,
-        "sum": "75000",
-        "mean": "75000",
-        "median": "75000",
-        "min": "75000",
-        "max": "75000",
-        "q1": "75000",
-        "q3": "75000",
-        "iqr": "0"
-      },
-      {
         "label": "Sicilia",
         "records": 1,
         "available": 1,
@@ -782,6 +989,20 @@
         "q1": "43800",
         "q3": "43800",
         "iqr": "0"
+      },
+      {
+        "label": "Calabria",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "715471.24",
+        "mean": "715471.24",
+        "median": "715471.24",
+        "min": "715471.24",
+        "max": "715471.24",
+        "q1": "715471.24",
+        "q3": "715471.24",
+        "iqr": "0.00"
       },
       {
         "label": "Emilia-Romagna",
@@ -824,9 +1045,28 @@
         "q1": "84236.15",
         "q3": "84236.15",
         "iqr": "0.00"
+      },
+      {
+        "label": "Veneto",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "66000",
+        "mean": "66000",
+        "median": "66000",
+        "min": "66000",
+        "max": "66000",
+        "q1": "66000",
+        "q3": "66000",
+        "iqr": "0"
       }
     ],
     "location_authority_differences": [
+      {
+        "cig": "B387047A20",
+        "tender_location": "Udine",
+        "authority_city": "Carlino"
+      },
       {
         "cig": "B5FDE25326",
         "tender_location": "Perugia",
@@ -841,6 +1081,16 @@
         "cig": "B6DD95EE23",
         "tender_location": "Roma",
         "authority_city": "Frascati"
+      },
+      {
+        "cig": "B6E9DE9F63",
+        "tender_location": "Roma",
+        "authority_city": "Pomezia"
+      },
+      {
+        "cig": "B7A3D70B00",
+        "tender_location": "Cosenza",
+        "authority_city": "Castiglione Cosentino"
       },
       {
         "cig": "B8297EE856",
@@ -858,57 +1108,57 @@
     "coverage": [
       {
         "field": "creation_date",
-        "available": 15,
+        "available": 21,
         "missing": 0,
         "percent": 100.0
       },
       {
         "field": "publication_date",
-        "available": 15,
+        "available": 21,
         "missing": 0,
         "percent": 100.0
       },
       {
         "field": "offer_deadline",
-        "available": 14,
-        "missing": 1,
-        "percent": 93.33
+        "available": 19,
+        "missing": 2,
+        "percent": 90.48
       },
       {
         "field": "award_date",
-        "available": 10,
-        "missing": 5,
+        "available": 14,
+        "missing": 7,
         "percent": 66.67
       },
       {
         "field": "start_date",
-        "available": 3,
-        "missing": 12,
-        "percent": 20.0
+        "available": 6,
+        "missing": 15,
+        "percent": 28.57
       },
       {
         "field": "expected_end_date",
-        "available": 4,
-        "missing": 11,
-        "percent": 26.67
+        "available": 6,
+        "missing": 15,
+        "percent": 28.57
       }
     ],
     "anomaly_counts": [
       {
         "type": "scadenza_anteriore_pubblicazione",
-        "count": 5
-      },
-      {
-        "type": "sequenza_cronologica_coerente",
-        "count": 5
+        "count": 8
       },
       {
         "type": "data_mancante",
-        "count": 5
+        "count": 7
+      },
+      {
+        "type": "sequenza_cronologica_coerente",
+        "count": 6
       },
       {
         "type": "aggiudicazione_anteriore_pubblicazione",
-        "count": 3
+        "count": 5
       },
       {
         "type": "aggiudicazione_anteriore_scadenza",
@@ -916,6 +1166,38 @@
       }
     ],
     "anomalies": [
+      {
+        "cig": "B387047A20",
+        "type": "scadenza_anteriore_pubblicazione",
+        "fields": [
+          "publication_date",
+          "offer_deadline"
+        ],
+        "dates": {
+          "creation_date": "2024-10-16",
+          "publication_date": "2025-06-06",
+          "offer_deadline": "2024-10-16T18:50",
+          "award_date": "2024-10-16",
+          "start_date": "",
+          "expected_end_date": ""
+        }
+      },
+      {
+        "cig": "B387047A20",
+        "type": "aggiudicazione_anteriore_pubblicazione",
+        "fields": [
+          "publication_date",
+          "award_date"
+        ],
+        "dates": {
+          "creation_date": "2024-10-16",
+          "publication_date": "2025-06-06",
+          "offer_deadline": "2024-10-16T18:50",
+          "award_date": "2024-10-16",
+          "start_date": "",
+          "expected_end_date": ""
+        }
+      },
       {
         "cig": "B474D3250C",
         "type": "scadenza_anteriore_pubblicazione",
@@ -946,6 +1228,21 @@
           "award_date": "2024-11-26",
           "start_date": "2025-01-27",
           "expected_end_date": "2025-03-01"
+        }
+      },
+      {
+        "cig": "B4B5B163A0",
+        "type": "data_mancante",
+        "fields": [
+          "award_date"
+        ],
+        "dates": {
+          "creation_date": "2024-12-09",
+          "publication_date": "2024-12-09",
+          "offer_deadline": "2024-12-09T17:44",
+          "award_date": "",
+          "start_date": "",
+          "expected_end_date": ""
         }
       },
       {
@@ -1021,6 +1318,54 @@
           "creation_date": "2025-04-28",
           "publication_date": "2025-04-28",
           "offer_deadline": "2025-05-08T07:30",
+          "award_date": "",
+          "start_date": "",
+          "expected_end_date": ""
+        }
+      },
+      {
+        "cig": "B6E9DE9F63",
+        "type": "scadenza_anteriore_pubblicazione",
+        "fields": [
+          "publication_date",
+          "offer_deadline"
+        ],
+        "dates": {
+          "creation_date": "2025-05-19",
+          "publication_date": "2025-05-20",
+          "offer_deadline": "2025-05-19T15:36",
+          "award_date": "2025-05-19",
+          "start_date": "2025-06-16",
+          "expected_end_date": ""
+        }
+      },
+      {
+        "cig": "B6E9DE9F63",
+        "type": "aggiudicazione_anteriore_pubblicazione",
+        "fields": [
+          "publication_date",
+          "award_date"
+        ],
+        "dates": {
+          "creation_date": "2025-05-19",
+          "publication_date": "2025-05-20",
+          "offer_deadline": "2025-05-19T15:36",
+          "award_date": "2025-05-19",
+          "start_date": "2025-06-16",
+          "expected_end_date": ""
+        }
+      },
+      {
+        "cig": "B6EDEAC0D4",
+        "type": "data_mancante",
+        "fields": [
+          "offer_deadline",
+          "award_date"
+        ],
+        "dates": {
+          "creation_date": "2025-05-20",
+          "publication_date": "2025-05-20",
+          "offer_deadline": "",
           "award_date": "",
           "start_date": "",
           "expected_end_date": ""
@@ -1135,26 +1480,46 @@
           "start_date": "",
           "expected_end_date": ""
         }
+      },
+      {
+        "cig": "B860168925",
+        "type": "scadenza_anteriore_pubblicazione",
+        "fields": [
+          "publication_date",
+          "offer_deadline"
+        ],
+        "dates": {
+          "creation_date": "2025-09-24",
+          "publication_date": "2025-09-25",
+          "offer_deadline": "2025-09-24T18:55",
+          "award_date": "2025-10-15",
+          "start_date": "2025-10-29",
+          "expected_end_date": "2028-10-28"
+        }
       }
     ],
     "durations": {
       "publication_to_deadline": {
-        "count": 9,
-        "mean": 13.11111111111111,
+        "count": 11,
+        "mean": 12.090909090909092,
         "median": 10.0
       },
       "deadline_to_award": {
-        "count": 9,
-        "mean": 11.777777777777779,
+        "count": 13,
+        "mean": 10.307692307692308,
         "median": 0.0
       },
       "publication_to_award": {
-        "count": 7,
-        "mean": 17,
-        "median": 6.0
+        "count": 9,
+        "mean": 17.88888888888889,
+        "median": 20.0
       }
     },
     "publication_months": [
+      {
+        "label": "2024-12",
+        "count": 1
+      },
       {
         "label": "2025-01",
         "count": 2
@@ -1169,27 +1534,35 @@
       },
       {
         "label": "2025-05",
-        "count": 1
+        "count": 3
       },
       {
         "label": "2025-06",
-        "count": 1
+        "count": 2
       },
       {
         "label": "2025-07",
-        "count": 1
+        "count": 2
       },
       {
         "label": "2025-09",
-        "count": 4
+        "count": 5
       }
     ],
     "deadline_months": [
+      {
+        "label": "2024-10",
+        "count": 1
+      },
       {
         "label": "2024-11",
         "count": 1
       },
       {
+        "label": "2024-12",
+        "count": 1
+      },
+      {
         "label": "2025-01",
         "count": 1
       },
@@ -1203,11 +1576,11 @@
       },
       {
         "label": "2025-05",
-        "count": 2
+        "count": 3
       },
       {
         "label": "2025-07",
-        "count": 1
+        "count": 2
       },
       {
         "label": "2025-08",
@@ -1215,61 +1588,61 @@
       },
       {
         "label": "2025-09",
-        "count": 3
+        "count": 4
       }
     ]
   },
   "amounts": {
     "statistics": {
       "tender_amount": {
-        "available": 15,
+        "available": 21,
         "missing": 0,
-        "sum": "3482410.72",
-        "mean": "232160.7146666666666666666667",
-        "median": "96150",
-        "min": "43800",
+        "sum": "4504947.51",
+        "mean": "214521.31",
+        "median": "84236.15",
+        "min": "4918.03",
         "max": "872727.27",
-        "q1": "76358.2350",
-        "q3": "359900.00",
-        "iqr": "283541.7650"
+        "q1": "66000.00",
+        "q3": "319800.00",
+        "iqr": "253800.00"
       },
       "lot_amount": {
-        "available": 15,
+        "available": 21,
         "missing": 0,
-        "sum": "3209735.72",
-        "mean": "213982.3813333333333333333333",
-        "median": "96150",
-        "min": "43800",
+        "sum": "4232272.51",
+        "mean": "201536.7861904761904761904762",
+        "median": "84236.15",
+        "min": "4918.03",
         "max": "872727.27",
-        "q1": "76358.2350",
-        "q3": "254250.00",
-        "iqr": "177891.7650"
+        "q1": "66000.00",
+        "q3": "188700.00",
+        "iqr": "122700.00"
       },
       "award_amount": {
-        "available": 10,
-        "missing": 5,
-        "sum": "1986823.79",
-        "mean": "198682.379",
-        "median": "90193.075",
-        "min": "60000",
+        "available": 15,
+        "missing": 6,
+        "sum": "2861623.14",
+        "mean": "190774.876",
+        "median": "76500",
+        "min": "4918.03",
         "max": "872727.27",
-        "q1": "76287.3525",
-        "q3": "175898.475",
-        "iqr": "99611.1225"
+        "q1": "63000.00",
+        "q3": "163096.950",
+        "iqr": "100096.950"
       }
     },
     "bands": [
       {
         "label": "Meno di 50.000 €",
-        "count": 1
+        "count": 4
       },
       {
         "label": "50.000–99.999 €",
-        "count": 7
+        "count": 8
       },
       {
         "label": "100.000–249.999 €",
-        "count": 2
+        "count": 3
       },
       {
         "label": "250.000–499.999 €",
@@ -1277,54 +1650,68 @@
       },
       {
         "label": "500.000 € e oltre",
-        "count": 2
+        "count": 3
       }
     ],
     "by_contract_type": [
       {
         "label": "SERVIZI",
-        "records": 8,
-        "available": 8,
+        "records": 11,
+        "available": 11,
         "missing": 0,
-        "sum": "1533771.01",
-        "mean": "191721.37625",
-        "median": "82346.87",
-        "min": "60000",
+        "sum": "1631690.06",
+        "mean": "148335.46",
+        "median": "76500",
+        "min": "4918.03",
         "max": "872727.27",
-        "q1": "76125.00",
-        "q3": "119287.50",
-        "iqr": "43162.50"
+        "q1": "54000.00",
+        "q3": "90193.0750",
+        "iqr": "36193.0750"
       },
       {
         "label": "FORNITURE",
-        "records": 5,
-        "available": 5,
+        "records": 7,
+        "available": 7,
         "missing": 0,
-        "sum": "1308868.9",
-        "mean": "261773.78",
-        "median": "319800",
+        "sum": "1518015.4",
+        "mean": "216859.3428571428571428571429",
+        "median": "143146.5",
         "min": "43800",
         "max": "407775",
-        "q1": "137493.900",
-        "q3": "400000.00",
-        "iqr": "262506.100"
+        "q1": "101746.950",
+        "q3": "359900.00",
+        "iqr": "258153.050"
       },
       {
         "label": "LAVORI",
-        "records": 2,
-        "available": 2,
+        "records": 3,
+        "available": 3,
         "missing": 0,
-        "sum": "639770.81",
-        "mean": "319885.405",
-        "median": "319885.405",
+        "sum": "1355242.05",
+        "mean": "451747.35",
+        "median": "563554.34",
         "min": "76216.47",
-        "max": "563554.34",
-        "q1": "198050.9375",
-        "q3": "441719.8725",
-        "iqr": "243668.9350"
+        "max": "715471.24",
+        "q1": "319885.4050",
+        "q3": "639512.7900",
+        "iqr": "319627.3850"
       }
     ],
     "by_city": [
+      {
+        "label": "Roma",
+        "records": 3,
+        "available": 3,
+        "missing": 0,
+        "sum": "950921.5",
+        "mean": "316973.8333333333333333333333",
+        "median": "400000",
+        "min": "143146.5",
+        "max": "407775",
+        "q1": "271573.250",
+        "q3": "403887.50",
+        "iqr": "132314.250"
+      },
       {
         "label": "Torino",
         "records": 2,
@@ -1340,18 +1727,18 @@
         "iqr": "187427.1700"
       },
       {
-        "label": "Roma",
-        "records": 2,
-        "available": 2,
+        "label": "Carlino",
+        "records": 1,
+        "available": 1,
         "missing": 0,
-        "sum": "807775",
-        "mean": "403887.5",
-        "median": "403887.5",
-        "min": "400000",
-        "max": "407775",
-        "q1": "401943.75",
-        "q3": "405831.25",
-        "iqr": "3887.50"
+        "sum": "45001.02",
+        "mean": "45001.02",
+        "median": "45001.02",
+        "min": "45001.02",
+        "max": "45001.02",
+        "q1": "45001.02",
+        "q3": "45001.02",
+        "iqr": "0.00"
       },
       {
         "label": "Grosseto",
@@ -1365,6 +1752,20 @@
         "max": "76216.47",
         "q1": "76216.47",
         "q3": "76216.47",
+        "iqr": "0.00"
+      },
+      {
+        "label": "Cremona",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "4918.03",
+        "mean": "4918.03",
+        "median": "4918.03",
+        "min": "4918.03",
+        "max": "4918.03",
+        "q1": "4918.03",
+        "q3": "4918.03",
         "iqr": "0.00"
       },
       {
@@ -1452,6 +1853,34 @@
         "iqr": "0.00"
       },
       {
+        "label": "Pomezia",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "48000",
+        "mean": "48000",
+        "median": "48000",
+        "min": "48000",
+        "max": "48000",
+        "q1": "48000",
+        "q3": "48000",
+        "iqr": "0"
+      },
+      {
+        "label": "Castiglione Cosentino",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "715471.24",
+        "mean": "715471.24",
+        "median": "715471.24",
+        "min": "715471.24",
+        "max": "715471.24",
+        "q1": "715471.24",
+        "q3": "715471.24",
+        "iqr": "0.00"
+      },
+      {
         "label": "Colleferro",
         "records": 1,
         "available": 1,
@@ -1506,22 +1935,36 @@
         "q1": "84236.15",
         "q3": "84236.15",
         "iqr": "0.00"
+      },
+      {
+        "label": "Verona",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "66000",
+        "mean": "66000",
+        "median": "66000",
+        "min": "66000",
+        "max": "66000",
+        "q1": "66000",
+        "q3": "66000",
+        "iqr": "0"
       }
     ],
     "by_region": [
       {
         "label": "Lazio",
-        "records": 5,
-        "available": 5,
+        "records": 7,
+        "available": 7,
         "missing": 0,
-        "sum": "1894496.17",
-        "mean": "378899.234",
-        "median": "400000",
-        "min": "76500",
+        "sum": "2085642.67",
+        "mean": "297948.9528571428571428571429",
+        "median": "143146.5",
+        "min": "48000",
         "max": "872727.27",
-        "q1": "137493.900",
-        "q3": "407775.0000",
-        "iqr": "270281.1000"
+        "q1": "106996.950",
+        "q3": "403887.50",
+        "iqr": "296890.550"
       },
       {
         "label": "Toscana",
@@ -1538,6 +1981,20 @@
         "iqr": "121791.7650"
       },
       {
+        "label": "Lombardia",
+        "records": 2,
+        "available": 2,
+        "missing": 0,
+        "sum": "79918.03",
+        "mean": "39959.015",
+        "median": "39959.015",
+        "min": "4918.03",
+        "max": "75000",
+        "q1": "22438.5225",
+        "q3": "57479.5075",
+        "iqr": "35040.9850"
+      },
+      {
         "label": "Piemonte",
         "records": 2,
         "available": 2,
@@ -1550,6 +2007,20 @@
         "q1": "282413.5850",
         "q3": "469840.7550",
         "iqr": "187427.1700"
+      },
+      {
+        "label": "Friuli-Venezia Giulia",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "45001.02",
+        "mean": "45001.02",
+        "median": "45001.02",
+        "min": "45001.02",
+        "max": "45001.02",
+        "q1": "45001.02",
+        "q3": "45001.02",
+        "iqr": "0.00"
       },
       {
         "label": "Umbria",
@@ -1566,20 +2037,6 @@
         "iqr": "0"
       },
       {
-        "label": "Lombardia",
-        "records": 1,
-        "available": 1,
-        "missing": 0,
-        "sum": "75000",
-        "mean": "75000",
-        "median": "75000",
-        "min": "75000",
-        "max": "75000",
-        "q1": "75000",
-        "q3": "75000",
-        "iqr": "0"
-      },
-      {
         "label": "Sicilia",
         "records": 1,
         "available": 1,
@@ -1592,6 +2049,20 @@
         "q1": "43800",
         "q3": "43800",
         "iqr": "0"
+      },
+      {
+        "label": "Calabria",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "715471.24",
+        "mean": "715471.24",
+        "median": "715471.24",
+        "min": "715471.24",
+        "max": "715471.24",
+        "q1": "715471.24",
+        "q3": "715471.24",
+        "iqr": "0.00"
       },
       {
         "label": "Emilia-Romagna",
@@ -1634,6 +2105,20 @@
         "q1": "84236.15",
         "q3": "84236.15",
         "iqr": "0.00"
+      },
+      {
+        "label": "Veneto",
+        "records": 1,
+        "available": 1,
+        "missing": 0,
+        "sum": "66000",
+        "mean": "66000",
+        "median": "66000",
+        "min": "66000",
+        "max": "66000",
+        "q1": "66000",
+        "q3": "66000",
+        "iqr": "0"
       }
     ],
     "highest": [
@@ -1641,6 +2126,11 @@
         "cig": "B6DD95EE23",
         "title": "PN VSF 15/25/SUA - CITTÀ DI FRASCATI (RM) - AFFIDAMENTO DEL SERVIZIO DI TRATTAMENTO E RECUPERO DEI RIFIUTI URBANI NON DIFFERENZIATI EER 20.03.01 SECCO RESIDUO, PRODOTTI DAL COMUNE DI FRASCATI.",
         "amount": "872727.27"
+      },
+      {
+        "cig": "B7A3D70B00",
+        "title": "EFFICIENTAMENTO ENERGETICO VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)",
+        "amount": "715471.24"
       },
       {
         "cig": "B7B0353822",
@@ -1656,11 +2146,6 @@
         "cig": "B6646262E7",
         "title": "ACQUISIZIONE DELLE ATTIVITÀ INGEGNERISTICHE E TECNOLOGICHE PER L'IMPRESCINDIBILE ADEGUAMENTO, IN OTTICA DI SECURITY, DEI VOICE COMMUNICATION SYSTEMS DI EMERGENZA, PRESENTI NEGLI AEROPORTI DI MILANO LINATE, BOLOGNA, GENOVA, TORINO E FIUMICINO, CHE SONO STATI FORNITI E MESSI IN ESERCIZIO, PER ENAV, DA PARTE DELLA SOCIETÀ FREQUENTIS",
         "amount": "400000"
-      },
-      {
-        "cig": "B55BB8E397",
-        "title": "DET. 1492 DEL 20/12/2024 AGG. FORN. PIASTRE /PLACCHE MONOUSO PER DEFIBR. TRANSTORAC. 14 DAL 01/03/2025 AL 28/02/2030 ZOLL MEDICAL ITALIA S.R.L.",
-        "amount": "319800"
       }
     ],
     "outliers": [
@@ -1668,22 +2153,41 @@
         "cig": "B6DD95EE23",
         "title": "PN VSF 15/25/SUA - CITTÀ DI FRASCATI (RM) - AFFIDAMENTO DEL SERVIZIO DI TRATTAMENTO E RECUPERO DEI RIFIUTI URBANI NON DIFFERENZIATI EER 20.03.01 SECCO RESIDUO, PRODOTTI DAL COMUNE DI FRASCATI.",
         "amount": "872727.27"
+      },
+      {
+        "cig": "B7A3D70B00",
+        "title": "EFFICIENTAMENTO ENERGETICO VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)",
+        "amount": "715471.24"
       }
     ],
     "comparisons": {
-      "available": 10,
-      "mean_absolute": "0.00",
+      "available": 15,
+      "mean_absolute": "306.0626666666666666666666667",
       "median_absolute": "0",
-      "mean_percent": "0",
+      "mean_percent": "0.04277777352261799742875292467",
       "median_percent": "0",
-      "unchanged": 10,
-      "award_lower": 0,
+      "unchanged": 14,
+      "award_lower": 1,
       "award_higher": 0,
       "records": [
+        {
+          "cig": "B387047A20",
+          "tender_amount": "45001.02",
+          "award_amount": "45001.02",
+          "difference": "0.00",
+          "difference_percent": "0"
+        },
         {
           "cig": "B474D3250C",
           "tender_amount": "76216.47",
           "award_amount": "76216.47",
+          "difference": "0.00",
+          "difference_percent": "0"
+        },
+        {
+          "cig": "B4B5B163A0",
+          "tender_amount": "4918.03",
+          "award_amount": "4918.03",
           "difference": "0.00",
           "difference_percent": "0"
         },
@@ -1730,6 +2234,20 @@
           "difference_percent": "0"
         },
         {
+          "cig": "B6E9DE9F63",
+          "tender_amount": "48000",
+          "award_amount": "48000",
+          "difference": "0",
+          "difference_percent": "0"
+        },
+        {
+          "cig": "B7A3D70B00",
+          "tender_amount": "715471.24",
+          "award_amount": "710880.3",
+          "difference": "4590.94",
+          "difference_percent": "0.6416666028392699614312938700"
+        },
+        {
           "cig": "B8297EE856",
           "tender_amount": "76500",
           "award_amount": "76500",
@@ -1749,11 +2267,100 @@
           "award_amount": "84236.15",
           "difference": "0.00",
           "difference_percent": "0"
+        },
+        {
+          "cig": "B860168925",
+          "tender_amount": "66000",
+          "award_amount": "66000",
+          "difference": "0",
+          "difference_percent": "0"
         }
       ]
     }
   },
   "records": [
+    {
+      "cig": "B387047A20",
+      "title": "SERVIZI DI COORDINAMENTO, PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL COMUNE DI CARLINO PER GLI ANNI 2024-2025-2026",
+      "contract_type": "SERVIZI",
+      "status": "ATTIVO",
+      "contracting_authority": "COMUNE DI CARLINO",
+      "authority_city": "Carlino",
+      "region": "Friuli-Venezia Giulia",
+      "province": "Udine",
+      "tender_location": "Udine",
+      "tender_amount": "45001.02",
+      "lot_amount": "45001.02",
+      "award_amount": "45001.02",
+      "creation_date": "2024-10-16T00:00:00",
+      "publication_date": "2025-06-06T00:00:00",
+      "offer_deadline": "2024-10-16T18:50:00",
+      "award_date": "2024-10-16T00:00:00",
+      "start_date": null,
+      "expected_end_date": null,
+      "cpv": [
+        "79952000-2 — SERVIZI DI ORGANIZZAZIONE DI EVENTI"
+      ],
+      "participants": [
+        {
+          "name": "ARTEVENTI SOCIETA' COOPERATIVA",
+          "role": "OPERATORE ECONOMICO MONOSOGGETTIVO",
+          "subject_type": "IMPRESA",
+          "tax_code": "02042820304",
+          "winner": false
+        }
+      ],
+      "sources": [
+        {
+          "kind": "csv",
+          "mime_type": "text/csv",
+          "path": "fonti_originali/csv/20260510_125151.csv",
+          "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "json",
+          "mime_type": "application/json",
+          "path": "fonti_originali/json/CIG_B387047A20.json",
+          "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B387047A20_determina.pdf",
+          "description": "Documento PDF collegato al CIG: B387047A20 determina"
+        }
+      ],
+      "web_sources": [
+        {
+          "title": "Determina 281 del 17 ottobre 2024 — servizi per la Fiera dei Sapori 2024–2026",
+          "publisher": "Comune di Carlino",
+          "document_type": "determina a contrarre e di affidamento",
+          "mime_type": "application/pdf",
+          "url": "https://www.comune.carlino.ud.it/media/files/030018/attachment/20241017_281_B387047A20_ARTEVENTI.pdf",
+          "relation": "cig-esatto",
+          "phase": "affidamento e impegno di spesa",
+          "evidence": "La determina riporta il CIG B387047A20 e affida ad Arteventi Società Cooperativa i servizi per la Fiera dei Sapori del Comune di Carlino negli anni 2024, 2025 e 2026.",
+          "summary": "Il documento descrive coordinamento, promozione, safety e squadra antincendio, con motivazione dell'affidamento e ripartizione degli impegni di spesa.",
+          "verified_on": "2026-09-15"
+        }
+      ],
+      "xml_valid": true,
+      "xml_filename": "CIG_B387047A20.xml",
+      "raw_dates": {
+        "creation_date": "2024-10-16",
+        "publication_date": "2025-06-06",
+        "offer_deadline": "2024-10-16T18:50",
+        "award_date": "2024-10-16",
+        "start_date": "",
+        "expected_end_date": ""
+      },
+      "raw_amounts": {
+        "tender_amount": "45001.02",
+        "lot_amount": "45001.02",
+        "award_amount": "45001.02"
+      },
+      "unparseable_dates": []
+    },
     {
       "cig": "B474D3250C",
       "title": "MANUTENZIONE STRAORDINARIA DELLA STRADA BIANCA DI ACCESSO IMPIANTO TRATTAMENTO RIFIUTI. LOC. STRILLAIE COMUNE DI GROSSETO",
@@ -1845,6 +2452,88 @@
         "tender_amount": "76216.47",
         "lot_amount": "76216.47",
         "award_amount": "76216.47"
+      },
+      "unparseable_dates": []
+    },
+    {
+      "cig": "B4B5B163A0",
+      "title": "AFFIDAMENTO ALLA SOCIETA' A2A ENERGIA DI MILANO DEI SERVIZI DI FORNITURE ENERGIA ELETTRICA 1 SEMESTRE 2025",
+      "contract_type": "SERVIZI",
+      "status": "ATTIVO",
+      "contracting_authority": "COMUNE DI CREMONA",
+      "authority_city": "Cremona",
+      "region": "Lombardia",
+      "province": "Cremona",
+      "tender_location": "",
+      "tender_amount": "4918.03",
+      "lot_amount": "4918.03",
+      "award_amount": "4918.03",
+      "creation_date": "2024-12-09T00:00:00",
+      "publication_date": "2024-12-09T00:00:00",
+      "offer_deadline": "2024-12-09T17:44:00",
+      "award_date": null,
+      "start_date": null,
+      "expected_end_date": null,
+      "cpv": [
+        "65310000-9 — EROGAZIONE DI ENERGIA ELETTRICA"
+      ],
+      "participants": [
+        {
+          "name": "A2A ENERGIA S.P.A.",
+          "role": "",
+          "subject_type": "IMPRESA",
+          "tax_code": "12883420155",
+          "winner": false
+        }
+      ],
+      "sources": [
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B4B5B163A0.html",
+          "description": "Documento HTML collegato al CIG: B4B5B163A0"
+        },
+        {
+          "kind": "json",
+          "mime_type": "application/json",
+          "path": "fonti_originali/json/CIG_B4B5B163A0.json",
+          "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B4B5B163A0_determina.pdf",
+          "description": "Documento PDF collegato al CIG: B4B5B163A0 determina"
+        }
+      ],
+      "web_sources": [
+        {
+          "title": "Determina 2/2025 del 7 gennaio 2025 — energia elettrica fuori dalle convenzioni Consip",
+          "publisher": "Comune di Cremona",
+          "document_type": "determinazione dirigenziale",
+          "mime_type": "application/pdf",
+          "url": "https://pubblicazioneatti.comune.cremona.it/jattipubblicazioni/AttiPubblicazioni?idDocumentale=393091&servizio=Allegato",
+          "relation": "cig-esatto",
+          "phase": "affidamento e approvazione della spesa",
+          "evidence": "L'atto 2/2025 riguarda il CIG B4B5B163A0 e la fornitura A2A Energia per i punti di prelievo comunali non previsti nelle convenzioni Consip, dal 1° gennaio al 30 giugno 2025. Il titolo, il numero e la data della pubblicazione sono stati confrontati con il PDF locale; durante la verifica il download remoto ha restituito HTTP 502.",
+          "summary": "La determina spiega il ricorso alla fornitura esterna alle convenzioni e dettaglia la spesa prevista per il primo semestre 2025, con i relativi capitoli di bilancio.",
+          "verified_on": "2026-09-15"
+        }
+      ],
+      "xml_valid": true,
+      "xml_filename": "CIG_B4B5B163A0.xml",
+      "raw_dates": {
+        "creation_date": "2024-12-09",
+        "publication_date": "2024-12-09",
+        "offer_deadline": "2024-12-09T17:44",
+        "award_date": "",
+        "start_date": "",
+        "expected_end_date": ""
+      },
+      "raw_amounts": {
+        "tender_amount": "4918.03",
+        "lot_amount": "4918.03",
+        "award_amount": "4918.03"
       },
       "unparseable_dates": []
     },
@@ -2654,6 +3343,172 @@
       "unparseable_dates": []
     },
     {
+      "cig": "B6E9DE9F63",
+      "title": "AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+      "contract_type": "SERVIZI",
+      "status": "ATTIVO",
+      "contracting_authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+      "authority_city": "Pomezia",
+      "region": "Lazio",
+      "province": "Roma",
+      "tender_location": "Roma",
+      "tender_amount": "48000",
+      "lot_amount": "48000",
+      "award_amount": "48000",
+      "creation_date": "2025-05-19T00:00:00",
+      "publication_date": "2025-05-20T00:00:00",
+      "offer_deadline": "2025-05-19T15:36:00",
+      "award_date": "2025-05-19T00:00:00",
+      "start_date": "2025-06-16T00:00:00",
+      "expected_end_date": null,
+      "cpv": [
+        "71323200-0 — SERVIZI DI PROGETTAZIONE TECNICA DI IMPIANTI"
+      ],
+      "participants": [
+        {
+          "name": "ING. ENRICO IOVANE",
+          "role": "OPERATORE ECONOMICO MONOSOGGETTIVO",
+          "subject_type": "NON PRESENTE IN ANAGRAFE",
+          "tax_code": "07664421216",
+          "winner": false
+        }
+      ],
+      "sources": [
+        {
+          "kind": "csv",
+          "mime_type": "text/csv",
+          "path": "fonti_originali/csv/20260510_125151.csv",
+          "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B6E9DE9F63.html",
+          "description": "Documento HTML collegato al CIG: B6E9DE9F63"
+        },
+        {
+          "kind": "json",
+          "mime_type": "application/json",
+          "path": "fonti_originali/json/CIG_B6E9DE9F63.json",
+          "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B6E9DE9F63_determina.pdf",
+          "description": "Documento PDF collegato al CIG: B6E9DE9F63 determina"
+        }
+      ],
+      "web_sources": [
+        {
+          "title": "Decisione a contrarre e affidamento — direzione lavori e sicurezza dell'hangar L",
+          "publisher": "Guardia di Finanza — Centro di Aviazione",
+          "document_type": "decisione a contrarre e determina di affidamento",
+          "mime_type": "application/pdf",
+          "url": "https://www.gdf.gov.it/it/stazioni-appaltanti/bandi-di-gara/archivio/anno-2025/centro-di-aviazione/giugno/affidamento-incarico-di-direzione-dei-lavori-e-coordinatore-della-sicurezza/esiti/decisione-a-contrarre-e-determina-di-affidamento.pdf/%40%40download/file",
+          "relation": "cig-esatto",
+          "phase": "affidamento dell'incarico professionale",
+          "evidence": "Il PDF pubblicato dal Centro di Aviazione riporta il CIG B6E9DE9F63, la RDO 5347942 e l'incarico relativo agli impianti elettrici dell'hangar L a Pratica di Mare.",
+          "summary": "L'atto documenta la direzione lavori e il coordinamento della sicurezza in esecuzione, distinguendo il compenso di 48.000 euro dagli ulteriori oneri del quadro economico.",
+          "verified_on": "2026-09-15"
+        }
+      ],
+      "xml_valid": true,
+      "xml_filename": "CIG_B6E9DE9F63.xml",
+      "raw_dates": {
+        "creation_date": "2025-05-19",
+        "publication_date": "2025-05-20",
+        "offer_deadline": "2025-05-19T15:36",
+        "award_date": "2025-05-19",
+        "start_date": "2025-06-16",
+        "expected_end_date": ""
+      },
+      "raw_amounts": {
+        "tender_amount": "48000",
+        "lot_amount": "48000",
+        "award_amount": "48000"
+      },
+      "unparseable_dates": []
+    },
+    {
+      "cig": "B6EDEAC0D4",
+      "title": "ACQUISIZIONE PARTI DI RICAMBIO RELATIVE AL PINTLE MACHINE GUN (PMG) PER M-134D MARINIZED MINIGUN",
+      "contract_type": "FORNITURE",
+      "status": "ATTIVO",
+      "contracting_authority": "SEGRETARIATO GENERALE DELLA DIFESA -DIREZIONE NAZIONALE ARMAMENTI-DIREZIONE ARMAMENTI AERONAUTICI",
+      "authority_city": "Roma",
+      "region": "Lazio",
+      "province": "",
+      "tender_location": "Roma",
+      "tender_amount": "143146.5",
+      "lot_amount": "143146.5",
+      "award_amount": null,
+      "creation_date": "2025-05-20T00:00:00",
+      "publication_date": "2025-05-20T00:00:00",
+      "offer_deadline": null,
+      "award_date": null,
+      "start_date": null,
+      "expected_end_date": null,
+      "cpv": [],
+      "participants": [],
+      "sources": [
+        {
+          "kind": "csv",
+          "mime_type": "text/csv",
+          "path": "fonti_originali/csv/20260510_125151.csv",
+          "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B6EDEAC0D4.html",
+          "description": "Documento HTML collegato al CIG: B6EDEAC0D4"
+        },
+        {
+          "kind": "json",
+          "mime_type": "application/json",
+          "path": "fonti_originali/json/CIG_B6EDEAC0D4.json",
+          "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B6EDEAC0D4_determina.pdf",
+          "description": "Documento PDF collegato al CIG: B6EDEAC0D4 determina"
+        }
+      ],
+      "web_sources": [
+        {
+          "title": "Avviso di post-informazione — contratto 1196 del 31 ottobre 2025",
+          "publisher": "Ministero della Difesa — Direzione degli Armamenti Aeronautici e per l'Aeronavigabilità",
+          "document_type": "avviso di post-informazione",
+          "mime_type": "application/pdf",
+          "url": "https://www.difesa.it/assets/allegati/68768/avviso_postinformazione_ctr1196.pdf",
+          "relation": "cig-esatto",
+          "phase": "stipula e pubblicazione dell'esito",
+          "evidence": "L'avviso identifica espressamente il CIG B6EDEAC0D4 e il contratto 1196 del 31 ottobre 2025 per l'acquisizione di parti di ricambio PMG Dillon M-134D.",
+          "summary": "La fonte aggiunge i dati di stipula e il contraente Leonardo S.p.A., con importo di 143.146,50 euro IVA esente, integrando la fotografia iniziale della procedura conservata nei JSON ANAC.",
+          "verified_on": "2026-09-15"
+        }
+      ],
+      "xml_valid": true,
+      "xml_filename": "CIG_B6EDEAC0D4.xml",
+      "raw_dates": {
+        "creation_date": "2025-05-20",
+        "publication_date": "2025-05-20",
+        "offer_deadline": "",
+        "award_date": "",
+        "start_date": "",
+        "expected_end_date": ""
+      },
+      "raw_amounts": {
+        "tender_amount": "143146.5",
+        "lot_amount": "143146.5",
+        "award_amount": ""
+      },
+      "unparseable_dates": []
+    },
+    {
       "cig": "B74941928B",
       "title": "FORNITURA DI ARREDI SANITARI ED ARREDI NON SANITARI PER LE NECESSITÀ DELLA FONDAZIONE PTV",
       "contract_type": "FORNITURE",
@@ -2748,6 +3603,101 @@
         "tender_amount": "407775",
         "lot_amount": "135100",
         "award_amount": ""
+      },
+      "unparseable_dates": []
+    },
+    {
+      "cig": "B7A3D70B00",
+      "title": "EFFICIENTAMENTO ENERGETICO VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)",
+      "contract_type": "LAVORI",
+      "status": "ATTIVO",
+      "contracting_authority": "COMUNE DI CASTIGLIONE COSENTINO",
+      "authority_city": "Castiglione Cosentino",
+      "region": "Calabria",
+      "province": "Cosenza",
+      "tender_location": "Cosenza",
+      "tender_amount": "715471.24",
+      "lot_amount": "715471.24",
+      "award_amount": "710880.3",
+      "creation_date": "2025-07-14T00:00:00",
+      "publication_date": "2025-07-14T00:00:00",
+      "offer_deadline": "2025-07-29T14:00:00",
+      "award_date": "2025-08-05T00:00:00",
+      "start_date": "2025-08-25T00:00:00",
+      "expected_end_date": "2026-12-31T00:00:00",
+      "cpv": [
+        "45262500-6 — LAVORI EDILI E DI MURATURA"
+      ],
+      "participants": [
+        {
+          "name": "CONSORZIO STABILE GANOSIS - SOCIETA' CONSORTILE A R.L.",
+          "role": "CONSORZIO STABILE",
+          "subject_type": "IMPRESA",
+          "tax_code": "01375260625",
+          "winner": false
+        },
+        {
+          "name": "SO.CO.SA. SOCIETA' COSTRUZIONI SAVINO S.R.L.",
+          "role": "OPERATORE ECONOMICO MONOSOGGETTIVO",
+          "subject_type": "IMPRESA",
+          "tax_code": "00271230633",
+          "winner": false
+        }
+      ],
+      "sources": [
+        {
+          "kind": "csv",
+          "mime_type": "text/csv",
+          "path": "fonti_originali/csv/20260510_125151.csv",
+          "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B7A3D70B00.html",
+          "description": "Documento HTML collegato al CIG: B7A3D70B00"
+        },
+        {
+          "kind": "json",
+          "mime_type": "application/json",
+          "path": "fonti_originali/json/CIG_B7A3D70B00.json",
+          "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B7A3D70B00_determina.pdf",
+          "description": "Documento PDF collegato al CIG: B7A3D70B00 determina"
+        }
+      ],
+      "web_sources": [
+        {
+          "title": "Gara aggiudicata — efficientamento energetico del Villaggio Scolastico P. De Stefano",
+          "publisher": "Comune di Castiglione Cosentino — piattaforma Traspare",
+          "document_type": "pagina di gara e fascicolo degli atti",
+          "mime_type": "text/html",
+          "url": "https://castiglionecosentino.traspare.com/announcements/39",
+          "relation": "cig-esatto",
+          "phase": "gara e aggiudicazione",
+          "evidence": "La scheda espone il CIG B7A3D70B00, il CUP H24D25000660001, l'intervento in via Lanza e l'aggiudicatario Consorzio Stabile Ganosis.",
+          "summary": "Il fascicolo raccoglie determina a contrarre, DGUE XML, comunicazioni, verbali, determina di aggiudicazione 407 del 5 agosto 2025 ed esito; permette di seguire la sequenza documentale della gara.",
+          "verified_on": "2026-09-15"
+        }
+      ],
+      "xml_valid": true,
+      "xml_filename": "CIG_B7A3D70B00.xml",
+      "raw_dates": {
+        "creation_date": "2025-07-14",
+        "publication_date": "2025-07-14",
+        "offer_deadline": "2025-07-29T14:00",
+        "award_date": "2025-08-05",
+        "start_date": "2025-08-25",
+        "expected_end_date": "2026-12-31"
+      },
+      "raw_amounts": {
+        "tender_amount": "715471.24",
+        "lot_amount": "715471.24",
+        "award_amount": "710880.3"
       },
       "unparseable_dates": []
     },
@@ -3232,6 +4182,106 @@
         "tender_amount": "84236.15",
         "lot_amount": "84236.15",
         "award_amount": "84236.15"
+      },
+      "unparseable_dates": []
+    },
+    {
+      "cig": "B860168925",
+      "title": "FORNITURA DI PNEUMATICI E PRESTAZIONI TECNICHE CORRELATE",
+      "contract_type": "FORNITURE",
+      "status": "ATTIVO",
+      "contracting_authority": "COMUNE DI VERONA",
+      "authority_city": "Verona",
+      "region": "Veneto",
+      "province": "Verona",
+      "tender_location": "Verona",
+      "tender_amount": "66000",
+      "lot_amount": "66000",
+      "award_amount": "66000",
+      "creation_date": "2025-09-24T00:00:00",
+      "publication_date": "2025-09-25T00:00:00",
+      "offer_deadline": "2025-09-24T18:55:00",
+      "award_date": "2025-10-15T00:00:00",
+      "start_date": "2025-10-29T00:00:00",
+      "expected_end_date": "2028-10-28T00:00:00",
+      "cpv": [
+        "34350000-5 — PNEUMATICI LEGGERI E PESANTI"
+      ],
+      "participants": [
+        {
+          "name": "B.R. PNEUMATICI S.P.A.",
+          "role": "OPERATORE ECONOMICO MONOSOGGETTIVO",
+          "subject_type": "IMPRESA",
+          "tax_code": "01800220244",
+          "winner": false
+        }
+      ],
+      "sources": [
+        {
+          "kind": "csv",
+          "mime_type": "text/csv",
+          "path": "fonti_originali/csv/20260510_125151.csv",
+          "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B860168925.html",
+          "description": "Documento HTML collegato al CIG: B860168925"
+        },
+        {
+          "kind": "json",
+          "mime_type": "application/json",
+          "path": "fonti_originali/json/CIG_B860168925.json",
+          "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B860168925_determina.pdf",
+          "description": "Documento PDF collegato al CIG: B860168925 determina"
+        }
+      ],
+      "web_sources": [
+        {
+          "title": "Accordo quadro per pneumatici e prestazioni tecniche correlate — CIG B860168925",
+          "publisher": "Comune di Verona",
+          "document_type": "scheda di affidamento e documentazione dell'accordo quadro",
+          "mime_type": "text/html",
+          "url": "https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-accordo-quadro-per-la-fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-CIG-B860168925",
+          "relation": "cig-esatto",
+          "phase": "affidamento dell'accordo quadro",
+          "evidence": "La pubblicazione comunale del 31 ottobre 2025 indica il CIG B860168925 e l'accordo quadro per i mezzi comunali con B.R. Pneumatici S.p.A.",
+          "summary": "La scheda istituzionale collega la procedura alla BDNCP e rende consultabile la documentazione dell'accordo quadro per la fornitura di pneumatici e i servizi tecnici correlati.",
+          "verified_on": "2026-09-15"
+        },
+        {
+          "title": "Primo contratto applicativo dell'accordo quadro — CIG derivato B8E24C68E3",
+          "publisher": "Comune di Verona",
+          "document_type": "scheda di stipula del contratto applicativo",
+          "mime_type": "text/html",
+          "url": "https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-Fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-primo-contratto-applicativo-accordo-quadro-CIG-DERIVATO-B8E24C68E3",
+          "relation": "accordo-quadro",
+          "phase": "attuazione mediante contratto applicativo",
+          "evidence": "La scheda del 17 novembre 2025 collega esplicitamente il CIG derivato B8E24C68E3 al CIG padre B860168925 e allo stesso fornitore.",
+          "summary": "La fonte documenta il primo contratto applicativo e rende visibile il rapporto fra accordo quadro e ordinativi successivi. Il CIG derivato identifica un contratto collegato distinto dal record del campione.",
+          "verified_on": "2026-09-15"
+        }
+      ],
+      "xml_valid": true,
+      "xml_filename": "CIG_B860168925.xml",
+      "raw_dates": {
+        "creation_date": "2025-09-24",
+        "publication_date": "2025-09-25",
+        "offer_deadline": "2025-09-24T18:55",
+        "award_date": "2025-10-15",
+        "start_date": "2025-10-29",
+        "expected_end_date": "2028-10-28"
+      },
+      "raw_amounts": {
+        "tender_amount": "66000",
+        "lot_amount": "66000",
+        "award_amount": "66000"
       },
       "unparseable_dates": []
     }

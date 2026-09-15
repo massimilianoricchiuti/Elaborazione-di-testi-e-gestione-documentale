@@ -5,22 +5,22 @@
 <text class="chart-title" x="20" y="35">Distribuzione per fascia di importo</text>
 <line class="grid" x1="255" x2="830" y1="114" y2="114"/>
 <text class="label" x="20" y="110">Meno di 50.000 €</text>
-<rect class="bar" x="255" y="93" width="82.1" height="24" rx="4"><title>Meno di 50.000 €: 1</title></rect>
-<text class="value" x="346.1" y="111">1</text>
+<rect class="bar" x="255" y="93" width="287.5" height="24" rx="4"><title>Meno di 50.000 €: 4</title></rect>
+<text class="value" x="551.5" y="111">4</text>
 <line class="grid" x1="255" x2="830" y1="156" y2="156"/>
 <text class="label" x="20" y="152">50.000–99.999 €</text>
-<rect class="bar" x="255" y="135" width="575.0" height="24" rx="4"><title>50.000–99.999 €: 7</title></rect>
-<text class="value" x="839.0" y="153">7</text>
+<rect class="bar" x="255" y="135" width="575.0" height="24" rx="4"><title>50.000–99.999 €: 8</title></rect>
+<text class="value" x="839.0" y="153">8</text>
 <line class="grid" x1="255" x2="830" y1="198" y2="198"/>
 <text class="label" x="20" y="194">100.000–249.999 €</text>
-<rect class="bar" x="255" y="177" width="164.3" height="24" rx="4"><title>100.000–249.999 €: 2</title></rect>
-<text class="value" x="428.3" y="195">2</text>
+<rect class="bar" x="255" y="177" width="215.6" height="24" rx="4"><title>100.000–249.999 €: 3</title></rect>
+<text class="value" x="479.6" y="195">3</text>
 <line class="grid" x1="255" x2="830" y1="240" y2="240"/>
 <text class="label" x="20" y="236">250.000–499.999 €</text>
-<rect class="bar" x="255" y="219" width="246.4" height="24" rx="4"><title>250.000–499.999 €: 3</title></rect>
-<text class="value" x="510.4" y="237">3</text>
+<rect class="bar" x="255" y="219" width="215.6" height="24" rx="4"><title>250.000–499.999 €: 3</title></rect>
+<text class="value" x="479.6" y="237">3</text>
 <line class="grid" x1="255" x2="830" y1="282" y2="282"/>
 <text class="label" x="20" y="278">500.000 € e oltre</text>
-<rect class="bar" x="255" y="261" width="164.3" height="24" rx="4"><title>500.000 € e oltre: 2</title></rect>
-<text class="value" x="428.3" y="279">2</text>
+<rect class="bar" x="255" y="261" width="215.6" height="24" rx="4"><title>500.000 € e oltre: 3</title></rect>
+<text class="value" x="479.6" y="279">3</text>
 </svg>

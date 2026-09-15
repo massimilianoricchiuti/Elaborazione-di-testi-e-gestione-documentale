@@ -94,6 +94,12 @@ def load_web_sources(paths: ProjectPaths, known_cigs) -> dict[str, list[WebSourc
             if relation not in _ALLOWED_RELATIONS:
                 raise ValueError(f"Fonte web {cig}: relazione non riconosciuta '{relation}'")
 
+            source_verified_on = clean_text(item.get("verified_on", verified_on))
+            try:
+                date.fromisoformat(source_verified_on)
+            except ValueError as exc:
+                raise ValueError(f"Fonte web {cig}: data di verifica non valida") from exc
+
             sources.append(
                 WebSource(
                     title=_validated_text(item, "title", cig),
@@ -105,7 +111,7 @@ def load_web_sources(paths: ProjectPaths, known_cigs) -> dict[str, list[WebSourc
                     phase=_validated_text(item, "phase", cig),
                     evidence=_validated_text(item, "evidence", cig),
                     summary=_validated_text(item, "summary", cig),
-                    verified_on=verified_on,
+                    verified_on=source_verified_on,
                 )
             )
         result[cig] = sources

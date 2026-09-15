@@ -39,7 +39,7 @@ site/assets/         CSS e JavaScript
 output_data/         risultati intermedi, incluso analysis.json
 report/              report LaTeX, PDF e frammenti generati
 tests/               test pytest
-dist/                sito statico generato, escluso dal versionamento
+dist/                sito statico generato
 ```
 
 ## Installazione
@@ -72,7 +72,7 @@ python scripts/prepare.py
 
 La preparazione individua dinamicamente i CIG presenti nelle fonti JSON e integra le righe corrispondenti del CSV. Le altre fonti locali vengono associate cercando il CIG prima nel nome del file e, per i nomi descrittivi, nel contenuto testuale estraibile. Il criterio vale per l’intero dataset e non contiene eccezioni dedicate a singoli CIG.
 
-Le risorse reperite sul web sono descritte in `fonti_originali/web/fonti_web.json`. Il caricatore pretende la corrispondenza esatta con l’insieme dei CIG, almeno una fonte per record, URL HTTP(S) validi e metadati completi. Ogni voce distingue il nesso probatorio (`cig-esatto`, lotto o accordo quadro, CUP e oggetto, procedura, fase antecedente, contesto o repertorio) affinché una fonte indiretta non venga presentata come atto della gara.
+Le risorse reperite sul web sono descritte in `fonti_originali/web/fonti_web.json`. Il caricatore pretende la corrispondenza esatta con l’insieme dei CIG, almeno una fonte per record, URL HTTP(S) validi e metadati completi. La data `verified_on` della singola voce, se presente, prevale su quella generale del catalogo, conservando le date delle verifiche precedenti. Quando si aggiungono JSON con nuovi CIG, occorre aggiungere anche le relative fonti prima di eseguire `build_all.py`. Ogni voce distingue il nesso probatorio (`cig-esatto`, lotto o accordo quadro, CUP e oggetto, procedura, fase antecedente, contesto o repertorio) affinché una fonte indiretta non venga presentata come atto della gara.
 
 ## Build del sito
 
@@ -128,7 +128,7 @@ Tutti i CSS, JavaScript, SVG, dati e download necessari sono locali. `assets/css
 
 ## Pubblicazione su GitHub Pages
 
-Il workflow `.github/workflows/pages.yml` viene eseguito a ogni push su `main` e può essere avviato anche manualmente. La procedura:
+Il workflow `.github/workflows/static.yml` viene eseguito a ogni push su `main` o `development` e può essere avviato anche manualmente. La procedura:
 
 1. installa Python e le dipendenze;
 2. rigenera gli XML con `python scripts/prepare.py`, includendo gli eventuali nuovi documenti collegati;
@@ -141,7 +141,7 @@ Nel repository, la sorgente di pubblicazione deve essere impostata una sola volt
 
 <https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/>
 
-I riferimenti interni sono relativi e restano validi sotto il percorso di progetto `/anac-progetto-team/`. La directory `dist/` non viene versionata: è ricostruita in modo riproducibile dal workflow, evitando la duplicazione delle fonti e degli artefatti.
+I riferimenti interni sono relativi e restano validi sotto il percorso di progetto `/Elaborazione-di-testi-e-gestione-documentale/`. La directory `dist/` è rigenerata dal workflow a partire dalle fonti; la copia nel repository viene aggiornata con la build locale. Il sito pubblico riflette l’ultimo deployment completato, anche quando proviene da `development`.
 
 ## Anteprima locale
 
@@ -155,4 +155,4 @@ Il sito è disponibile su <http://localhost:8000/>.
 
 ## Provenienza e limiti dei dati
 
-Il campione coincide con i documenti conservati nel progetto e non rappresenta l'intero sistema degli appalti pubblici. Le incongruenze cronologiche vengono segnalate senza correggere i dati e senza attribuirle automaticamente a errori della fonte. Le differenze tra importo di gara e aggiudicazione sono descrittive e non vengono denominate automaticamente ribassi. Le fonti web sono state verificate nella data dichiarata dal manifesto; disponibilità e contenuto delle pagine esterne possono mutare. Il tipo di nesso resta quindi sempre visibile nel sito e negli XML.
+Il campione coincide con i documenti conservati nel progetto e non rappresenta l'intero sistema degli appalti pubblici. Le incongruenze cronologiche vengono segnalate senza correggere i dati e senza attribuirle automaticamente a errori della fonte. Le differenze tra importo di gara e aggiudicazione sono descrittive e non vengono denominate automaticamente ribassi. Le fonti web sono state verificate nella data dichiarata per ciascuna fonte, o in quella generale del manifesto se non specificata; disponibilità e contenuto delle pagine esterne possono mutare. Il tipo di nesso resta quindi sempre visibile nel sito e negli XML.

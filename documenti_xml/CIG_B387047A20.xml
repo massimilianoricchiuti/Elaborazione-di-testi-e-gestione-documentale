@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<contratto cig="B387047A20" fonte="ANAC">
+  <fonti>
+    <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B387047A20.json">Fonte originale JSON del CIG</fonte>
+    <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/B387047A20_determina.pdf">Documento PDF collegato al CIG: B387047A20 determina</fonte>
+  </fonti>
+  <approfondimentiWeb>
+    <fonteWeb tipo="determina a contrarre e di affidamento" formato="application/pdf" url="https://www.comune.carlino.ud.it/media/files/030018/attachment/20241017_281_B387047A20_ARTEVENTI.pdf" relazione="cig-esatto" verificataIl="2026-09-15">La fonte <titoloFonte>Determina 281 del 17 ottobre 2024 — servizi per la Fiera dei Sapori 2024–2026</titoloFonte>, pubblicata da <enteFonte>Comune di Carlino</enteFonte>, riguarda la fase <faseFonte>affidamento e impegno di spesa</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>La determina riporta il CIG B387047A20 e affida ad Arteventi Società Cooperativa i servizi per la Fiera dei Sapori del Comune di Carlino negli anni 2024, 2025 e 2026.</nessoFonte>. In sintesi, <datoFonte>Il documento descrive coordinamento, promozione, safety e squadra antincendio, con motivazione dell'affidamento e ripartizione degli impegni di spesa.</datoFonte>.</fonteWeb>
+  </approfondimentiWeb>
+  <informazioniGara>
+    <numeroGara>630910_66080</numeroGara>
+    <tipoCig>ORDINARIO</tipoCig>
+    <stato>ATTIVO</stato>
+    <oggettoGara>SERVIZI DI COORDINAMENTO, PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL COMUNE DI CARLINO PER GLI ANNI 2024-2025-2026</oggettoGara>
+    <oggettoLotto>SERVIZI DI COORDINAMENTO, PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL COMUNE DI CARLINO PER GLI ANNI 2024-2025-2026</oggettoLotto>
+    <importoGara valuta="EUR">45001.02</importoGara>
+    <importoLotto valuta="EUR">45001.02</importoLotto>
+    <provincia>UDINE</provincia>
+    <settore>SETTORI ORDINARI</settore>
+    <cup/>
+    <oggettoPrincipaleContratto>SERVIZI</oggettoPrincipaleContratto>
+    <tipologiaContratto>SERVIZI</tipologiaContratto>
+    <localizzazione>Udine</localizzazione>
+    <scadenzaOfferte>2024-10-16T18:50</scadenzaOfferte>
+    <dataAggiudicazione>2024-10-16</dataAggiudicazione>
+  </informazioniGara>
+  <stazioneAppaltante>
+    <codiceFiscale>81002550309</codiceFiscale>
+    <denominazione>COMUNE DI CARLINO</denominazione>
+    <centroCosto>UFFICIO FINANZIARIO</centroCosto>
+    <citta>CARLINO</citta>
+    <regione>FRIULI-VENEZIA GIULIA</regione>
+    <indirizzo>PZA SAN ROCCO</indirizzo>
+  </stazioneAppaltante>
+  <incaricati>
+    <incaricato ruolo="RESPONSABILE UNICO DEL PROCEDIMENTO">
+      <nome>FLAVIA</nome>
+      <cognome>TOMBA</cognome>
+      <codiceFiscale>TMBFLV72D62G284R</codiceFiscale>
+    </incaricato>
+  </incaricati>
+  <pubblicazioni>
+    <dataCreazione>2024-10-16</dataCreazione>
+    <dataPubblicazione>2025-06-06</dataPubblicazione>
+  </pubblicazioni>
+  <partecipanti>
+    <partecipante aggiudicatario="13413878">
+      <denominazione>ARTEVENTI SOCIETA' COOPERATIVA</denominazione>
+      <tipoSoggetto>IMPRESA</tipoSoggetto>
+      <codiceFiscale>02042820304</codiceFiscale>
+      <ruolo>OPERATORE ECONOMICO MONOSOGGETTIVO</ruolo>
+    </partecipante>
+  </partecipanti>
+  <aggiudicazione>
+    <aggiudicatario>
+      <denominazione/>
+      <codiceFiscale/>
+      <importoAggiudicazione valuta="EUR">45001.02</importoAggiudicazione>
+    </aggiudicatario>
+  </aggiudicazione>
+  <quadroEconomico>
+    <voceEconomica nome="IMPORTO_SERVIZI" valuta="EUR">45001.02</voceEconomica>
+    <voceEconomica nome="IMPORTO_SICUREZZA" valuta="EUR">150</voceEconomica>
+    <voceEconomica nome="SOMME_A_DISPOSIZIONE" valuta="EUR">20791.47</voceEconomica>
+  </quadroEconomico>
+  <categorieOpera>
+    <categoriaOpera tipo="PREVALENTE">
+      <idCategoria>FS</idCategoria>
+      <descrizione>FORNITURA DI SERVIZI</descrizione>
+    </categoriaOpera>
+  </categorieOpera>
+  <cpv>
+    <voceCpv tipo="Prevalente">
+      <codice>79952000-2</codice>
+      <descrizione>SERVIZI DI ORGANIZZAZIONE DI EVENTI</descrizione>
+    </voceCpv>
+  </cpv>
+  <descrizioneDocumentale>Procedura relativa a <tipologia>servizi</tipologia> avente per oggetto <oggetto>SERVIZI DI COORDINAMENTO, PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL COMUNE DI CARLINO PER GLI ANNI 2024-2025-2026</oggetto>. <termine>servizi di organizzazione di eventi</termine>. <categoria>fornitura di servizi</categoria>. <luogo>Udine</luogo>.</descrizioneDocumentale>
+</contratto>
