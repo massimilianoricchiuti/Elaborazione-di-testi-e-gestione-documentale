@@ -1,0 +1,17 @@
+{% macro attributes(node) -%}
+{% for name, value in node.attributes.items() %} <span class="xml-attribute"><span class="xml-attribute-name">{{ name }}</span>=<span class="xml-attribute-value">"{{ value }}"</span></span>{% endfor %}
+{%- endmacro %}
+
+{% macro render_xml_node(node, depth=0) -%}
+{% if node.children %}
+<details id="{{ node.id }}" class="xml-node xml-branch" data-xml-search="{{ node.search }}" data-xml-path="{{ node.path }}" data-default-open="{{ 'true' if depth < 2 else 'false' }}"{% if depth < 2 %} open{% endif %}>
+  <summary><code class="xml-tag">&lt;{{ node.tag }}{{ attributes(node) }}&gt;</code><span class="node-count">{{ node.children|length }} elementi</span></summary>
+  <div class="xml-children">
+    {% for part in node.content %}{% if part.kind == 'element' %}{{ render_xml_node(part.node, depth + 1) }}{% elif part.kind == 'text' %}<div class="xml-mixed-text">{{ part.text }}</div>{% else %}<div class="xml-comment">&lt;!--{{ part.text }}--&gt;</div>{% endif %}{% endfor %}
+    <code class="xml-closing-tag">&lt;/{{ node.tag }}&gt;</code>
+  </div>
+</details>
+{% else %}
+<div id="{{ node.id }}" class="xml-node xml-leaf" data-xml-search="{{ node.search }}" data-xml-path="{{ node.path }}"><code class="xml-tag">&lt;{{ node.tag }}{{ attributes(node) }}{% if node.empty %}/&gt;</code> <span class="empty-value">Elemento vuoto</span>{% else %}&gt;</code><span class="xml-text">{{ node.value }}</span><code class="xml-closing-tag">&lt;/{{ node.tag }}&gt;</code>{% endif %}</div>
+{% endif %}
+{%- endmacro %}

@@ -1,8 +1,22 @@
-# Archivio XML dei CIG ANAC
+# WebCig — Archivio XML dei CIG ANAC
 
 Progetto universitario di elaborazione documentale che trasforma fonti CSV, JSON, HTML e PDF in documenti XML, integra un catalogo qualificato di fonti web istituzionali, valida il corpus mediante DTD, estrae un modello intermedio normalizzato e genera analisi territoriali, cronologiche ed economiche. La build produce un sito statico autonomo in `dist/`, pubblicato su GitHub Pages senza backend o database.
 
 Sito: [https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/](https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/)
+
+## Consultazione dell’archivio
+
+La home integra **Progetto e metodo**, la pipeline e la documentazione. Il precedente URL `progetto.html` rimanda alla sezione `index.html#progetto-e-metodo`.
+
+L’archivio espone i nomi dei file XML, ricerca per CIG/file/oggetto/ente, filtri territoriali e per tipologia, ordinamento e download. Ogni documento offre tre viste:
+
+- **Scheda completa:** tutti i valori e gli attributi dell’XML, con sezioni navigabili e distinzione esplicita degli elementi vuoti;
+- **Struttura XML:** albero espandibile, ricerca per tag/attributo/valore e collegamenti diretti ai nodi;
+- **Codice XML:** sorgente integrale, copia e download del file.
+
+`src/processing/xml_view.py` ricava queste viste direttamente dall’XML, preservando nodi ripetuti, attributi e ordine del testo misto. Il modello normalizzato in `ContractRecord` continua a servire alle analisi: i campi che non usa non vengono più esclusi dall’interfaccia. Schede, albero e sorgente sono generati nella pagina e restano consultabili senza JavaScript; quest’ultimo aggiunge schede a linguetta, ricerca e comandi dell’albero.
+
+Le modifiche nel branch `development` sono consultabili mediante la build locale. Il sito pubblico viene aggiornato soltanto dal workflow di pubblicazione su `main`.
 
 ## Requisiti
 

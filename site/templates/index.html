@@ -1,33 +1,41 @@
 {% extends "base.html" %}
-{% block title %}Archivio CIG ANAC — Home{% endblock %}
+{% block title %}Un archivio XML da esplorare{% endblock %}
 {% block content %}
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <p class="eyebrow">ELABORAZIONE DI TESTI E GESTIONE DOCUMENTALE</p>
-      <h1>Un archivio XML dei contratti pubblici italiani</h1>
-      <p class="lead">Fonti ANAC in CSV, JSON, HTML e PDF vengono associate ai rispettivi CIG, trasformate in XML validi e pubblicate come collezione navigabile.</p>
-      <div class="actions"><a class="button" href="progetto.html">Scopri il progetto</a><a class="button secondary" href="archivio.html">Esplora i CIG</a></div>
+      <p class="collection-label"><span class="xml-badge">XML</span> {{ analysis.metadata.record_count }} documenti · Un’unica collezione</p>
+      <h1>I contratti pubblici,<br>documento per documento.</h1>
+      <p class="lead">Esplora un archivio XML costruito a partire dalle fonti ANAC. Ogni CIG riunisce dati di gara, soggetti, importi e fonti: dalla scheda leggibile fino ai singoli elementi del documento.</p>
+      <div class="actions"><a class="button" href="archivio.html">Esplora l’archivio XML <span aria-hidden="true">↗</span></a><a class="button secondary" href="#progetto-e-metodo">Progetto e metodo</a></div>
     </div>
-  </div>
-</section>
-<section class="container section">
-  <h2>Indicatori principali</h2>
-  <div class="kpi-grid">
-    <article class="kpi"><span>{{ analysis.metadata.record_count }}</span><h3>Documenti XML</h3><p>Record elaborati dal modello intermedio.</p></article>
-    <article class="kpi"><span>{{ analysis.metadata.valid_xml_count }}</span><h3>XML validi</h3><p>Validazione rispetto alla DTD.</p></article>
-    <article class="kpi"><span>{{ analysis.amounts.statistics.tender_amount.median|currency }}</span><h3>Importo mediano</h3><p>Distinto dalla media per la distribuzione asimmetrica.</p></article>
-    <article class="kpi"><span>{{ analysis.dates.anomalies|length }}</span><h3>Segnalazioni data</h3><p>Valori mancanti o sequenze da esaminare.</p></article>
-  </div>
-</section>
-<section class="container section">
-  <div>
-    <div class="section-heading"><div><p class="eyebrow">Archivio</p><h2>CIG in evidenza</h2></div><a href="archivio.html">Apri l'archivio completo</a></div>
-    <div class="card-list">
-      {% for record in records %}
-      <article class="record-card"><p class="record-code">{{ record.cig }}</p><h3><a href="cig/{{ record.cig }}.html">{{ record.title }}</a></h3><p>{{ record.contracting_authority }}</p><dl><div><dt>Tipologia</dt><dd>{{ record.contract_type or "n.d." }}</dd></div><div><dt>Importo</dt><dd>{{ record.tender_amount_formatted }}</dd></div></dl></article>
-      {% endfor %}
+    {% if records %}
+    <div class="archive-preview">
+      <div class="preview-heading"><span class="xml-badge">XML</span><span>Dentro l’archivio</span><span class="preview-dot" aria-hidden="true"></span></div>
+      <p class="preview-folder">documenti_xml /</p>
+      {% for record in records %}<a class="preview-file{% if loop.first %} selected{% endif %}" href="cig/{{ record.cig }}.html#struttura-xml"><span aria-hidden="true">&lt;/&gt;</span><span>{{ record.xml_filename }}</span><span aria-hidden="true">↗</span></a>{% endfor %}
+      <div class="preview-code"><p>&lt;<span>contratto</span> cig="{{ records[0].cig }}"&gt;</p><p class="indent">&lt;<span>informazioniGara</span>&gt;…</p><p class="indent">&lt;<span>stazioneAppaltante</span>&gt;…</p><p class="indent">&lt;<span>fonti</span>&gt;…</p><p>&lt;/<span>contratto</span>&gt;</p></div>
+      <p class="preview-caption">Anteprima della struttura · Seleziona un file per esplorarlo.</p>
     </div>
+    {% endif %}
   </div>
 </section>
+<section class="container section archive-intro" aria-labelledby="consultazione-title">
+  <div class="section-heading"><div><p class="eyebrow">Una collezione, tre modi di leggerla</p><h2 id="consultazione-title">Dalla scheda al sorgente.</h2></div><a href="archivio.html">Tutti i documenti →</a></div>
+  <div class="reading-modes">
+    <article><span class="mode-number">01</span><h3>Scheda completa</h3><p>Tutti i campi dell’XML, raggruppati per sezione. Anche gli attributi e gli elementi vuoti restano riconoscibili.</p></article>
+    <article><span class="mode-number">02</span><h3>Struttura XML</h3><p>Apri i nodi dell’albero e cerca un elemento o un valore: le relazioni tra i dati diventano visibili.</p></article>
+    <article><span class="mode-number">03</span><h3>Codice e fonti</h3><p>Consulta il sorgente integrale, scarica il documento e risali ai file e alle risorse da cui proviene.</p></article>
+  </div>
+  <div class="archive-stats"><p><strong>{{ analysis.metadata.record_count }}</strong> documenti XML</p><p><strong>{{ analysis.metadata.valid_xml_count }}</strong> validi rispetto alla DTD</p><p><strong>{{ analysis.metadata.web_source_coverage.linked_sources }}</strong> fonti web collegate</p><a href="qualita-dati.html">Consulta la qualità dei dati →</a></div>
+</section>
+<section class="container section featured-documents">
+  <div class="section-heading"><div><p class="eyebrow">Inizia a esplorare</p><h2>Documenti della collezione</h2></div><a href="archivio.html">Apri l’archivio completo →</a></div>
+  <div class="document-grid">
+    {% for record in records %}
+    <article class="record-card"><p class="record-code"><span class="xml-badge">XML</span> {{ record.cig }}</p><h3><a href="cig/{{ record.cig }}.html">{{ record.title }}</a></h3><p>{{ record.contracting_authority }}</p><dl><div><dt>Tipologia</dt><dd>{{ record.contract_type or "n.d." }}</dd></div><div><dt>Importo</dt><dd>{{ record.tender_amount_formatted }}</dd></div></dl><a class="document-action" href="cig/{{ record.cig }}.html#struttura-xml">Esplora la struttura XML →</a></article>
+    {% endfor %}
+  </div>
+</section>
+{% include "method.html" %}
 {% endblock %}

@@ -3,25 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Archivio statico e analisi dei CIG ANAC inclusi nel progetto universitario.">
-  <title>{% block title %}Archivio CIG ANAC{% endblock %}</title>
+  <meta name="description" content="WebCig: esplora i documenti XML dei contratti pubblici, consulta tutti i campi e risali alle fonti del progetto universitario.">
+  <title>{% block title %}Archivio XML{% endblock %} · WebCig</title>
   <link rel="stylesheet" href="{{ base }}assets/css/stile.css">
   <script defer src="{{ base }}assets/js/app.js"></script>
+  {% block head %}{% endblock %}
 </head>
 <body>
 <a class="skip-link" href="#contenuto">Salta al contenuto</a>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ base }}index.html" aria-label="Archivio CIG ANAC, pagina iniziale">
-      <span class="brand-mark" aria-hidden="true">CIG</span>
-      <span>Archivio XML ANAC</span>
+    <a class="brand" href="{{ base }}index.html" aria-label="WebCig, pagina iniziale">
+      <span class="brand-mark">WebCig</span>
     </a>
     <nav aria-label="Navigazione principale">
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <ul id="main-nav" class="main-nav">
         <li><a href="{{ base }}index.html">Home</a></li>
-        <li><a href="{{ base }}progetto.html">Progetto e metodo</a></li>
-        <li><a href="{{ base }}archivio.html">Archivio dei CIG</a></li>
+        <li><a href="{{ base }}archivio.html">Archivio XML</a></li>
         <li><a href="{{ base }}report.html">Analisi del campione</a></li>
         <li><a href="{{ base }}qualita-dati.html">Qualità dei dati</a></li>
       </ul>
@@ -33,8 +32,13 @@
 </main>
 <footer class="site-footer">
   <div class="container footer-grid">
-    <p><strong>Fonti:</strong> documenti ANAC del progetto e risorse web istituzionali qualificate. Il campione non rappresenta necessariamente la totalità dei contratti pubblici.</p>
-    <p>Generazione: {{ generated_at }} · {{ record_count }} CIG elaborati.</p>
+    <div class="footer-identity"><a class="footer-brand" href="{{ base }}index.html">WebCig</a><p>Un archivio XML per leggere, esplorare<br>e comprendere i contratti pubblici.</p></div>
+    <div><p class="footer-label">Progetto universitario</p><p><a href="https://www.unibo.it/">Alma Mater Studiorum · Università di Bologna</a></p><p>Corso di Elaborazione Testi e Gestione Documentale</p></div>
+    <nav aria-label="Risorse del progetto"><p class="footer-label">Risorse</p><ul class="footer-links"><li><a href="{{ base }}index.html#progetto-e-metodo">Progetto e metodo</a></li><li><a href="{{ base }}index.html#documentazione">Documentazione</a></li><li><a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale">Repository GitHub ↗</a></li></ul></nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026{% if current_year > 2026 %}–{{ current_year }}{% endif %} Massimiliano Ricchiuti · Codice con <a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale/blob/development/LICENSE">licenza MIT</a>.</p>
+    <p>Progetto didattico. Fonti e documenti appartengono ai rispettivi titolari. Il campione di {{ record_count }} CIG non rappresenta l’intero sistema dei contratti pubblici.</p>
   </div>
 </footer>
 </body>

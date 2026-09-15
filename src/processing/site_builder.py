@@ -9,6 +9,7 @@ import zipfile
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from src.processing.charts import write_bar_chart
+from src.processing.xml_view import read_xml_document
 from src.support.config import ProjectPaths
 from src.support.formatting import format_currency_it, format_date_it, format_datetime_it, format_decimal_it, format_percent
 from src.support.html_utils import assert_internal_links
@@ -176,6 +177,7 @@ def build_site(paths: ProjectPaths, analysis: dict, pdf_analysis: list[dict], te
     common = {
         "generated_at": generated_at,
         "record_count": analysis["metadata"]["record_count"],
+        "current_year": datetime.now().year,
         "report_available": report_available,
         "web_manifest_available": (
             paths.dist / "downloads" / "documentazione" / paths.web_sources_file.name
@@ -183,7 +185,7 @@ def build_site(paths: ProjectPaths, analysis: dict, pdf_analysis: list[dict], te
     }
 
     pages = {
-        "index.html": ("index.html", {"analysis": analysis, "records": records[:5], "base": "", **common}),
+        "index.html": ("index.html", {"analysis": analysis, "records": records[:3], "pdf_analysis": pdf_analysis, "text_analysis": text_analysis, "base": "", **common}),
         "archivio.html": ("archive.html", {"records": records, "analysis": analysis, "base": "", **common}),
         "report.html": ("report.html", {"analysis": analysis, "base": "", **common}),
         "progetto.html": ("project.html", {"analysis": analysis, "pdf_analysis": pdf_analysis, "text_analysis": text_analysis, "base": "", **common}),
@@ -197,9 +199,13 @@ def build_site(paths: ProjectPaths, analysis: dict, pdf_analysis: list[dict], te
     anomaly_map: dict[str, list[dict]] = {}
     for anomaly in analysis["dates"]["anomalies"]:
         anomaly_map.setdefault(anomaly["cig"], []).append(anomaly)
-    for cig, record in records_by_cig.items():
+    for index, (cig, record) in enumerate(records_by_cig.items()):
         html = detail_template.render(
             record=record,
+            xml_document=read_xml_document(paths.xml_dir / record["xml_filename"]),
+            previous_record=records[index - 1] if index else None,
+            next_record=records[index + 1] if index + 1 < len(records) else None,
+            record_position=index + 1,
             anomalies=anomaly_map.get(cig, []),
             base="../",
             **common,
