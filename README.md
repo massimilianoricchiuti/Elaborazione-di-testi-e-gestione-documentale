@@ -128,7 +128,7 @@ Tutti i CSS, JavaScript, SVG, dati e download necessari sono locali. `assets/css
 
 ## Pubblicazione su GitHub Pages
 
-Il workflow `.github/workflows/static.yml` viene eseguito a ogni push su `main` o `development` e può essere avviato anche manualmente. La procedura:
+Il workflow `.github/workflows/static.yml` pubblica il sito a ogni push su `main`. L’avvio manuale è consentito su `main`; i job di build e deploy verificano esplicitamente il branch. Per pubblicare le modifiche preparate su `development`, unirle prima in `main`. La procedura:
 
 1. installa Python e le dipendenze;
 2. rigenera gli XML con `python scripts/prepare.py`, includendo gli eventuali nuovi documenti collegati;
@@ -141,7 +141,7 @@ Nel repository, la sorgente di pubblicazione deve essere impostata una sola volt
 
 <https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-documentale/>
 
-I riferimenti interni sono relativi e restano validi sotto il percorso di progetto `/Elaborazione-di-testi-e-gestione-documentale/`. La directory `dist/` è rigenerata dal workflow a partire dalle fonti; la copia nel repository viene aggiornata con la build locale. Il sito pubblico riflette l’ultimo deployment completato, anche quando proviene da `development`.
+I riferimenti interni sono relativi e restano validi sotto il percorso di progetto `/Elaborazione-di-testi-e-gestione-documentale/`. La directory `dist/` è rigenerata dal workflow a partire dalle fonti; la copia nel repository viene aggiornata con la build locale. Il sito pubblico riflette l’ultimo deployment completato del branch `main`.
 
 ## Anteprima locale
 
