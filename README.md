@@ -6,17 +6,13 @@ Sito: [https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-
 
 ## Consultazione dell’archivio
 
-La Home offre sei sezioni numerate con un indice persistente e collegamenti diretti: **Introduzione**, **Consultazione**, **Documenti**, **Progetto e metodo**, **Documentazione** e **Compilazione**. La sezione corrente viene evidenziata durante lo scorrimento; i collegamenti funzionano anche senza JavaScript. La navigazione principale porta a **Home**, **Archivio**, **Report dei dati** e **Qualità dei dati**. Il precedente URL `progetto.html` rimanda alla sezione `index.html#progetto-e-metodo`.
+La Home offre sei sezioni numerate con un indice persistente e collegamenti diretti: **Introduzione**, **Consultazione**, **Documenti**, **Progetto e metodo**, **Documentazione** e **Compilazione**. La sezione corrente viene evidenziata durante lo scorrimento; i collegamenti funzionano anche senza JavaScript. La navigazione principale porta a **Home**, **Archivio**, **Report dei dati** e **Qualità dei dati**.
 
 L’archivio espone i nomi dei file XML, ricerca per CIG/file/oggetto/ente, filtri territoriali e per tipologia, ordinamento e download. Ogni documento offre tre viste:
 
 - **Scheda completa:** tutti i valori e gli attributi dell’XML, con sezioni navigabili e distinzione esplicita degli elementi vuoti;
 - **Struttura XML:** albero espandibile, ricerca per tag/attributo/valore e collegamenti diretti ai nodi;
 - **Documenti:** tutti i collegamenti ai documenti locali associati al CIG, con etichette sintetiche e nome del file.
-
-`src/processing/xml_view.py` ricava scheda e albero direttamente dall’XML, preservando nodi ripetuti, attributi e ordine del testo misto. Il modello normalizzato in `ContractRecord` continua a servire alle analisi: i campi che non usa non vengono più esclusi dall’interfaccia. Scheda, albero e collegamenti ai documenti sono generati nella pagina e restano consultabili senza JavaScript; quest’ultimo aggiunge schede a linguetta, ricerca e comandi dell’albero. Il sorgente XML integrale rimane disponibile attraverso il download. La scheda **Documenti** sostituisce la precedente vista del codice XML e raccoglie i collegamenti prima elencati in **File del dataset**.
-
-Il workflow esistente pubblica sia i push su `main` sia quelli su `development`: il sito pubblico riflette l’ultimo deployment completato.
 
 ## Requisiti
 
