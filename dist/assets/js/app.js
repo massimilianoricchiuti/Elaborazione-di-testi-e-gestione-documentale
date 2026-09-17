@@ -152,23 +152,6 @@
     activateHash(Boolean(location.hash));
   }
 
-  const copyButton = document.querySelector('#copy-xml');
-  if (copyButton) copyButton.addEventListener('click', async () => {
-    const source = document.querySelector('#xml-source-code');
-    const status = document.querySelector('#copy-status');
-    try {
-      await navigator.clipboard.writeText(source.textContent);
-      status.textContent = 'Sorgente copiato.';
-    } catch {
-      const selection = window.getSelection();
-      const range = document.createRange();
-      range.selectNodeContents(source);
-      selection.removeAllRanges();
-      selection.addRange(range);
-      status.textContent = 'Sorgente selezionato: usa Ctrl+C o ⌘C per copiarlo.';
-    }
-  });
-
   const table = document.querySelector('#archive-table');
   if (!table) return;
   const tbody = table.querySelector('tbody');

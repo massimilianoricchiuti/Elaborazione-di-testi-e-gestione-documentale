@@ -13,8 +13,9 @@ def test_every_archived_xml_is_fully_represented(built_project):
         tree = parse_xml(path)
         cig = tree.getroot().get("cig")
         page = html.parse(str(built_project.dist / "cig" / f"{cig}.html"))
-        source = page.xpath('//*[@id="xml-source-code"]')[0].text_content()
-        assert source == path.read_bytes().decode("utf-8"), cig
+        download = built_project.dist / "downloads" / "xml" / path.name
+        assert download.read_bytes() == path.read_bytes(), cig
+        assert not page.xpath('//*[@id="codice-xml" or @id="xml-source-code"]')
         rendered = page.xpath('//*[contains(concat(" ", normalize-space(@class), " "), " xml-node ")]')
         assert [node.get("data-xml-path") for node in rendered] == [tree.getpath(node) for node in tree.getroot().iter()], cig
         for element, node in zip(tree.getroot().iter(), rendered):

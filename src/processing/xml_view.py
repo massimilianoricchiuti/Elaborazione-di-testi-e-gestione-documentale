@@ -29,8 +29,8 @@ def _label(tag: str) -> str:
 def read_xml_document(path: Path) -> dict:
     """Keep all elements, attributes and ordered mixed text, apart from layout whitespace.
 
-    The verbatim source is provided separately. No normalized analytical field is
-    used here: new XML fields therefore appear without extending ContractRecord.
+    No normalized analytical field is used here: new XML fields therefore appear
+    without extending ContractRecord. The original XML remains downloadable.
     """
     tree = parse_xml(path)
     root = tree.getroot()
@@ -83,5 +83,4 @@ def read_xml_document(path: Path) -> dict:
     return {
         "root": root_view, "sections": sections, "element_count": counter,
         "attribute_count": sum(len(node.attrib) for node in root.iter() if isinstance(node.tag, str)),
-        "source": path.read_bytes().decode(tree.docinfo.encoding or "utf-8"),
     }

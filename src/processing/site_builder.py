@@ -54,6 +54,15 @@ def _to_decimal(value):
     return Decimal(value) if value not in (None, "") else None
 
 
+def _document_label(source: dict) -> str:
+    description = source.get("description") or ""
+    if source["kind"] == "csv":
+        return "CSV"
+    if source["kind"] == "pdf" and description.startswith("Documento PDF collegato al CIG:"):
+        return "Determina"
+    return description.removeprefix("Fonte originale ") or source["kind"].upper()
+
+
 def _render_record(record: dict) -> dict:
     enriched = dict(record)
     for field in ("tender_amount", "lot_amount", "award_amount"):
@@ -68,7 +77,8 @@ def _render_record(record: dict) -> dict:
     enriched["source_downloads"] = [
         {
             **source,
-            "label": source.get("description") or f"Fonte {source['kind'].upper()}",
+            "label": _document_label(source),
+            "filename": Path(source["path"]).name,
             "href": f"../downloads/{source['kind']}/{Path(source['path']).name}.zip" if source["kind"] == "html" else f"../downloads/{source['kind']}/{Path(source['path']).name}",
         }
         for source in record.get("sources", [])

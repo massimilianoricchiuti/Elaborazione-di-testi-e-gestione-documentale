@@ -1,5 +1,7 @@
 import json
+from pathlib import Path
 
+from lxml import html
 from pypdf import PdfReader
 
 from src.support.html_utils import check_internal_links
@@ -36,6 +38,14 @@ def test_detail_pages_and_deploy_downloads(built_project):
     assert len(list((built_project.dist / "downloads" / "xml").glob("*.xml"))) == analysis["metadata"]["record_count"]
     for folder in ("json", "html", "pdf"):
         assert (built_project.dist / "downloads" / folder).is_dir()
+    for record in analysis["records"]:
+        page = html.parse(str(built_project.dist / "cig" / f"{record['cig']}.html"))
+        links = page.xpath('//*[@id="documenti"]//li/a/@href')
+        expected = [
+            f"../downloads/{source['kind']}/{Path(source['path']).name}" + (".zip" if source["kind"] == "html" else "")
+            for source in record["sources"]
+        ]
+        assert links == expected, record["cig"]
 
 
 def test_descriptive_pdf_is_linked_to_its_cig(built_project):
