@@ -19,7 +19,7 @@ def test_main_pages_generated(built_project):
         "data/analysis.json",
         "downloads/documentazione/contratto_cig.dtd",
         "downloads/documentazione/fonti_web.json",
-        "downloads/documentazione/prompts_utilizzati.md",
+        "downloads/report/report_progetto.pdf",
         ".nojekyll",
     ]
     for relative in required:
@@ -27,6 +27,7 @@ def test_main_pages_generated(built_project):
     assert not (built_project.dist / "_headers").exists()
     assert not (built_project.dist / "_redirects").exists()
     assert not (built_project.dist / "metodologia.html").exists()
+    assert not (built_project.dist / "downloads/documentazione/prompts_utilizzati.md").exists()
 
 
 def test_detail_pages_and_deploy_downloads(built_project):
@@ -57,7 +58,8 @@ def test_descriptive_pdf_is_linked_to_its_cig(built_project):
 def test_navigation_uses_explicit_exam_labels(built_project):
     page = (built_project.dist / "index.html").read_text(encoding="utf-8")
     assert ">Progetto e metodo<" in page
-    assert ">Analisi del campione<" in page
+    assert ">Report dei dati<" in page
+    assert ">Archivio<" in page
     assert ">PDF<" not in page
     assert ">Metodologia<" not in page
 
@@ -98,4 +100,9 @@ def test_exam_output_constraints(built_project):
     assert analysis["metadata"]["record_count"] >= 15
     assert analysis["metadata"]["valid_xml_count"] == analysis["metadata"]["record_count"]
     assert microdata["items"] >= 1
-    assert len(PdfReader(str(built_project.report_dir / "report_progetto.pdf")).pages) <= 3
+    report = PdfReader(str(built_project.report_dir / "report_progetto.pdf"))
+    assert len(report.pages) <= 3
+    text = "\n".join(page.extract_text() for page in report.pages)
+    assert "Prompt documentati" in text
+    for number in range(1, 10):
+        assert f"Prompt {number}." in text

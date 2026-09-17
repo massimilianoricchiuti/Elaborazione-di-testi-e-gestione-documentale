@@ -1,81 +1,107 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[italian,provide=*]{babel}
 \usepackage{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xurl}
 \usepackage[expansion=false]{microtype}
-\geometry{top=1.45cm,bottom=1.45cm,left=1.55cm,right=1.55cm}
+\geometry{top=1.45cm,bottom=1.65cm,left=1.55cm,right=1.55cm}
 \setlist[itemize]{noitemsep,topsep=2pt,leftmargin=*}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{3pt}
 \setlength{\emergencystretch}{2em}
-\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=black,pdftitle={WebCig - Relazione di progetto},pdfauthor={Massimiliano Ricchiuti}}
 \newcommand{\code}[1]{\texttt{#1}}
-
-\title{\vspace{-1.2cm}\textbf{Archivio XML dei CIG ANAC}\\[2pt]\large Relazione sintetica sulla preparazione documentale}
+\newcommand{\anac}{\href{https://www.anticorruzione.it/-/piattaforma-contratti-pubblici}{ANAC}}
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}{8pt}{4pt}{\large\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{0pt}{6pt}{2pt}{\normalsize\bfseries}}
+\makeatother
+\title{\vspace{-1.2cm}\textbf{WebCig}\\[2pt]\large Un archivio navigabile dei contratti pubblici italiani\\Relazione di progetto}
 \author{Massimiliano Ricchiuti\\Elaborazione di testi e gestione documentale}
 \date{A.A. 2025/2026}
-
 \input{generated/consistenza.tex}
-
 \begin{document}
 \maketitle
-\vspace{-1.1cm}
+\vspace{-1.0cm}
 
-\section*{1. Obiettivo e dataset}
-Il progetto realizza una pipeline Python che processa fonti relative a contratti pubblici, le trasforma in XML, valida i documenti mediante DTD, estrae informazioni e genera una collezione HTML navigabile. Il dataset comprende \numeroContratti{} XML, oltre la soglia minima di 15 documenti del progetto individuale, derivati da fonti CSV, JSON, HTML e PDF conservate in \code{fonti\_originali/}. A queste si affiancano \numeroFontiWeb{} risorse web istituzionali o primarie, qualificate e riferite a tutti i CIG. Il campione è didattico e non rappresenta l'intero universo ANAC.
+\section*{1. Obiettivo e corpus}
+WebCig trasforma fonti eterogenee relative ai contratti pubblici in documenti XML validati, estrae informazioni e genera un archivio HTML statico. Il corpus comprende \numeroContratti{} XML, uno per CIG, derivati dai CSV e JSON \anac{} e dai documenti HTML e PDF conservati in \code{fonti\_originali/}. Il catalogo \code{fonti\_originali/web/fonti\_web.json} aggiunge \numeroFontiWeb{} risorse web, distribuite su \contrattiConFontiWeb{} CIG. I conteggi sono aggiornati dalla pipeline mediante \path{report/generated/consistenza.tex}.
 
-La preparazione parte dai CIG presenti nei JSON, integra le righe omologhe del CSV e collega le ulteriori fonti locali. L'associazione non usa eccezioni dedicate: cerca un CIG noto nel nome e, se il nome è descrittivo, nel testo estraibile. Così il disciplinare di Frascati viene associato a \code{B6DD95EE23} perché il codice compare nel testo. Le risorse online sono invece governate da un manifesto: per ciascuna conserva URL, ente, formato, fase, sintesi e nesso probatorio. Il caricamento fallisce se manca un CIG o un metadato.
+La preparazione individua i CIG nei JSON e integra le righe corrispondenti del CSV, quando disponibili. Le altre fonti locali sono associate tramite il CIG nel nome del file oppure nel testo estraibile. Il catalogo web conserva URL, ente, formato, fase, sintesi, data di verifica e nesso con il contratto; il caricatore controlla metadati, URL e corrispondenza con i CIG del dataset. Non effettua una nuova verifica online durante ogni build.
 
-\section*{2. Modello XML e validazione}
-Ogni radice \code{contratto} reca il CIG e contiene fonti locali, approfondimenti web, informazioni di gara, stazione appaltante, pubblicazioni, partecipanti, importi, date, CPV e descrizione documentale. I file locali conservano tipo, MIME type e percorso; le risorse online mantengono inoltre URL, relazione e data di verifica.
-
-La DTD \code{schema/contratto\_cig.dtd} stabilisce ordine, cardinalità e attributi. Il requisito del contenuto testuale è soddisfatto da un content model misto conforme alla sintassi XML:
+\section*{2. Modello documentale e validazione}
+La radice \code{contratto} identifica il CIG e raccoglie fonti, dati di gara, stazione appaltante, incaricati, pubblicazioni, partecipanti, importi, date e descrizione. Le sezioni facoltative, fra cui esecuzione, quadro economico, categorie e CPV, dipendono dalle informazioni disponibili. La DTD \code{schema/contratto\_cig.dtd} definisce ordine, cardinalità e attributi. Due modelli misti alternano testo e marcatori semantici ripetibili:
 \begin{verbatim}
 <!ELEMENT descrizioneDocumentale
   (#PCDATA | tipologia | oggetto | categoria | termine | luogo)*>
-\end{verbatim}
-Un secondo modello applica lo stesso principio alle fonti esterne:
-\begin{verbatim}
 <!ELEMENT fonteWeb
   (#PCDATA | titoloFonte | enteFonte | faseFonte | nessoFonte | datoFonte)*>
 \end{verbatim}
-I due elementi alternano testo ed elementi semantici ripetibili; il corpus non è quindi composto soltanto da blocchi strutturati. La build valida tutti gli XML con \code{lxml}; un documento mal formato o non valido interrompe l'esecuzione ed è registrato in \code{output\_data/validation.xml}.
+\code{lxml.etree} esegue parsing e validazione; un XML mal formato o non conforme interrompe la build. Gli esiti sono registrati in \code{output\_data/validation.xml}. Gli XPath estraggono il modello intermedio \code{ContractRecord}, mentre le viste documentali leggono direttamente gli XML e preservano elementi ripetuti, attributi, valori vuoti e ordine del contenuto misto.
 
-\section*{3. Estrazione, analisi e output}
-Gli XPath convertono gli XML validi in istanze del modello intermedio \code{ContractRecord}. Su tale modello sono calcolate distribuzioni territoriali, copertura dei campi, sequenze cronologiche, statistiche economiche e frequenze testuali. I PDF sono esaminati con \code{pypdf}, con ripiego su \code{pdfminer.six}; gli importi usano \code{Decimal} e le incongruenze temporali restano visibili senza correzioni arbitrarie.
+\section*{3. Elaborazioni e consultazione}
+Le analisi calcolano copertura delle fonti e dei campi, distribuzioni territoriali, sequenze cronologiche, statistiche economiche e frequenze testuali. Gli importi usano \code{Decimal}; le durate negative restano segnalate e sono escluse dalle statistiche di durata. \code{pypdf}, con ripiego su \code{pdfminer.six}, estrae il testo dei PDF. Risultati JSON, riepilogo CSV dei PDF, grafici SVG e frammenti LaTeX sono generati dalla pipeline; la relazione sintetica usa i conteggi, mentre il \emph{Report dei dati} espone le analisi dettagliate.
 
-Jinja2 genera \code{index.html}, un archivio filtrabile, una pagina per ciascun XML valido, l'analisi, la qualità dei dati e la sezione \emph{Progetto e metodo} integrata nella home. Le schede mostrano tutti i campi XML e consentono di esplorare l'albero e leggere o scaricare il sorgente. Ogni dettaglio separa i download locali dalle fonti web verificate e mostra per queste ultime ente, fase, sintesi e ragione del collegamento. Per \code{B6DD95EE23} il fascicolo ufficiale espone determina iniziale, disciplinare, verbale, graduatoria ed esito. Le pagine recano microdata \code{schema.org/GovernmentService}; CSS, JavaScript e grafici SVG sono locali e responsivi.
+Jinja2 genera il sito in \code{dist/}. La Home ha sei sezioni numerate, un indice persistente e collegamenti diretti: Introduzione, Consultazione, Documenti, Progetto e metodo, Documentazione e Compilazione. Le altre pagine sono \emph{Archivio}, \emph{Report dei dati} e \emph{Qualità dei dati}. L'Archivio offre ricerca, filtri e ordinamento; ogni CIG dispone di scheda completa, albero XML e sorgente integrale, oltre a documenti locali e fonti web con il nesso dichiarato. Gli HTML originari sono scaricati in ZIP; i PDF e gli XML sono disponibili direttamente. Il vecchio \code{progetto.html} rimanda alla Home. CSS, JavaScript, SVG e download sono locali; i dettagli includono microdata \code{schema.org/GovernmentService}. Senza JavaScript restano accessibili contenuti e collegamenti; ricerca, ordinamento e schede a linguetta richiedono JavaScript.
+
+\section*{4. Limiti}
+Il campione è didattico, non rappresentativo del sistema italiano dei contratti pubblici. Campi assenti o non omogenei limitano il confronto; le incongruenze non sono corrette arbitrariamente e le differenze fra importi non sono automaticamente interpretate come ribassi. Il riconoscimento dei documenti richiede il CIG nel nome o nel testo: non è implementato OCR per i PDF immagine. Le fonti web possono mutare e un nesso di contesto, lotto, accordo quadro o fase antecedente non equivale a un riscontro sul CIG esatto.
 
 \newpage
-\section*{4. Riproducibilità, verifiche e uso di strumenti AI}
-I comandi principali sono:
+\section*{5. Riproducibilità e verifiche}
+Dalla radice del repository, con Python 3.11 o successivo, su Linux/macOS:
 \begin{verbatim}
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt -r requirements-dev.txt
+python -m pip install -r requirements-dev.txt
 python scripts/build_all.py
 python -m pytest
 \end{verbatim}
-La suite verifica parsing, DTD, uso dei due modelli misti, copertura \contrattiConFontiWeb/\numeroContratti{} del manifesto, estrazione, statistiche, mapping dei documenti descrittivi, pagine, microdata e collegamenti interni. GitHub Actions ripete build e test a ogni push su \code{main} o \code{development} e pubblica \code{dist/} su GitHub Pages.
+Su Windows PowerShell usare \code{py -3 -m venv .venv} e \code{.venv\textbackslash Scripts\textbackslash Activate.ps1}. \code{requirements-dev.txt} include le dipendenze del progetto. Per ricompilare il PDF serve una distribuzione LaTeX con \code{pdflatex}; il pacchetto Python omonimo non installa il compilatore. In sua assenza la build del sito usa il PDF già presente. \code{scripts/build.py} elabora gli XML esistenti; \code{scripts/build\_report.py} ricompila la sola relazione. Dopo quest'ultimo comando occorre rigenerare il sito per aggiornare il download. L'anteprima si avvia con \code{python -m http.server 8000 --directory dist}.
 
-Gli strumenti AI sono stati impiegati per la revisione architetturale, l'implementazione e il controllo della documentazione. Le proposte sono state sottoposte a validazione DTD, test automatici, build completa e ispezione dell'output. I prompt e le finalità d'uso sono riportati in \code{report/prompts\_utilizzati.md}. Le fonti originali, gli script di preparazione, la DTD, gli XML e gli output HTML restano disponibili e ispezionabili.
+I test controllano parsing, DTD, modelli misti, fonti, estrazione, statistiche, viste XML, microdata, pagine e collegamenti interni. Il workflow esistente prepara il dataset, costruisce il sito, esegue i test e pubblica \code{dist/} a ogni push su \code{main} o \code{development}; copia il PDF versionato senza compilare LaTeX. Le verifiche coprono struttura e coerenza degli output, non certificano l'esattezza amministrativa delle fonti.
 
-\section*{5. Riscontro dei requisiti}
-\begin{itemize}
-  \item \numeroContratti{} file XML distinti e validi, con directory di input configurabile;
-  \item DTD creata per il progetto e due content model misti effettivamente usati;
-  \item fonti eterogenee CSV, JSON, HTML, PDF e \numeroFontiWeb{} risorse web qualificate, con copertura \contrattiConFontiWeb/\numeroContratti;
-  \item una pagina HTML per ogni XML, indice navigabile e pagine aggiuntive di analisi;
-  \item download dell'XML e dei documenti originali collegati al relativo CIG;
-  \item foglio CSS comune, layout responsivo e annotazioni microdata generate;
-  \item relazione entro tre pagine e prompt conservati nella documentazione.
-\end{itemize}
+\section*{6. Prompt documentati}
+Questa sezione incorpora gli otto prompt e le note già registrati nel progetto e aggiunge la sintesi dell'intervento attuale. Le formulazioni storiche sono conservate: \code{DOCS\_DIR} appartiene a una richiesta iniziale; l'implementazione attuale configura la directory tramite \code{ProjectPaths.xml\_dir}. Gli strumenti generativi sono stati usati per supportare modellazione, codice e documentazione; gli output richiedono controlli sui sorgenti e sui risultati. Le note dei prompt 6--8 documentano gli interventi precedenti, senza attribuire loro verifiche nuove.
 
-\section*{6. Limiti}
-Il dataset è circoscritto e presenta campi mancanti o semanticamente non omogenei; perciò le analisi sono descrittive. Il riconoscimento locale richiede il CIG nel nome o nel testo estraibile: i PDF immagine necessitano di OCR. Le pagine web possono inoltre mutare dopo la data di verifica. Per questo ogni nesso è classificato: lotto, accordo quadro, CUP, fase antecedente o contesto non sono presentati come atti con CIG esatto. I limiti restano dichiarati e non sono colmati con dati inventati.
+\subsection*{Prompt 1. Analisi della struttura del progetto}
+Analizza le specifiche del progetto TEAM e verifica che la struttura del progetto distingua correttamente tra fonti originali, directory XML di input, DTD, script Python, output HTML/CSS e report finale. Evidenzia eventuali elementi non conformi e proponi correzioni minime senza introdurre requisiti non presenti nelle specifiche.
 
+\subsection*{Prompt 2. Modellazione XML dei CIG}
+A partire da un CSV \anac{} con CIG e da JSON di dettaglio disponibili per alcuni CIG, progetta un modello XML descrittivo per rappresentare un singolo contratto pubblico. Il modello deve evitare una semplice struttura tabellare, deve includere contenuto misto, deve mantenere il collegamento alle fonti originali e deve poter essere validato con DTD.
+
+\subsection*{Prompt 3. DTD e validazione}
+Dato il modello XML dei contratti pubblici, costruisci una DTD semplice ma coerente. Alcune sezioni devono essere opzionali perché non tutti i CIG hanno JSON dettagliato, aggiudicazione, CPV o PDF. La descrizione documentale deve consentire contenuto misto con elementi interni come tipologia, oggetto, categoria, termine e luogo.
+
+\subsection*{Prompt 4. Allineamento agli esempi di laboratorio}
+Riscrivi gli script Python in modo che seguano l’impostazione degli esempi di laboratorio: uso di \code{lxml.etree}, variabile \code{DOCS\_DIR}, scansione della directory XML, parsing, validazione DTD e generazione di HTML. Integra inoltre uno script di verifica microdata e uno script di analisi PDF con librerie viste nel corso.
+
+\subsection*{Prompt 5. Revisione del report}
+Revisiona il report LaTeX del progetto affinché descriva in modo sintetico la fase di preparazione, la directory XML di input, la validazione, gli output prodotti, le librerie Python utilizzate e i limiti del lavoro. Il testo deve restare nel perimetro del corso e non trasformarsi in una relazione sugli appalti pubblici.
+
+\newpage
+\section*{6. Prompt documentati (segue)}
+\subsection*{Prompt 6. Rifattorizzazione, analisi e pubblicazione statica}
+È stato richiesto di analizzare integralmente il progetto, separare il codice di supporto dalle elaborazioni, introdurre un modello intermedio dei record, implementare analisi territoriali, cronologiche ed economiche, trasformare l'output in un sito statico responsivo e accessibile, predisporre la pubblicazione automatizzata, ampliare il report LaTeX e aggiungere test automatici.
+
+Gli output generati sono stati verificati mediante esecuzione della pipeline completa, validazione DTD, confronto dei conteggi delle fonti, controllo automatico dei collegamenti nella directory \code{dist/}, test \code{pytest}, verifica dei microdata e compilazione LaTeX quando disponibile. Le metriche del report non sono state trascritte manualmente: derivano da \code{output\_data/analysis.json} e dai frammenti in \code{report/generated/}.
+
+\subsection*{Prompt 7. Ricerca e qualificazione delle fonti web}
+Per ogni CIG presente nell’archivio, reperisci documenti, determine o altre fonti web autorevoli riferibili alla gara. Le risorse devono arricchire le fonti originarie e consolidare il content model misto. Evita soluzioni limitate a un CIG: conserva provenienza, formato, fase e criterio di collegamento, distinguendo un riscontro esatto da una fonte relativa a lotto, accordo quadro, CUP, fase antecedente o contesto.
+
+Le risorse selezionate sono state registrate in un manifesto dati e integrate nella pipeline comune. La verifica non si limita alla raggiungibilità del collegamento: il nesso dichiarato evita di attribuire a una gara un atto che documenta soltanto il suo contesto. Per i procedimenti relativi a minori è stata inoltre privilegiata la minimizzazione, collegando fonti istituzionali senza ripubblicare documenti potenzialmente sensibili.
+
+\subsection*{Prompt 8. Aggiornamento del corpus su development}
+Dopo l’aggiunta dei documenti locali, cercare autonomamente i riferimenti istituzionali per i nuovi CIG, aggiornare le fonti web e ricompilare il progetto affinché i documenti compaiano nell’archivio. Operare esclusivamente sul branch \code{development}.
+
+I sei nuovi CIG sono stati confrontati con i JSON e le determine locali. Sono state aggiunte sette risorse istituzionali, distinguendo l’accordo quadro di Verona dal suo primo contratto applicativo. Le date di verifica precedenti sono conservate; il problema di accesso remoto al PDF di Cremona è dichiarato nel riscontro. La build ha rigenerato XML, sito, analisi e report, con validazione DTD e controlli automatici.
+
+\subsection*{Prompt 9. Revisione della Home e integrazione della relazione}
+\emph{Sintesi della richiesta del 17 settembre 2026.} Operare sul branch \code{development}; rendere navigabili le sezioni della Home, rimuovere il riepilogo della collezione e l'anteprima laterale, adottare il titolo WebCig richiesto e collegare \anac{} alla pagina della Piattaforma contratti pubblici. Rimuovere dalla Home le sezioni sull'associazione ai CIG e sui criteri di provenienza; rinominare Archivio, Report dei dati e istruzioni di compilazione. Rendere la relazione coerente con il progetto, integrarvi i prompt e rimuovere il documento separato e il relativo collegamento.
+
+L'intervento aggiorna i template e la navigazione, mantiene le analisi e i documenti del corpus e concentra descrizione e prompt in questa relazione, scaricabile dalla sezione Documentazione. La numerazione e i collegamenti della Home funzionano come ancore della pagina statica.
 \end{document}

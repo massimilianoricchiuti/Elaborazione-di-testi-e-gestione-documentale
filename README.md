@@ -1,4 +1,4 @@
-# WebCig — Archivio XML dei CIG ANAC
+# WebCig — Archivio dei contratti pubblici italiani
 
 Progetto universitario di elaborazione documentale che trasforma fonti CSV, JSON, HTML e PDF in documenti XML, integra un catalogo qualificato di fonti web istituzionali, valida il corpus mediante DTD, estrae un modello intermedio normalizzato e genera analisi territoriali, cronologiche ed economiche. La build produce un sito statico autonomo in `dist/`, pubblicato su GitHub Pages senza backend o database.
 
@@ -6,7 +6,7 @@ Sito: [https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-
 
 ## Consultazione dell’archivio
 
-La home integra **Progetto e metodo**, la pipeline e la documentazione. Il precedente URL `progetto.html` rimanda alla sezione `index.html#progetto-e-metodo`.
+La Home offre sei sezioni numerate con un indice persistente e collegamenti diretti: **Introduzione**, **Consultazione**, **Documenti**, **Progetto e metodo**, **Documentazione** e **Compilazione**. La sezione corrente viene evidenziata durante lo scorrimento; i collegamenti funzionano anche senza JavaScript. La navigazione principale porta a **Home**, **Archivio**, **Report dei dati** e **Qualità dei dati**. Il precedente URL `progetto.html` rimanda alla sezione `index.html#progetto-e-metodo`.
 
 L’archivio espone i nomi dei file XML, ricerca per CIG/file/oggetto/ente, filtri territoriali e per tipologia, ordinamento e download. Ogni documento offre tre viste:
 
@@ -16,7 +16,7 @@ L’archivio espone i nomi dei file XML, ricerca per CIG/file/oggetto/ente, filt
 
 `src/processing/xml_view.py` ricava queste viste direttamente dall’XML, preservando nodi ripetuti, attributi e ordine del testo misto. Il modello normalizzato in `ContractRecord` continua a servire alle analisi: i campi che non usa non vengono più esclusi dall’interfaccia. Schede, albero e sorgente sono generati nella pagina e restano consultabili senza JavaScript; quest’ultimo aggiunge schede a linguetta, ricerca e comandi dell’albero.
 
-Le modifiche nel branch `development` sono consultabili mediante la build locale. Il sito pubblico viene aggiornato soltanto dal workflow di pubblicazione su `main`.
+Il workflow esistente pubblica sia i push su `main` sia quelli su `development`: il sito pubblico riflette l’ultimo deployment completato.
 
 ## Requisiti
 
@@ -90,13 +90,17 @@ python scripts/build_all.py
 
 Il controllo dei collegamenti viene eseguito automaticamente sulla sola directory `dist/`. La build fallisce se un riferimento locale non esiste o punta fuori dalla directory pubblicata.
 
-## Report LaTeX
+## Relazione di progetto
+
+La relazione unica contiene descrizione del progetto, riproducibilità, limiti e **Prompt documentati**. Gli otto prompt già registrati e la sintesi della revisione dell’interfaccia sono integrati in `report/report_progetto.tex`; non viene pubblicato un documento separato di prompt. Il PDF rimane entro tre pagine.
 
 Dopo una build, i frammenti dinamici sono disponibili in `report/generated/`:
 
 ```bash
 python scripts/build_report.py
 ```
+
+Dopo aver ricompilato la relazione, eseguire `python scripts/build.py` per aggiornare anche il PDF scaricabile dal sito.
 
 La build GitHub Pages non richiede LaTeX. Se `report/report_progetto.pdf` è già presente, viene copiato in `dist/downloads/report/`.
 

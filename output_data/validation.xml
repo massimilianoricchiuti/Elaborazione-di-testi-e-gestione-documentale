@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<validazione date="2026-09-15" docs_dir="documenti_xml">
+<validazione date="2026-09-17" docs_dir="documenti_xml">
   <file name="CIG_B387047A20.xml" wellformed="true" valid="true"/>
   <file name="CIG_B474D3250C.xml" wellformed="true" valid="true"/>
   <file name="CIG_B4B5B163A0.xml" wellformed="true" valid="true"/>

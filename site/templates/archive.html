@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block title %}Archivio XML{% endblock %}
+{% block title %}Archivio{% endblock %}
 {% block content %}
-<section class="page-header"><div class="container"><nav class="breadcrumbs" aria-label="Percorso"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Archivio XML</li></ol></nav><p class="eyebrow">La collezione</p><h1>Archivio XML</h1><p>{{ records|length }} documenti, ciascuno identificato dal proprio CIG. Cerca un contratto, consulta la scheda completa o apri direttamente la sua struttura XML.</p><div class="archive-location"><code>documenti_xml /</code><a href="downloads/documentazione/contratto_cig.dtd">Schema della collezione · DTD ↗</a></div></div></section>
+<section class="page-header"><div class="container"><nav class="breadcrumbs" aria-label="Percorso"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Archivio</li></ol></nav><p class="eyebrow">La collezione</p><h1>Archivio</h1><p>{{ records|length }} documenti, ciascuno identificato dal proprio CIG. Cerca un contratto, consulta la scheda completa o apri direttamente la sua struttura XML.</p><div class="archive-location"><a href="downloads/documentazione/contratto_cig.dtd">Schema della collezione · DTD ↗</a></div></div></section>
 <section class="container section">
-  <form class="filters" data-table-filters role="search" aria-label="Cerca nell’archivio XML">
+  <form class="filters" data-table-filters role="search" aria-label="Cerca nell’archivio">
     <label>Ricerca<input type="search" id="search" placeholder="CIG, file XML, oggetto o ente"></label>
     <label>Tipologia<select id="type-filter"><option value="">Tutte</option>{% for row in analysis.amounts.by_contract_type %}<option>{{ row.label }}</option>{% endfor %}</select></label>
     <label>Città<select id="city-filter"><option value="">Tutte</option>{% for row in analysis.territorial.authority_cities.rows %}{% if row.label != 'Dati mancanti' %}<option>{{ row.label }}</option>{% endif %}{% endfor %}</select></label>

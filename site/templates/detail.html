@@ -3,7 +3,7 @@
 {% block title %}{{ record.cig }} · Documento XML{% endblock %}
 {% block content %}
 <section class="page-header document-header"><div class="container">
-  <nav class="breadcrumbs" aria-label="Percorso"><ol><li><a href="../index.html">Home</a></li><li><a href="../archivio.html">Archivio XML</a></li><li aria-current="page">{{ record.xml_filename }}</li></ol></nav>
+  <nav class="breadcrumbs" aria-label="Percorso"><ol><li><a href="../index.html">Home</a></li><li><a href="../archivio.html">Archivio</a></li><li aria-current="page">{{ record.xml_filename }}</li></ol></nav>
   <p class="collection-label"><span class="xml-badge">XML</span> Documento {{ record_position }} di {{ record_count }} {% if record.xml_valid %}<span class="badge">Valido rispetto alla DTD</span>{% endif %}</p>
   <h1>{{ record.cig }}</h1><p class="document-title">{{ record.title }}</p>
   <div class="document-meta"><span>{{ record.contract_type or 'Tipologia non disponibile' }}</span><span>{{ record.tender_amount_formatted }}</span><span>{{ record.authority_city or 'Località non disponibile' }}</span></div>

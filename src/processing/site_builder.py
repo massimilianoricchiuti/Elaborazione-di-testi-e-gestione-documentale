@@ -122,9 +122,6 @@ def _copy_downloads(paths: ProjectPaths) -> None:
         paths.web_sources_file,
         paths.dist / "downloads" / "documentazione" / paths.web_sources_file.name,
     )
-    prompts = paths.report_dir / "prompts_utilizzati.md"
-    if prompts.exists():
-        copy_file(prompts, paths.dist / "downloads" / "documentazione" / prompts.name)
 
 
 def _generate_charts(paths: ProjectPaths, analysis: dict) -> None:

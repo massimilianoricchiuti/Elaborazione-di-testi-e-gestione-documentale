@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="WebCig: esplora i documenti XML dei contratti pubblici, consulta tutti i campi e risali alle fonti del progetto universitario.">
-  <title>Un archivio XML da esplorare · WebCig</title>
+  <title>Un archivio navigabile dei contratti pubblici italiani · WebCig</title>
   <link rel="stylesheet" href="assets/css/stile.css">
   <script defer src="assets/js/app.js"></script>
 </head>
@@ -19,32 +19,34 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <ul id="main-nav" class="main-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="archivio.html">Archivio XML</a></li>
-        <li><a href="report.html">Analisi del campione</a></li>
+        <li><a href="archivio.html">Archivio</a></li>
+        <li><a href="report.html">Report dei dati</a></li>
         <li><a href="qualita-dati.html">Qualità dei dati</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <main id="contenuto">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="collection-label"><span class="xml-badge">XML</span> 21 documenti · Un’unica collezione</p>
-      <h1>I contratti pubblici,<br>documento per documento.</h1>
-      <p class="lead">Esplora un archivio XML costruito a partire dalle fonti ANAC. Ogni CIG riunisce dati di gara, soggetti, importi e fonti: dalla scheda leggibile fino ai singoli elementi del documento.</p>
-      <div class="actions"><a class="button" href="archivio.html">Esplora l’archivio XML <span aria-hidden="true">↗</span></a><a class="button secondary" href="#progetto-e-metodo">Progetto e metodo</a></div>
-    </div>
-    <div class="archive-preview">
-      <div class="preview-heading"><span class="xml-badge">XML</span><span>Dentro l’archivio</span><span class="preview-dot" aria-hidden="true"></span></div>
-      <p class="preview-folder">documenti_xml /</p>
-<a class="preview-file selected" href="cig/B387047A20.html#struttura-xml"><span aria-hidden="true">&lt;/&gt;</span><span>CIG_B387047A20.xml</span><span aria-hidden="true">↗</span></a><a class="preview-file" href="cig/B474D3250C.html#struttura-xml"><span aria-hidden="true">&lt;/&gt;</span><span>CIG_B474D3250C.xml</span><span aria-hidden="true">↗</span></a><a class="preview-file" href="cig/B4B5B163A0.html#struttura-xml"><span aria-hidden="true">&lt;/&gt;</span><span>CIG_B4B5B163A0.xml</span><span aria-hidden="true">↗</span></a>      <div class="preview-code"><p>&lt;<span>contratto</span> cig="B387047A20"&gt;</p><p class="indent">&lt;<span>informazioniGara</span>&gt;…</p><p class="indent">&lt;<span>stazioneAppaltante</span>&gt;…</p><p class="indent">&lt;<span>fonti</span>&gt;…</p><p>&lt;/<span>contratto</span>&gt;</p></div>
-      <p class="preview-caption">Anteprima della struttura · Seleziona un file per esplorarlo.</p>
-    </div>
+<nav class="section-nav" aria-label="Sezioni della Home">
+  <ol class="container">
+    <li><a href="#introduzione" aria-current="location"><span>01</span> Introduzione</a></li>
+    <li><a href="#consultazione"><span>02</span> Consultazione</a></li>
+    <li><a href="#documenti"><span>03</span> Documenti</a></li>
+    <li><a href="#progetto-e-metodo"><span>04</span> Progetto e metodo</a></li>
+    <li><a href="#documentazione"><span>05</span> Documentazione</a></li>
+    <li><a href="#compilazione"><span>06</span> Compilazione</a></li>
+  </ol>
+</nav>
+<section id="introduzione" class="hero home-section" aria-labelledby="home-title">
+  <div class="container hero-content">
+    <p class="eyebrow">01 / Introduzione</p>
+    <h1 id="home-title">WebCig, un archivio navigabile dei contratti pubblici italiani.</h1>
+    <p class="lead">Esplora un archivio XML costruito a partire dalle fonti <a href="https://www.anticorruzione.it/-/piattaforma-contratti-pubblici">ANAC</a>. Ogni CIG riunisce dati di gara, soggetti, importi e fonti: dalla scheda leggibile fino ai singoli elementi del documento.</p>
+    <div class="actions"><a class="button" href="archivio.html">Esplora l’archivio <span aria-hidden="true">↗</span></a><a class="button secondary" href="#progetto-e-metodo">Progetto e metodo</a></div>
   </div>
 </section>
-<section class="container section archive-intro" aria-labelledby="consultazione-title">
-  <div class="section-heading"><div><p class="eyebrow">Una collezione, tre modi di leggerla</p><h2 id="consultazione-title">Dalla scheda al sorgente.</h2></div><a href="archivio.html">Tutti i documenti →</a></div>
+<section id="consultazione" class="container section archive-intro home-section" aria-labelledby="consultazione-title">
+  <div class="section-heading"><div><p class="eyebrow">02 / Consultazione</p><h2 id="consultazione-title">Dalla scheda al sorgente.</h2></div><a href="archivio.html">Tutti i documenti →</a></div>
   <div class="reading-modes">
     <article><span class="mode-number">01</span><h3>Scheda completa</h3><p>Tutti i campi dell’XML, raggruppati per sezione. Anche gli attributi e gli elementi vuoti restano riconoscibili.</p></article>
     <article><span class="mode-number">02</span><h3>Struttura XML</h3><p>Apri i nodi dell’albero e cerca un elemento o un valore: le relazioni tra i dati diventano visibili.</p></article>
@@ -52,16 +54,16 @@
   </div>
   <div class="archive-stats"><p><strong>21</strong> documenti XML</p><p><strong>21</strong> validi rispetto alla DTD</p><p><strong>33</strong> fonti web collegate</p><a href="qualita-dati.html">Consulta la qualità dei dati →</a></div>
 </section>
-<section class="container section featured-documents">
-  <div class="section-heading"><div><p class="eyebrow">Inizia a esplorare</p><h2>Documenti della collezione</h2></div><a href="archivio.html">Apri l’archivio completo →</a></div>
+<section id="documenti" class="container section featured-documents home-section" aria-labelledby="documenti-title">
+  <div class="section-heading"><div><p class="eyebrow">03 / Documenti</p><h2 id="documenti-title">Documenti della collezione</h2></div><a href="archivio.html">Apri l’archivio completo →</a></div>
   <div class="document-grid">
     <article class="record-card"><p class="record-code"><span class="xml-badge">XML</span> B387047A20</p><h3><a href="cig/B387047A20.html">SERVIZI DI COORDINAMENTO, PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL COMUNE DI CARLINO PER GLI ANNI 2024-2025-2026</a></h3><p>COMUNE DI CARLINO</p><dl><div><dt>Tipologia</dt><dd>SERVIZI</dd></div><div><dt>Importo</dt><dd>45.001,02 €</dd></div></dl><a class="document-action" href="cig/B387047A20.html#struttura-xml">Esplora la struttura XML →</a></article>
     <article class="record-card"><p class="record-code"><span class="xml-badge">XML</span> B474D3250C</p><h3><a href="cig/B474D3250C.html">MANUTENZIONE STRAORDINARIA DELLA STRADA BIANCA DI ACCESSO IMPIANTO TRATTAMENTO RIFIUTI. LOC. STRILLAIE COMUNE DI GROSSETO</a></h3><p>COMUNE DI GROSSETO</p><dl><div><dt>Tipologia</dt><dd>LAVORI</dd></div><div><dt>Importo</dt><dd>76.216,47 €</dd></div></dl><a class="document-action" href="cig/B474D3250C.html#struttura-xml">Esplora la struttura XML →</a></article>
     <article class="record-card"><p class="record-code"><span class="xml-badge">XML</span> B4B5B163A0</p><h3><a href="cig/B4B5B163A0.html">AFFIDAMENTO ALLA SOCIETA&#39; A2A ENERGIA DI MILANO DEI SERVIZI DI FORNITURE ENERGIA ELETTRICA 1 SEMESTRE 2025</a></h3><p>COMUNE DI CREMONA</p><dl><div><dt>Tipologia</dt><dd>SERVIZI</dd></div><div><dt>Importo</dt><dd>4.918,03 €</dd></div></dl><a class="document-action" href="cig/B4B5B163A0.html#struttura-xml">Esplora la struttura XML →</a></article>
   </div>
 </section>
-<section id="progetto-e-metodo" class="container section method-section">
-  <div class="section-heading"><div><p class="eyebrow">Dal documento alla consultazione</p><h2>Progetto e metodo</h2></div><a href="#documentazione">Vai alla documentazione ↓</a></div>
+<section id="progetto-e-metodo" class="container section method-section home-section" aria-labelledby="metodo-title">
+  <div class="section-heading"><div><p class="eyebrow">04 / Progetto e metodo</p><h2 id="metodo-title">Progetto e metodo</h2></div><a href="#documentazione">Vai alla documentazione ↓</a></div>
   <div class="prose">
   <h3>Obiettivo e perimetro</h3>
   <p>Il progetto trasforma fonti eterogenee relative ai contratti pubblici in una collezione di documenti XML validati, ne estrae informazioni territoriali, cronologiche ed economiche e genera un sito HTML statico. Il campione contiene <strong>21 documenti XML</strong>, tutti verificati rispetto alla DTD.</p>
@@ -83,29 +85,31 @@
   (#PCDATA | titoloFonte | enteFonte | faseFonte | nessoFonte | datoFonte)*&gt;</code></pre>
   <p><code>descrizioneDocumentale</code> sintetizza il contratto; ogni <code>fonteWeb</code> intreccia invece titolo, ente, fase, riscontro e dato utile in una frase leggibile. Gli attributi conservano tipo documentale, MIME type, URL, classe di relazione e data di verifica. La separazione fra struttura, contenuto e presentazione rimane così esplicita.</p>
 
-  <h3>Associazione dei documenti ai CIG</h3>
-  <p>Il mapping non dipende da una lista inserita nel codice. Per ogni fonte viene cercato anzitutto un CIG noto nel nome del file; quando il nome è descrittivo, il sistema esamina il testo estraibile. Questo consente di collegare anche lettere, disciplinari e ulteriori allegati PDF, purché riportino il CIG nel contenuto.</p>
-  <p>Le fonti reperite online sono invece governate da un manifesto dati versionato, caricato dalla medesima pipeline per tutti i record. Il catalogo copre <strong>21 CIG su 21</strong> e collega <strong>33 risorse web</strong>. Ogni voce dichiara se il riscontro riguarda il CIG esatto, un lotto o accordo quadro, CUP e oggetto, una fase antecedente o soltanto il contesto istituzionale o tecnico.</p>
-  <p>Sono stati inoltre analizzati <strong>28 PDF locali</strong>. Il controllo testuale comprende <strong>21 descrizioni documentali</strong> e 405 token selezionati.</p>
-
-  <h3>Criteri di provenienza</h3>
-  <ul>
-    <li><strong>Priorità alle fonti primarie:</strong> albo, portale di gara, determina, programma, relazione o pagina dell’amministrazione competente.</li>
-    <li><strong>Nesso dichiarato:</strong> il sito mostra perché la fonte è pertinente e non equipara un documento contestuale a un atto con CIG esatto.</li>
-    <li><strong>Minimizzazione:</strong> i collegamenti esterni evitano duplicazioni massive e, nei procedimenti riguardanti minori, la ripubblicazione di documenti potenzialmente sensibili.</li>
-    <li><strong>Riproducibilità:</strong> URL, metadati, sintesi e data di verifica sono conservati nel manifesto JSON scaricabile e poi serializzati negli XML validati.</li>
-  </ul>
-
-  <h3 id="documentazione">Documentazione</h3>
-  <div class="actions">
-<a class="button" href="downloads/report/report_progetto.pdf">Scarica la relazione di progetto (PDF)</a>    <a class="button secondary" href="downloads/documentazione/contratto_cig.dtd">Scarica la DTD</a>
-<a class="button secondary" href="downloads/documentazione/fonti_web.json">Scarica il catalogo delle fonti web</a>    <a class="button secondary" href="downloads/documentazione/prompts_utilizzati.md">Consulta i prompt documentati</a>
   </div>
-
-  <h3>Comandi essenziali</h3>
-  <pre><code>python -m pip install -r requirements.txt -r requirements-dev.txt
+</section>
+<section id="documentazione" class="container section method-section home-section" aria-labelledby="documentazione-title">
+  <div class="section-heading"><div><p class="eyebrow">05 / Documentazione</p><h2 id="documentazione-title">Documentazione</h2></div></div>
+  <p>La relazione descrive il progetto, le verifiche, i limiti e i prompt documentati.</p>
+  <div class="actions">
+<a class="button" href="downloads/report/report_progetto.pdf">Scarica la relazione di progetto</a>    <a class="button secondary" href="downloads/documentazione/contratto_cig.dtd">Scarica la DTD</a>
+<a class="button secondary" href="downloads/documentazione/fonti_web.json">Scarica il catalogo delle fonti web</a>  </div>
+</section>
+<section id="compilazione" class="container section method-section home-section" aria-labelledby="compilazione-title">
+  <div class="section-heading"><div><p class="eyebrow">06 / Compilazione</p><h2 id="compilazione-title">Istruzioni per la compilazione del progetto</h2></div></div>
+  <div class="prose">
+  <p>Dalla radice del repository, con Python 3.11 o successivo, crea e attiva un ambiente virtuale. Su Linux e macOS:</p>
+  <pre><code>python3 -m venv .venv
+source .venv/bin/activate</code></pre>
+  <p>Su Windows PowerShell:</p>
+  <pre><code>py -3 -m venv .venv
+.venv\Scripts\Activate.ps1</code></pre>
+  <p>Installa le dipendenze, rigenera XML e sito ed esegui i controlli:</p>
+  <pre><code>python -m pip install -r requirements-dev.txt
 python scripts/build_all.py
 python -m pytest</code></pre>
+  <p>La compilazione della relazione richiede una distribuzione LaTeX con <code>pdflatex</code>. Se non è disponibile, il sito utilizza il PDF già presente nel repository. Per consultare il risultato:</p>
+  <pre><code>python -m http.server 8000 --directory dist</code></pre>
+  <p>Apri <code>http://localhost:8000/</code> nel browser.</p>
   </div>
 </section></main>
 <footer class="site-footer">

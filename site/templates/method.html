@@ -1,5 +1,5 @@
-<section id="progetto-e-metodo" class="container section method-section">
-  <div class="section-heading"><div><p class="eyebrow">Dal documento alla consultazione</p><h2>Progetto e metodo</h2></div><a href="#documentazione">Vai alla documentazione ↓</a></div>
+<section id="progetto-e-metodo" class="container section method-section home-section" aria-labelledby="metodo-title">
+  <div class="section-heading"><div><p class="eyebrow">04 / Progetto e metodo</p><h2 id="metodo-title">Progetto e metodo</h2></div><a href="#documentazione">Vai alla documentazione ↓</a></div>
   <div class="prose">
   <h3>Obiettivo e perimetro</h3>
   <p>Il progetto trasforma fonti eterogenee relative ai contratti pubblici in una collezione di documenti XML validati, ne estrae informazioni territoriali, cronologiche ed economiche e genera un sito HTML statico. Il campione contiene <strong>{{ analysis.metadata.record_count }} documenti XML</strong>, tutti verificati rispetto alla DTD.</p>
@@ -21,30 +21,32 @@
   (#PCDATA | titoloFonte | enteFonte | faseFonte | nessoFonte | datoFonte)*&gt;</code></pre>
   <p><code>descrizioneDocumentale</code> sintetizza il contratto; ogni <code>fonteWeb</code> intreccia invece titolo, ente, fase, riscontro e dato utile in una frase leggibile. Gli attributi conservano tipo documentale, MIME type, URL, classe di relazione e data di verifica. La separazione fra struttura, contenuto e presentazione rimane così esplicita.</p>
 
-  <h3>Associazione dei documenti ai CIG</h3>
-  <p>Il mapping non dipende da una lista inserita nel codice. Per ogni fonte viene cercato anzitutto un CIG noto nel nome del file; quando il nome è descrittivo, il sistema esamina il testo estraibile. Questo consente di collegare anche lettere, disciplinari e ulteriori allegati PDF, purché riportino il CIG nel contenuto.</p>
-  <p>Le fonti reperite online sono invece governate da un manifesto dati versionato, caricato dalla medesima pipeline per tutti i record. Il catalogo copre <strong>{{ analysis.metadata.web_source_coverage.available }} CIG su {{ analysis.metadata.record_count }}</strong> e collega <strong>{{ analysis.metadata.web_source_coverage.linked_sources }} risorse web</strong>. Ogni voce dichiara se il riscontro riguarda il CIG esatto, un lotto o accordo quadro, CUP e oggetto, una fase antecedente o soltanto il contesto istituzionale o tecnico.</p>
-  <p>Sono stati inoltre analizzati <strong>{{ pdf_analysis|length }} PDF locali</strong>. Il controllo testuale comprende <strong>{{ text_analysis.documents }} descrizioni documentali</strong> e {{ text_analysis.tokens }} token selezionati.</p>
-
-  <h3>Criteri di provenienza</h3>
-  <ul>
-    <li><strong>Priorità alle fonti primarie:</strong> albo, portale di gara, determina, programma, relazione o pagina dell’amministrazione competente.</li>
-    <li><strong>Nesso dichiarato:</strong> il sito mostra perché la fonte è pertinente e non equipara un documento contestuale a un atto con CIG esatto.</li>
-    <li><strong>Minimizzazione:</strong> i collegamenti esterni evitano duplicazioni massive e, nei procedimenti riguardanti minori, la ripubblicazione di documenti potenzialmente sensibili.</li>
-    <li><strong>Riproducibilità:</strong> URL, metadati, sintesi e data di verifica sono conservati nel manifesto JSON scaricabile e poi serializzati negli XML validati.</li>
-  </ul>
-
-  <h3 id="documentazione">Documentazione</h3>
+  </div>
+</section>
+<section id="documentazione" class="container section method-section home-section" aria-labelledby="documentazione-title">
+  <div class="section-heading"><div><p class="eyebrow">05 / Documentazione</p><h2 id="documentazione-title">Documentazione</h2></div></div>
+  <p>La relazione descrive il progetto, le verifiche, i limiti e i prompt documentati.</p>
   <div class="actions">
-    {% if report_available %}<a class="button" href="downloads/report/report_progetto.pdf">Scarica la relazione di progetto (PDF)</a>{% endif %}
+    {% if report_available %}<a class="button" href="downloads/report/report_progetto.pdf">Scarica la relazione di progetto</a>{% endif %}
     <a class="button secondary" href="downloads/documentazione/contratto_cig.dtd">Scarica la DTD</a>
     {% if web_manifest_available %}<a class="button secondary" href="downloads/documentazione/fonti_web.json">Scarica il catalogo delle fonti web</a>{% endif %}
-    <a class="button secondary" href="downloads/documentazione/prompts_utilizzati.md">Consulta i prompt documentati</a>
   </div>
-
-  <h3>Comandi essenziali</h3>
-  <pre><code>python -m pip install -r requirements.txt -r requirements-dev.txt
+</section>
+<section id="compilazione" class="container section method-section home-section" aria-labelledby="compilazione-title">
+  <div class="section-heading"><div><p class="eyebrow">06 / Compilazione</p><h2 id="compilazione-title">Istruzioni per la compilazione del progetto</h2></div></div>
+  <div class="prose">
+  <p>Dalla radice del repository, con Python 3.11 o successivo, crea e attiva un ambiente virtuale. Su Linux e macOS:</p>
+  <pre><code>python3 -m venv .venv
+source .venv/bin/activate</code></pre>
+  <p>Su Windows PowerShell:</p>
+  <pre><code>py -3 -m venv .venv
+.venv\Scripts\Activate.ps1</code></pre>
+  <p>Installa le dipendenze, rigenera XML e sito ed esegui i controlli:</p>
+  <pre><code>python -m pip install -r requirements-dev.txt
 python scripts/build_all.py
 python -m pytest</code></pre>
+  <p>La compilazione della relazione richiede una distribuzione LaTeX con <code>pdflatex</code>. Se non è disponibile, il sito utilizza il PDF già presente nel repository. Per consultare il risultato:</p>
+  <pre><code>python -m http.server 8000 --directory dist</code></pre>
+  <p>Apri <code>http://localhost:8000/</code> nel browser.</p>
   </div>
 </section>

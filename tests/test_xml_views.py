@@ -53,6 +53,11 @@ def test_home_integration_and_document_view_links(built_project):
     home = html.parse(str(built_project.dist / "index.html"))
     assert home.xpath('//*[@id="progetto-e-metodo"]//h2[text()="Progetto e metodo"]')
     assert home.xpath('//*[@id="documentazione"]')
+    sections = home.xpath('//section[contains(concat(" ", normalize-space(@class), " "), " home-section ")]/@id')
+    anchors = home.xpath('//nav[@aria-label="Sezioni della Home"]//a/@href')
+    assert anchors == [f"#{section}" for section in sections]
+    assert len(sections) == 6
+    assert home.xpath('//a[text()="ANAC"]/@href') == ['https://www.anticorruzione.it/-/piattaforma-contratti-pubblici']
     assert not home.xpath('//header//a[contains(@href,"progetto.html")]')
     assert home.xpath('//header//span[text()="WebCig"]')
     assert "ELABORAZIONE DI TESTI E GESTIONE DOCUMENTALE" not in home.getroot().text_content()
