@@ -1,40 +1,38 @@
 {% extends "base.html" %}
 {% block title %}Un archivio navigabile dei contratti pubblici italiani{% endblock %}
+{% macro download_icon() -%}
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>
+{%- endmacro %}
 {% block content %}
-<nav class="section-nav" aria-label="Sezioni della Home">
-  <ol class="container">
-    <li><a href="#introduzione" aria-current="location"><span>01</span> Introduzione</a></li>
-    <li><a href="#consultazione"><span>02</span> Consultazione</a></li>
-    <li><a href="#documenti"><span>03</span> Documenti</a></li>
-    <li><a href="#progetto-e-metodo"><span>04</span> Progetto e metodo</a></li>
-    <li><a href="#documentazione"><span>05</span> Documentazione</a></li>
-    <li><a href="#compilazione"><span>06</span> Compilazione</a></li>
-  </ol>
-</nav>
-<section id="introduzione" class="hero home-section" aria-labelledby="home-title">
+<section id="introduzione" class="hero" aria-labelledby="home-title">
   <div class="container hero-content">
-    <p class="eyebrow">01 / Introduzione</p>
     <h1 id="home-title">WebCig, un archivio navigabile dei contratti pubblici italiani.</h1>
     <p class="lead">Esplora un archivio XML costruito a partire dalle fonti <a href="https://www.anticorruzione.it/-/piattaforma-contratti-pubblici">ANAC</a>. Ogni CIG riunisce dati di gara, soggetti, importi e fonti: dalla scheda leggibile fino ai singoli elementi del documento.</p>
-    <div class="actions"><a class="button" href="archivio.html">Esplora l’archivio <span aria-hidden="true">↗</span></a><a class="button secondary" href="#progetto-e-metodo">Progetto e metodo</a></div>
+    <div class="project-downloads">
+      {% if report_available %}<a class="download-link" href="downloads/report/report_progetto.pdf" download>{{ download_icon() }} Relazione di progetto</a>{% endif %}
+      <a class="download-link" href="downloads/documentazione/contratto_cig.dtd" download>{{ download_icon() }} DTD</a>
+      {% if web_manifest_available %}<a class="download-link" href="downloads/documentazione/fonti_web.json" download>{{ download_icon() }} Catalogo delle fonti web</a>{% endif %}
+    </div>
   </div>
 </section>
-<section id="consultazione" class="container section archive-intro home-section" aria-labelledby="consultazione-title">
-  <div class="section-heading"><div><p class="eyebrow">02 / Consultazione</p><h2 id="consultazione-title">Dalla scheda ai documenti.</h2></div><a href="archivio.html">Tutti i documenti →</a></div>
-  <div class="reading-modes">
-    <article><span class="mode-number">01</span><h3>Scheda completa</h3><p>Tutti i campi dell’XML, raggruppati per sezione. Anche gli attributi e gli elementi vuoti restano riconoscibili.</p></article>
-    <article><span class="mode-number">02</span><h3>Struttura XML</h3><p>Apri i nodi dell’albero e cerca un elemento o un valore: le relazioni tra i dati diventano visibili.</p></article>
-    <article><span class="mode-number">03</span><h3>Documenti</h3><p>Apri i documenti collegati al CIG e consulta CSV, JSON, HTML e PDF in un’unica sezione.</p></article>
+<section id="archivio" class="container section" aria-labelledby="archivio-title">
+  <div class="section-heading"><div><h2 id="archivio-title">Archivio</h2><p>{{ records|length }} documenti, ciascuno identificato dal proprio CIG. Cerca un contratto, consulta la scheda completa o apri direttamente la sua struttura XML.</p></div></div>
+  <form class="filters" data-table-filters role="search" aria-label="Cerca nell’archivio">
+    <label>Ricerca<input type="search" id="search" placeholder="CIG, file XML, oggetto o ente"></label>
+    <label>Tipologia<select id="type-filter"><option value="">Tutte</option>{% for row in analysis.amounts.by_contract_type %}<option>{{ row.label }}</option>{% endfor %}</select></label>
+    <label>Città<select id="city-filter"><option value="">Tutte</option>{% for row in analysis.territorial.authority_cities.rows %}{% if row.label != 'Dati mancanti' %}<option>{{ row.label }}</option>{% endif %}{% endfor %}</select></label>
+    <label>Regione<select id="region-filter"><option value="">Tutte</option>{% for row in analysis.territorial.regions.rows %}{% if row.label != 'Dati mancanti' %}<option>{{ row.label }}</option>{% endif %}{% endfor %}</select></label>
+    <button class="button secondary" type="reset">Azzera</button>
+  </form>
+  <noscript><p class="note">Tutti i documenti sono consultabili. Per usare ricerca e ordinamento, attiva JavaScript.</p></noscript>
+  <p class="results-count" role="status"><span id="visible-count">{{ records|length }}</span> di {{ records|length }} documenti XML</p>
+  <div class="table-wrap">
+    <table id="archive-table" class="sortable-table">
+      <caption class="sr-only">Documenti XML del campione, con collegamenti a scheda, struttura e download.</caption>
+      <thead><tr><th scope="col"><button data-sort="cig">Documento XML ↕</button></th><th scope="col"><button data-sort="title">Oggetto ↕</button></th><th scope="col"><button data-sort="authority">Stazione appaltante ↕</button></th><th scope="col"><button data-sort="type">Tipologia ↕</button></th><th scope="col"><button data-sort="amount" data-sort-type="number">Importo gara ↕</button></th><th scope="col">Consulta</th></tr></thead>
+      <tbody>{% for record in records %}<tr data-cig="{{ record.cig }}" data-filename="{{ record.xml_filename }}" data-title="{{ record.title }}" data-authority="{{ record.contracting_authority }}" data-type="{{ record.contract_type }}" data-city="{{ record.authority_city }}" data-region="{{ record.region }}" data-amount="{{ record.tender_amount or '' }}"><td class="file-cell"><a href="cig/{{ record.cig }}.html">{{ record.cig }}</a><small>{{ record.xml_filename }}</small></td><td>{{ record.title }}</td><td>{{ record.contracting_authority or "n.d." }}<small class="cell-meta">{{ record.authority_city or "n.d." }} · {{ record.region or "n.d." }}</small></td><td>{{ record.contract_type or "n.d." }}</td><td class="amount-cell">{{ record.tender_amount_formatted }}</td><td><div class="file-actions"><a href="cig/{{ record.cig }}.html#struttura-xml" aria-label="Esplora la struttura XML di {{ record.cig }}">Struttura ↗</a><a href="downloads/xml/{{ record.xml_filename }}" download aria-label="Scarica {{ record.xml_filename }}">Scarica XML ↓</a></div></td></tr>{% endfor %}</tbody>
+    </table>
   </div>
-  <div class="archive-stats"><p><strong>{{ analysis.metadata.record_count }}</strong> documenti XML</p><p><strong>{{ analysis.metadata.valid_xml_count }}</strong> validi rispetto alla DTD</p><p><strong>{{ analysis.metadata.web_source_coverage.linked_sources }}</strong> fonti web collegate</p><a href="qualita-dati.html">Consulta la qualità dei dati →</a></div>
+  <div id="no-results" class="empty-state" hidden><h2>Nessun documento trovato</h2><p>Modifica la ricerca o usa “Azzera” per visualizzare nuovamente tutta la collezione.</p></div>
 </section>
-<section id="documenti" class="container section featured-documents home-section" aria-labelledby="documenti-title">
-  <div class="section-heading"><div><p class="eyebrow">03 / Documenti</p><h2 id="documenti-title">Documenti della collezione</h2></div><a href="archivio.html">Apri l’archivio completo →</a></div>
-  <div class="document-grid">
-    {% for record in records %}
-    <article class="record-card"><p class="record-code"><span class="xml-badge">XML</span> {{ record.cig }}</p><h3><a href="cig/{{ record.cig }}.html">{{ record.title }}</a></h3><p>{{ record.contracting_authority }}</p><dl><div><dt>Tipologia</dt><dd>{{ record.contract_type or "n.d." }}</dd></div><div><dt>Importo</dt><dd>{{ record.tender_amount_formatted }}</dd></div></dl><a class="document-action" href="cig/{{ record.cig }}.html#struttura-xml">Esplora la struttura XML →</a></article>
-    {% endfor %}
-  </div>
-</section>
-{% include "method.html" %}
 {% endblock %}

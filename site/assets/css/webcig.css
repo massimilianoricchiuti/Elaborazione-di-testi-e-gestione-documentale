@@ -144,24 +144,13 @@
   .field-path { display: none; }
 }
 
-/* The home remains navigable through native fragment links without JavaScript. */
+/* Download compatti nell’introduzione; l’archivio segue nella stessa pagina. */
 .hero-content { max-width: 1180px; }
-.home-section { scroll-margin-top: var(--home-anchor-offset, 150px); }
-.section-nav { position: sticky; top: var(--site-header-height, 72px); z-index: 10; background: #fbfcfc; border-bottom: 1px solid var(--line); }
-.section-nav ol { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); list-style: none; padding: 0; margin-block: 0; }
-.section-nav a { display: flex; gap: .45rem; align-items: center; height: 100%; padding: .9rem .5rem; text-decoration: none; font-size: .8rem; font-weight: 650; border-bottom: 3px solid transparent; }
-.section-nav a span { font: .72rem ui-monospace, monospace; color: var(--muted); }
-.section-nav a:hover, .section-nav a[aria-current="location"] { background: #e9f1f3; border-bottom-color: var(--accent); }
-@media (max-width: 800px) {
-  .section-nav ol { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .section-nav a { padding: .6rem .4rem; font-size: .76rem; }
-  .home-section { scroll-margin-top: var(--home-anchor-offset, 195px); }
-}
-@media (max-width: 400px) {
-  .section-nav a { gap: .25rem; padding-inline: .2rem; font-size: .69rem; }
-  .section-nav a span { font-size: .66rem; }
-}
-@media print { .section-nav { display: none; } }
+.project-downloads { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
+.download-link { display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .75rem; border: 1px solid #c8d4d5; border-radius: 7px; color: var(--accent-dark); font-size: .84rem; font-weight: 600; text-decoration: none; }
+.download-link:hover { background: #e9f1f3; border-color: #8badae; }
+.download-link svg { flex-shrink: 0; }
+#archivio .section-heading p { max-width: 76ch; color: var(--muted); }
 
 .attached-documents { display: grid; gap: .8rem; list-style: none; padding: 0; margin: 0; }
 .attached-documents li { padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: var(--radius); background: white; }

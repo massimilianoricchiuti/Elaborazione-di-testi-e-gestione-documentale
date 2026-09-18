@@ -20,7 +20,6 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <ul id="main-nav" class="main-nav">
         <li><a href="{{ base }}index.html">Home</a></li>
-        <li><a href="{{ base }}archivio.html">Archivio</a></li>
         <li><a href="{{ base }}report.html">Report dei dati</a></li>
         <li><a href="{{ base }}qualita-dati.html">Qualità dei dati</a></li>
       </ul>
@@ -34,10 +33,10 @@
   <div class="container footer-grid">
     <div class="footer-identity"><a class="footer-brand" href="{{ base }}index.html">WebCig</a><p>Un archivio XML per leggere, esplorare<br>e comprendere i contratti pubblici.</p></div>
     <div><p class="footer-label">Progetto universitario</p><p><a href="https://www.unibo.it/">Alma Mater Studiorum · Università di Bologna</a></p><p>Corso di Elaborazione Testi e Gestione Documentale</p></div>
-    <nav aria-label="Risorse del progetto"><p class="footer-label">Risorse</p><ul class="footer-links"><li><a href="{{ base }}index.html#progetto-e-metodo">Progetto e metodo</a></li><li><a href="{{ base }}index.html#documentazione">Documentazione</a></li><li><a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale">Repository GitHub ↗</a></li></ul></nav>
+    <nav aria-label="Risorse del progetto"><p class="footer-label">Risorse</p><ul class="footer-links"><li><a href="{{ base }}index.html#archivio">Archivio</a></li>{% if report_available %}<li><a href="{{ base }}downloads/report/report_progetto.pdf" download>Relazione di progetto</a></li>{% endif %}<li><a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale">Repository GitHub ↗</a></li></ul></nav>
   </div>
   <div class="container footer-bottom">
-    <p>© 2026{% if current_year > 2026 %}–{{ current_year }}{% endif %} Massimiliano Ricchiuti · Codice con <a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale/blob/development/LICENSE">licenza MIT</a>.</p>
+    <p>© 2026{% if current_year > 2026 %}–{{ current_year }}{% endif %} Massimiliano Ricchiuti · Codice con <a href="https://github.com/massimilianoricchiuti/Elaborazione-di-testi-e-gestione-documentale/blob/main/LICENSE">licenza MIT</a>.</p>
     <p>Progetto didattico. Fonti e documenti appartengono ai rispettivi titolari. Il campione di {{ record_count }} CIG non rappresenta l’intero sistema dei contratti pubblici.</p>
   </div>
 </footer>

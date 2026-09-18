@@ -66,12 +66,11 @@ def test_descriptive_pdf_is_linked_to_its_cig(built_project):
 
 
 def test_navigation_uses_explicit_exam_labels(built_project):
-    page = (built_project.dist / "index.html").read_text(encoding="utf-8")
-    assert ">Progetto e metodo<" in page
-    assert ">Report dei dati<" in page
-    assert ">Archivio<" in page
-    assert ">PDF<" not in page
-    assert ">Metodologia<" not in page
+    page = html.parse(str(built_project.dist / "index.html"))
+    assert page.xpath('//*[@id="main-nav"]//a/text()') == ["Home", "Report dei dati", "Qualità dei dati"]
+    downloads = page.xpath('//*[@id="introduzione"]//a[@download]')
+    assert [link.text_content().strip() for link in downloads] == ["Relazione di progetto", "DTD", "Catalogo delle fonti web"]
+    assert all(link.xpath('./svg[@aria-hidden="true"]') for link in downloads)
 
 
 def test_no_broken_internal_links(built_project):
@@ -114,5 +113,5 @@ def test_exam_output_constraints(built_project):
     assert len(report.pages) <= 3
     text = "\n".join(page.extract_text() for page in report.pages)
     assert "Prompt documentati" in text
-    for number in range(1, 11):
+    for number in range(1, 12):
         assert f"Prompt {number}." in text

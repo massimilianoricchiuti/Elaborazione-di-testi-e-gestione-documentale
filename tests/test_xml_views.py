@@ -52,18 +52,18 @@ def test_mixed_content_repeats_and_escaping_are_preserved(tmp_path):
 
 def test_home_integration_and_document_view_links(built_project):
     home = html.parse(str(built_project.dist / "index.html"))
-    assert home.xpath('//*[@id="progetto-e-metodo"]//h2[text()="Progetto e metodo"]')
-    assert home.xpath('//*[@id="documentazione"]')
-    sections = home.xpath('//section[contains(concat(" ", normalize-space(@class), " "), " home-section ")]/@id')
-    anchors = home.xpath('//nav[@aria-label="Sezioni della Home"]//a/@href')
-    assert anchors == [f"#{section}" for section in sections]
-    assert len(sections) == 6
+    assert home.xpath('//main/section/@id') == ["introduzione", "archivio"]
+    assert not home.xpath('//nav[@aria-label="Sezioni della Home"]')
+    expected_cigs = sorted(parse_xml(path).getroot().get("cig") for path in built_project.xml_dir.glob("*.xml"))
+    assert sorted(home.xpath('//*[@id="archive-table"]/tbody/tr/@data-cig')) == expected_cigs
+    assert len(home.xpath('//*[@id="archivio"]//form//input | //*[@id="archivio"]//form//select')) == 4
     assert home.xpath('//a[text()="ANAC"]/@href') == ['https://www.anticorruzione.it/-/piattaforma-contratti-pubblici']
     assert not home.xpath('//header//a[contains(@href,"progetto.html")]')
     assert home.xpath('//header//span[text()="WebCig"]')
     assert "ELABORAZIONE DI TESTI E GESTIONE DOCUMENTALE" not in home.getroot().text_content()
-    legacy = html.parse(str(built_project.dist / "progetto.html"))
-    assert legacy.xpath('//meta[@http-equiv="refresh"]/@content') == ['0;url=index.html#progetto-e-metodo']
+    for name, destination in [("archivio.html", "index.html#archivio"), ("progetto.html", "index.html")]:
+        legacy = html.parse(str(built_project.dist / name))
+        assert legacy.xpath('//meta[@http-equiv="refresh"]/@content') == [f"0;url={destination}"]
     for file in built_project.dist.rglob("*.html"):
         page = html.parse(str(file))
         ids = page.xpath('//*[@id]/@id')

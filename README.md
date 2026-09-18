@@ -6,7 +6,7 @@ Sito: [https://massimilianoricchiuti.github.io/Elaborazione-di-testi-e-gestione-
 
 ## Consultazione dell’archivio
 
-La Home offre sei sezioni numerate con un indice persistente e collegamenti diretti: **Introduzione**, **Consultazione**, **Documenti**, **Progetto e metodo**, **Documentazione** e **Compilazione**. La sezione corrente viene evidenziata durante lo scorrimento; i collegamenti funzionano anche senza JavaScript. La navigazione principale porta a **Home**, **Archivio**, **Report dei dati** e **Qualità dei dati**.
+La Home riunisce l’introduzione, tre pulsanti con icona di download (**Relazione di progetto**, **DTD**, **Catalogo delle fonti web**) e l’**Archivio** completo. La navigazione principale porta a **Home**, **Report dei dati** e **Qualità dei dati**, senza sottomenu. Metodo e istruzioni di compilazione sono nella relazione. I vecchi indirizzi `archivio.html` e `progetto.html` reindirizzano rispettivamente all’archivio nella Home e alla Home.
 
 L’archivio espone i nomi dei file XML, ricerca per CIG/file/oggetto/ente, filtri territoriali e per tipologia, ordinamento e download. Ogni documento offre tre viste:
 
