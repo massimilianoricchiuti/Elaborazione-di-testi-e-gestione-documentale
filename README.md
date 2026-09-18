@@ -86,9 +86,19 @@ python scripts/build_all.py
 
 Il controllo dei collegamenti viene eseguito automaticamente sulla sola directory `dist/`. La build fallisce se un riferimento locale non esiste o punta fuori dalla directory pubblicata.
 
+## Lessico dei contratti
+
+Il **Report dei dati** include i 20 lemmi più frequenti negli oggetti di gara. Ogni riga mostra le forme trovate, le occorrenze e il numero di CIG distinti; aprendola si leggono i testi originali con tutte le occorrenze evidenziate e i collegamenti ai documenti. I controlli HTML nativi funzionano anche senza JavaScript.
+
+`src/processing/text_analysis.py` seleziona con XPath soltanto `/contratto/informazioniGara/oggettoGara`: il titolo del lotto e la descrizione generata non duplicano i conteggi. Il modello italiano spaCy `it_core_news_sm` riconosce nomi comuni e aggettivi di almeno tre caratteri; vengono esclusi stopword, entità riconosciute, numeri e punteggiatura. Il modello legge i token in minuscolo, mentre le concordanze mantengono grafia, spazi e punteggiatura della fonte. Il parser sintattico non è necessario.
+
+spaCy e il modello sono installati da `requirements.txt`, con versioni fissate; la compilazione successiva funziona senza connessioni a servizi linguistici. `output_data/text_analysis.json`, copiato nel sito, conserva modello, criterio, forme, conteggi e riscontri. Sono frequenze lessicali, non una classificazione degli appalti per argomento.
+
+Controlli sul corpus: `servizio/servizi`, `impianto/impianti` e `fornitura/forniture` sono ricondotti al rispettivo lemma. Il riconoscimento delle entità esclude `Frascati`, che altrimenti il modello interpreta come nome comune. La correzione lessicale esplicita `arredi → arredo` risolve un errore osservato del modello e si applica a tutti i documenti. Restano possibili errori su sigle e testi amministrativi: gli estratti permettono di verificarli. I test controllano conteggi, CIG distinti e corrispondenza integrale con il testo XML.
+
 ## Relazione di progetto
 
-La relazione unica contiene descrizione del progetto, riproducibilità, limiti e **Prompt documentati**. Gli otto prompt già registrati e la sintesi della revisione dell’interfaccia sono integrati in `report/report_progetto.tex`; non viene pubblicato un documento separato di prompt. Il PDF rimane entro tre pagine.
+La relazione unica contiene descrizione del progetto, riproducibilità, limiti e **Prompt documentati**, inclusa l'aggiunta del lessico. I prompt sono integrati in `report/report_progetto.tex`; non viene pubblicato un documento separato di prompt. Il PDF rimane entro tre pagine.
 
 Dopo una build, i frammenti dinamici sono disponibili in `report/generated/`:
 

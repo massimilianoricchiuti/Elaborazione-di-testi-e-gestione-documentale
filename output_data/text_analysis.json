@@ -1,126 +1,1207 @@
 {
   "documents": 21,
-  "tokens": 405,
+  "documents_with_text": 21,
+  "tokens": 172,
+  "distinct_lemmas": 135,
+  "source_xpath": "/contratto/informazioniGara/oggettoGara",
+  "model": {
+    "name": "it_core_news_sm",
+    "version": "3.8.0",
+    "spacy_version": "3.8.16"
+  },
+  "method": "Nomi comuni e aggettivi di almeno tre caratteri, esclusi stopword, entità riconosciute, numeri e punteggiatura; un oggetto di gara per XML.",
+  "lemma_corrections": {
+    "arredi": "arredo"
+  },
   "top_terms": [
     {
-      "term": "servizi",
-      "count": 31
+      "lemma": "affidamento",
+      "count": 5,
+      "forms": [
+        "affidamento"
+      ],
+      "concordances": [
+        {
+          "cig": "B4B5B163A0",
+          "authority": "COMUNE DI CREMONA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO",
+              "match": true
+            },
+            {
+              "text": " ALLA SOCIETA' A2A ENERGIA DI MILANO DEI SERVIZI DI FORNITURE ENERGIA ELETTRICA 1 SEMESTRE 2025",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B675CE0615",
+          "authority": "CAMERA DI COMMERCIO DI MILANO MONZA BRIANZA LODI",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO",
+              "match": true
+            },
+            {
+              "text": " IN-HOUSE AI SENSI DELL'ART. 7 D.LGS. 36/2023 A INNEXTA S.C.R.L. DEL SERVIZIODI FINANZIA LA TUA IMPRESA ANNO 2025",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6DD95EE23",
+          "authority": "COMUNE DI FRASCATI",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "PN VSF 15/25/SUA - CITTÀ DI FRASCATI (RM) - ",
+              "match": false
+            },
+            {
+              "text": "AFFIDAMENTO",
+              "match": true
+            },
+            {
+              "text": " DEL SERVIZIO DI TRATTAMENTO E RECUPERO DEI RIFIUTI URBANI NON DIFFERENZIATI EER 20.03.01 SECCO RESIDUO, PRODOTTI DAL COMUNE DI FRASCATI.",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6E9DE9F63",
+          "authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO",
+              "match": true
+            },
+            {
+              "text": " INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B82A8FBA72",
+          "authority": "COMUNE DI POGGIO TORRIANA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO",
+              "match": true
+            },
+            {
+              "text": " DEL SERVIZIO DI TRASPORTO SCOLASTICO NEL TERRITORIO DEL COMUNE DI POGGIO TORRIANA (PER GLI ISTITUTI SCOLASTICI PRESENTI SUL TERRITORIO DI TORRIANA), PER ANNO SCOLASTICO 2025/2026",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 5
     },
     {
-      "term": "oggetto",
-      "count": 21
+      "lemma": "comune",
+      "count": 5,
+      "forms": [
+        "comune"
+      ],
+      "concordances": [
+        {
+          "cig": "B387047A20",
+          "authority": "COMUNE DI CARLINO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "SERVIZI DI COORDINAMENTO, PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL ",
+              "match": false
+            },
+            {
+              "text": "COMUNE",
+              "match": true
+            },
+            {
+              "text": " DI CARLINO PER GLI ANNI 2024-2025-2026",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B474D3250C",
+          "authority": "COMUNE DI GROSSETO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "MANUTENZIONE STRAORDINARIA DELLA STRADA BIANCA DI ACCESSO IMPIANTO TRATTAMENTO RIFIUTI. LOC. STRILLAIE ",
+              "match": false
+            },
+            {
+              "text": "COMUNE",
+              "match": true
+            },
+            {
+              "text": " DI GROSSETO",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6DD95EE23",
+          "authority": "COMUNE DI FRASCATI",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "PN VSF 15/25/SUA - CITTÀ DI FRASCATI (RM) - AFFIDAMENTO DEL SERVIZIO DI TRATTAMENTO E RECUPERO DEI RIFIUTI URBANI NON DIFFERENZIATI EER 20.03.01 SECCO RESIDUO, PRODOTTI DAL ",
+              "match": false
+            },
+            {
+              "text": "COMUNE",
+              "match": true
+            },
+            {
+              "text": " DI FRASCATI.",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B8297EE856",
+          "authority": "COMUNE DI COLLEFERRO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "RICHIESTA DI PREVENTIVO PER SERVIZI DI CYBERSECURITY PER IL ",
+              "match": false
+            },
+            {
+              "text": "COMUNE",
+              "match": true
+            },
+            {
+              "text": " DI COLLEFERRO.",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B82A8FBA72",
+          "authority": "COMUNE DI POGGIO TORRIANA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO NEL TERRITORIO DEL ",
+              "match": false
+            },
+            {
+              "text": "COMUNE",
+              "match": true
+            },
+            {
+              "text": " DI POGGIO TORRIANA (PER GLI ISTITUTI SCOLASTICI PRESENTI SUL TERRITORIO DI TORRIANA), PER ANNO SCOLASTICO 2025/2026",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 5
     },
     {
-      "term": "fornitura",
-      "count": 16
+      "lemma": "servizio",
+      "count": 5,
+      "forms": [
+        "servizi",
+        "servizio"
+      ],
+      "concordances": [
+        {
+          "cig": "B387047A20",
+          "authority": "COMUNE DI CARLINO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "SERVIZI",
+              "match": true
+            },
+            {
+              "text": " DI COORDINAMENTO, PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL COMUNE DI CARLINO PER GLI ANNI 2024-2025-2026",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B4B5B163A0",
+          "authority": "COMUNE DI CREMONA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO ALLA SOCIETA' A2A ENERGIA DI MILANO DEI ",
+              "match": false
+            },
+            {
+              "text": "SERVIZI",
+              "match": true
+            },
+            {
+              "text": " DI FORNITURE ENERGIA ELETTRICA 1 SEMESTRE 2025",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6DD95EE23",
+          "authority": "COMUNE DI FRASCATI",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "PN VSF 15/25/SUA - CITTÀ DI FRASCATI (RM) - AFFIDAMENTO DEL ",
+              "match": false
+            },
+            {
+              "text": "SERVIZIO",
+              "match": true
+            },
+            {
+              "text": " DI TRATTAMENTO E RECUPERO DEI RIFIUTI URBANI NON DIFFERENZIATI EER 20.03.01 SECCO RESIDUO, PRODOTTI DAL COMUNE DI FRASCATI.",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B8297EE856",
+          "authority": "COMUNE DI COLLEFERRO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "RICHIESTA DI PREVENTIVO PER ",
+              "match": false
+            },
+            {
+              "text": "SERVIZI",
+              "match": true
+            },
+            {
+              "text": " DI CYBERSECURITY PER IL COMUNE DI COLLEFERRO.",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B82A8FBA72",
+          "authority": "COMUNE DI POGGIO TORRIANA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO DEL ",
+              "match": false
+            },
+            {
+              "text": "SERVIZIO",
+              "match": true
+            },
+            {
+              "text": " DI TRASPORTO SCOLASTICO NEL TERRITORIO DEL COMUNE DI POGGIO TORRIANA (PER GLI ISTITUTI SCOLASTICI PRESENTI SUL TERRITORIO DI TORRIANA), PER ANNO SCOLASTICO 2025/2026",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 5
     },
     {
-      "term": "lavori",
-      "count": 10
+      "lemma": "lavoro",
+      "count": 4,
+      "forms": [
+        "lavori"
+      ],
+      "concordances": [
+        {
+          "cig": "B6E9DE9F63",
+          "authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+          "field": "Oggetto della gara",
+          "count": 2,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO INCARICO DI DIREZIONE DEI ",
+              "match": false
+            },
+            {
+              "text": "LAVORI",
+              "match": true
+            },
+            {
+              "text": " E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI ",
+              "match": false
+            },
+            {
+              "text": "LAVORI",
+              "match": true
+            },
+            {
+              "text": " DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B7B0353822",
+          "authority": "UNIVERSITA' DEGLI STUDI DI TORINO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AZIENDA OSPEDALIERO-UNIVERSITARIA SAN LUIGI GONZAGA,ORBASSANO (TO) - ",
+              "match": false
+            },
+            {
+              "text": "LAVORI",
+              "match": true
+            },
+            {
+              "text": " DI REALIZZAZIONE DI UNA BIOBANCA DIRICERCA E SVILUPPO PER IL DIPARTIMENTO DI SCIENZE CLINICHE EBIOLOGICHE.",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B85DEBAAC9",
+          "authority": "SANITAETSBETRIEB DER AUTONOMEN PROVINZ BOZEN",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AOI 195 ADATTAMENTO E AMPLIAMENTO DELL'IMPIANTO DI EVACUAZIONE NEGLI OSPEDALI DI BRESSANONE E VIPITENO PROGETTAZIONE, DIREZIONE ",
+              "match": false
+            },
+            {
+              "text": "LAVORI",
+              "match": true
+            },
+            {
+              "text": " E COORDINAMENTO DELLA SICUREZZA",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 3
     },
     {
-      "term": "forniture",
-      "count": 8
+      "lemma": "scolastico",
+      "count": 4,
+      "forms": [
+        "scolastici",
+        "scolastico"
+      ],
+      "concordances": [
+        {
+          "cig": "B7A3D70B00",
+          "authority": "COMUNE DI CASTIGLIONE COSENTINO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "EFFICIENTAMENTO ENERGETICO VILLAGGIO ",
+              "match": false
+            },
+            {
+              "text": "SCOLASTICO",
+              "match": true
+            },
+            {
+              "text": " P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B82A8FBA72",
+          "authority": "COMUNE DI POGGIO TORRIANA",
+          "field": "Oggetto della gara",
+          "count": 3,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO DEL SERVIZIO DI TRASPORTO ",
+              "match": false
+            },
+            {
+              "text": "SCOLASTICO",
+              "match": true
+            },
+            {
+              "text": " NEL TERRITORIO DEL COMUNE DI POGGIO TORRIANA (PER GLI ISTITUTI ",
+              "match": false
+            },
+            {
+              "text": "SCOLASTICI",
+              "match": true
+            },
+            {
+              "text": " PRESENTI SUL TERRITORIO DI TORRIANA), PER ANNO ",
+              "match": false
+            },
+            {
+              "text": "SCOLASTICO",
+              "match": true
+            },
+            {
+              "text": " 2025/2026",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "2025",
-      "count": 6
+      "lemma": "fornitura",
+      "count": 3,
+      "forms": [
+        "fornitura",
+        "forniture"
+      ],
+      "concordances": [
+        {
+          "cig": "B4B5B163A0",
+          "authority": "COMUNE DI CREMONA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO ALLA SOCIETA' A2A ENERGIA DI MILANO DEI SERVIZI DI ",
+              "match": false
+            },
+            {
+              "text": "FORNITURE",
+              "match": true
+            },
+            {
+              "text": " ENERGIA ELETTRICA 1 SEMESTRE 2025",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B74941928B",
+          "authority": "FONDAZIONE POLICLINICO TOR VERGATA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "FORNITURA",
+              "match": true
+            },
+            {
+              "text": " DI ARREDI SANITARI ED ARREDI NON SANITARI PER LE NECESSITÀ DELLA FONDAZIONE PTV",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B860168925",
+          "authority": "COMUNE DI VERONA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "FORNITURA",
+              "match": true
+            },
+            {
+              "text": " DI PNEUMATICI E PRESTAZIONI TECNICHE CORRELATE",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 3
     },
     {
-      "term": "beni",
-      "count": 6
+      "lemma": "impianto",
+      "count": 3,
+      "forms": [
+        "impianti",
+        "impianto"
+      ],
+      "concordances": [
+        {
+          "cig": "B474D3250C",
+          "authority": "COMUNE DI GROSSETO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "MANUTENZIONE STRAORDINARIA DELLA STRADA BIANCA DI ACCESSO ",
+              "match": false
+            },
+            {
+              "text": "IMPIANTO",
+              "match": true
+            },
+            {
+              "text": " TRATTAMENTO RIFIUTI. LOC. STRILLAIE COMUNE DI GROSSETO",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6E9DE9F63",
+          "authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI ",
+              "match": false
+            },
+            {
+              "text": "IMPIANTI",
+              "match": true
+            },
+            {
+              "text": " ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B85DEBAAC9",
+          "authority": "SANITAETSBETRIEB DER AUTONOMEN PROVINZ BOZEN",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AOI 195 ADATTAMENTO E AMPLIAMENTO DELL'",
+              "match": false
+            },
+            {
+              "text": "IMPIANTO",
+              "match": true
+            },
+            {
+              "text": " DI EVACUAZIONE NEGLI OSPEDALI DI BRESSANONE E VIPITENO PROGETTAZIONE, DIREZIONE LAVORI E COORDINAMENTO DELLA SICUREZZA",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 3
     },
     {
-      "term": "roma",
-      "count": 6
+      "lemma": "acquisizione",
+      "count": 2,
+      "forms": [
+        "acquisizione"
+      ],
+      "concordances": [
+        {
+          "cig": "B6646262E7",
+          "authority": "ENAV S.P.A.",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "ACQUISIZIONE",
+              "match": true
+            },
+            {
+              "text": " DELLE ATTIVITÀ INGEGNERISTICHE E TECNOLOGICHE PER L'IMPRESCINDIBILE ADEGUAMENTO, IN OTTICA DI SECURITY, DEI VOICE COMMUNICATION SYSTEMS DI EMERGENZA, PRESENTI NEGLI AEROPORTI DI MILANO LINATE, BOLOGNA, GENOVA, TORINO E FIUMICINO, CHE SONO STATI FORNITI E MESSI IN ESERCIZIO, PER ENAV, DA PARTE DELLA SOCIETÀ FREQUENTIS",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6EDEAC0D4",
+          "authority": "SEGRETARIATO GENERALE DELLA DIFESA -DIREZIONE NAZIONALE ARMAMENTI-DIREZIONE ARMAMENTI AERONAUTICI",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "ACQUISIZIONE",
+              "match": true
+            },
+            {
+              "text": " PARTI DI RICAMBIO RELATIVE AL PINTLE MACHINE GUN (PMG) PER M-134D MARINIZED MINIGUN",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "affidamento",
-      "count": 4
+      "lemma": "adeguamento",
+      "count": 2,
+      "forms": [
+        "adeguamento"
+      ],
+      "concordances": [
+        {
+          "cig": "B6646262E7",
+          "authority": "ENAV S.P.A.",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "ACQUISIZIONE DELLE ATTIVITÀ INGEGNERISTICHE E TECNOLOGICHE PER L'IMPRESCINDIBILE ",
+              "match": false
+            },
+            {
+              "text": "ADEGUAMENTO",
+              "match": true
+            },
+            {
+              "text": ", IN OTTICA DI SECURITY, DEI VOICE COMMUNICATION SYSTEMS DI EMERGENZA, PRESENTI NEGLI AEROPORTI DI MILANO LINATE, BOLOGNA, GENOVA, TORINO E FIUMICINO, CHE SONO STATI FORNITI E MESSI IN ESERCIZIO, PER ENAV, DA PARTE DELLA SOCIETÀ FREQUENTIS",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6E9DE9F63",
+          "authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ",
+              "match": false
+            },
+            {
+              "text": "ADEGUAMENTO",
+              "match": true
+            },
+            {
+              "text": " DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "non",
-      "count": 4
+      "lemma": "arredo",
+      "count": 2,
+      "forms": [
+        "arredi"
+      ],
+      "concordances": [
+        {
+          "cig": "B74941928B",
+          "authority": "FONDAZIONE POLICLINICO TOR VERGATA",
+          "field": "Oggetto della gara",
+          "count": 2,
+          "parts": [
+            {
+              "text": "FORNITURA DI ",
+              "match": false
+            },
+            {
+              "text": "ARREDI",
+              "match": true
+            },
+            {
+              "text": " SANITARI ED ",
+              "match": false
+            },
+            {
+              "text": "ARREDI",
+              "match": true
+            },
+            {
+              "text": " NON SANITARI PER LE NECESSITÀ DELLA FONDAZIONE PTV",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 1
     },
     {
-      "term": "impianti",
-      "count": 4
+      "lemma": "coordinamento",
+      "count": 2,
+      "forms": [
+        "coordinamento"
+      ],
+      "concordances": [
+        {
+          "cig": "B387047A20",
+          "authority": "COMUNE DI CARLINO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "SERVIZI DI ",
+              "match": false
+            },
+            {
+              "text": "COORDINAMENTO",
+              "match": true
+            },
+            {
+              "text": ", PROMOZIONE, SAFETY E SQUADRA ANTICINCENDIO IN OCCASIONE DELLA MANIFESTAZIONE FIERA DEI SAPORI ORGANIZZATA DAL COMUNE DI CARLINO PER GLI ANNI 2024-2025-2026",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B85DEBAAC9",
+          "authority": "SANITAETSBETRIEB DER AUTONOMEN PROVINZ BOZEN",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AOI 195 ADATTAMENTO E AMPLIAMENTO DELL'IMPIANTO DI EVACUAZIONE NEGLI OSPEDALI DI BRESSANONE E VIPITENO PROGETTAZIONE, DIREZIONE LAVORI E ",
+              "match": false
+            },
+            {
+              "text": "COORDINAMENTO",
+              "match": true
+            },
+            {
+              "text": " DELLA SICUREZZA",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "2024",
-      "count": 3
+      "lemma": "direzione",
+      "count": 2,
+      "forms": [
+        "direzione"
+      ],
+      "concordances": [
+        {
+          "cig": "B6E9DE9F63",
+          "authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO INCARICO DI ",
+              "match": false
+            },
+            {
+              "text": "DIREZIONE",
+              "match": true
+            },
+            {
+              "text": " DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B85DEBAAC9",
+          "authority": "SANITAETSBETRIEB DER AUTONOMEN PROVINZ BOZEN",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AOI 195 ADATTAMENTO E AMPLIAMENTO DELL'IMPIANTO DI EVACUAZIONE NEGLI OSPEDALI DI BRESSANONE E VIPITENO PROGETTAZIONE, ",
+              "match": false
+            },
+            {
+              "text": "DIREZIONE",
+              "match": true
+            },
+            {
+              "text": " LAVORI E COORDINAMENTO DELLA SICUREZZA",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "energia",
-      "count": 3
+      "lemma": "efficientamento",
+      "count": 2,
+      "forms": [
+        "efficientamento"
+      ],
+      "concordances": [
+        {
+          "cig": "B6A106A32A",
+          "authority": "COMUNE DI S FRATELLO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "EX PALAZZO COMUNALE_INTERVENTO DI ",
+              "match": false
+            },
+            {
+              "text": "EFFICIENTAMENTO",
+              "match": true
+            },
+            {
+              "text": " ENERGETICO ATTRAVERSO FV CON ACCUMULO",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B7A3D70B00",
+          "authority": "COMUNE DI CASTIGLIONE COSENTINO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "EFFICIENTAMENTO",
+              "match": true
+            },
+            {
+              "text": " ENERGETICO VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "milano",
-      "count": 3
+      "lemma": "elettrico",
+      "count": 2,
+      "forms": [
+        "elettrica",
+        "elettrici"
+      ],
+      "concordances": [
+        {
+          "cig": "B4B5B163A0",
+          "authority": "COMUNE DI CREMONA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO ALLA SOCIETA' A2A ENERGIA DI MILANO DEI SERVIZI DI FORNITURE ENERGIA ",
+              "match": false
+            },
+            {
+              "text": "ELETTRICA",
+              "match": true
+            },
+            {
+              "text": " 1 SEMESTRE 2025",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6E9DE9F63",
+          "authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA SICUREZZA IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ",
+              "match": false
+            },
+            {
+              "text": "ELETTRICI",
+              "match": true
+            },
+            {
+              "text": " DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "categoria",
-      "count": 3
+      "lemma": "energetico",
+      "count": 2,
+      "forms": [
+        "energetico"
+      ],
+      "concordances": [
+        {
+          "cig": "B6A106A32A",
+          "authority": "COMUNE DI S FRATELLO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "EX PALAZZO COMUNALE_INTERVENTO DI EFFICIENTAMENTO ",
+              "match": false
+            },
+            {
+              "text": "ENERGETICO",
+              "match": true
+            },
+            {
+              "text": " ATTRAVERSO FV CON ACCUMULO",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B7A3D70B00",
+          "authority": "COMUNE DI CASTIGLIONE COSENTINO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "EFFICIENTAMENTO ",
+              "match": false
+            },
+            {
+              "text": "ENERGETICO",
+              "match": true
+            },
+            {
+              "text": " VILLAGGIO SCOLASTICO P. DE STEFANO VIA LANZA - CASTIGLIONE COSENTINO (CS)",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "definita",
-      "count": 3
+      "lemma": "energia",
+      "count": 2,
+      "forms": [
+        "energia"
+      ],
+      "concordances": [
+        {
+          "cig": "B4B5B163A0",
+          "authority": "COMUNE DI CREMONA",
+          "field": "Oggetto della gara",
+          "count": 2,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO ALLA SOCIETA' A2A ",
+              "match": false
+            },
+            {
+              "text": "ENERGIA",
+              "match": true
+            },
+            {
+              "text": " DI MILANO DEI SERVIZI DI FORNITURE ",
+              "match": false
+            },
+            {
+              "text": "ENERGIA",
+              "match": true
+            },
+            {
+              "text": " ELETTRICA 1 SEMESTRE 2025",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 1
     },
     {
-      "term": "progettazione",
-      "count": 3
+      "lemma": "presente",
+      "count": 2,
+      "forms": [
+        "presenti"
+      ],
+      "concordances": [
+        {
+          "cig": "B6646262E7",
+          "authority": "ENAV S.P.A.",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "ACQUISIZIONE DELLE ATTIVITÀ INGEGNERISTICHE E TECNOLOGICHE PER L'IMPRESCINDIBILE ADEGUAMENTO, IN OTTICA DI SECURITY, DEI VOICE COMMUNICATION SYSTEMS DI EMERGENZA, ",
+              "match": false
+            },
+            {
+              "text": "PRESENTI",
+              "match": true
+            },
+            {
+              "text": " NEGLI AEROPORTI DI MILANO LINATE, BOLOGNA, GENOVA, TORINO E FIUMICINO, CHE SONO STATI FORNITI E MESSI IN ESERCIZIO, PER ENAV, DA PARTE DELLA SOCIETÀ FREQUENTIS",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B82A8FBA72",
+          "authority": "COMUNE DI POGGIO TORRIANA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO DEL SERVIZIO DI TRASPORTO SCOLASTICO NEL TERRITORIO DEL COMUNE DI POGGIO TORRIANA (PER GLI ISTITUTI SCOLASTICI ",
+              "match": false
+            },
+            {
+              "text": "PRESENTI",
+              "match": true
+            },
+            {
+              "text": " SUL TERRITORIO DI TORRIANA), PER ANNO SCOLASTICO 2025/2026",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "torino",
-      "count": 3
+      "lemma": "rifiuto",
+      "count": 2,
+      "forms": [
+        "rifiuti"
+      ],
+      "concordances": [
+        {
+          "cig": "B474D3250C",
+          "authority": "COMUNE DI GROSSETO",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "MANUTENZIONE STRAORDINARIA DELLA STRADA BIANCA DI ACCESSO IMPIANTO TRATTAMENTO ",
+              "match": false
+            },
+            {
+              "text": "RIFIUTI",
+              "match": true
+            },
+            {
+              "text": ". LOC. STRILLAIE COMUNE DI GROSSETO",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B6DD95EE23",
+          "authority": "COMUNE DI FRASCATI",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "PN VSF 15/25/SUA - CITTÀ DI FRASCATI (RM) - AFFIDAMENTO DEL SERVIZIO DI TRATTAMENTO E RECUPERO DEI ",
+              "match": false
+            },
+            {
+              "text": "RIFIUTI",
+              "match": true
+            },
+            {
+              "text": " URBANI NON DIFFERENZIATI EER 20.03.01 SECCO RESIDUO, PRODOTTI DAL COMUNE DI FRASCATI.",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     },
     {
-      "term": "dell",
-      "count": 3
+      "lemma": "sanitario",
+      "count": 2,
+      "forms": [
+        "sanitari"
+      ],
+      "concordances": [
+        {
+          "cig": "B74941928B",
+          "authority": "FONDAZIONE POLICLINICO TOR VERGATA",
+          "field": "Oggetto della gara",
+          "count": 2,
+          "parts": [
+            {
+              "text": "FORNITURA DI ARREDI ",
+              "match": false
+            },
+            {
+              "text": "SANITARI",
+              "match": true
+            },
+            {
+              "text": " ED ARREDI NON ",
+              "match": false
+            },
+            {
+              "text": "SANITARI",
+              "match": true
+            },
+            {
+              "text": " PER LE NECESSITÀ DELLA FONDAZIONE PTV",
+              "match": false
+            }
+          ]
+        }
+      ],
+      "document_count": 1
     },
     {
-      "term": "coordinamento",
-      "count": 2
-    },
-    {
-      "term": "dal",
-      "count": 2
-    },
-    {
-      "term": "comune",
-      "count": 2
-    },
-    {
-      "term": "2026",
-      "count": 2
-    },
-    {
-      "term": "manutenzione",
-      "count": 2
-    },
-    {
-      "term": "strada",
-      "count": 2
-    },
-    {
-      "term": "impianto",
-      "count": 2
-    },
-    {
-      "term": "grosseto",
-      "count": 2
-    },
-    {
-      "term": "elettrica",
-      "count": 2
-    },
-    {
-      "term": "pratica",
-      "count": 2
-    },
-    {
-      "term": "ingegneria",
-      "count": 2
+      "lemma": "sicurezza",
+      "count": 2,
+      "forms": [
+        "sicurezza"
+      ],
+      "concordances": [
+        {
+          "cig": "B6E9DE9F63",
+          "authority": "CENTRO DI AVIAZIONE GUARDIA DI FINANZA",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AFFIDAMENTO INCARICO DI DIREZIONE DEI LAVORI E COORDINATORE DELLA ",
+              "match": false
+            },
+            {
+              "text": "SICUREZZA",
+              "match": true
+            },
+            {
+              "text": " IN FASE DI ESECUZIONE DEI LAVORI DI ADEGUAMENTO DEGLI IMPIANTI ELETTRICI DI ALCUNI LOCALI DELL'HANGAR L OSPITANTE IL CENTRO DI SIMULAZIONE OPERAZIONI AERONAVALI DELLA GUARDIA DI FINANZA DI PRATICA DI MARE",
+              "match": false
+            }
+          ]
+        },
+        {
+          "cig": "B85DEBAAC9",
+          "authority": "SANITAETSBETRIEB DER AUTONOMEN PROVINZ BOZEN",
+          "field": "Oggetto della gara",
+          "count": 1,
+          "parts": [
+            {
+              "text": "AOI 195 ADATTAMENTO E AMPLIAMENTO DELL'IMPIANTO DI EVACUAZIONE NEGLI OSPEDALI DI BRESSANONE E VIPITENO PROGETTAZIONE, DIREZIONE LAVORI E COORDINAMENTO DELLA ",
+              "match": false
+            },
+            {
+              "text": "SICUREZZA",
+              "match": true
+            }
+          ]
+        }
+      ],
+      "document_count": 2
     }
   ]
 }

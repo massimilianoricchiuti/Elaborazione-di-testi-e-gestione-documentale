@@ -114,5 +114,5 @@ def test_exam_output_constraints(built_project):
     assert len(report.pages) <= 3
     text = "\n".join(page.extract_text() for page in report.pages)
     assert "Prompt documentati" in text
-    for number in range(1, 10):
+    for number in range(1, 11):
         assert f"Prompt {number}." in text

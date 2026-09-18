@@ -167,3 +167,36 @@
 .attached-documents li { padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: var(--radius); background: white; }
 .attached-documents a { font-weight: 700; }
 .attached-documents small { display: block; margin-top: .35rem; color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
+
+/* Il lessico usa dettagli HTML nativi: nessuno script per aprire gli estratti. */
+#lessico { scroll-margin-top: 90px; }
+.lexicon-header, .lexicon-entry > summary { display: grid; grid-template-columns: 1.2fr 2fr .7fr .7fr; gap: 1rem; align-items: center; padding: 1rem 1.2rem; }
+.lexicon-header { background: var(--soft); border: 1px solid var(--line); border-radius: 12px 12px 0 0; font-size: .82rem; font-weight: 700; }
+.lexicon-list { list-style: none; padding: 0; margin: 0; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; background: white; }
+.lexicon-list > li + li { border-top: 1px solid var(--line); }
+.lexicon-entry > summary { cursor: pointer; list-style: none; }
+.lexicon-entry > summary::-webkit-details-marker { display: none; }
+.lexicon-entry > summary:hover, .lexicon-entry[open] > summary { background: var(--soft); }
+.lexicon-entry > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.lexicon-lemma { font-weight: 750; color: var(--accent-dark); overflow-wrap: anywhere; }
+.lexicon-arrow::before { content: "▸"; display: inline-block; width: 1.2em; }
+.lexicon-entry[open] .lexicon-arrow::before { content: "▾"; }
+.lexicon-forms { color: var(--muted); font-size: .88rem; overflow-wrap: anywhere; }
+.lexicon-forms .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.lexicon-stat small { display: block; color: var(--muted); font-size: .7rem; }
+.concordances { padding: 0 1.2rem 1rem; }
+.concordances h3 { font-size: 1rem; padding-top: .8rem; margin-top: 0; }
+.concordances ul { list-style: none; padding: 0; }
+.concordances li + li { border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 1rem; }
+.concordance-heading { margin: 0; font-size: .85rem; overflow-wrap: anywhere; }
+.concordance-heading a { font-weight: 750; }
+.concordance-source { color: var(--muted); font-size: .75rem; margin: .25rem 0; }
+.concordances blockquote { border-left: 3px solid var(--line); padding-left: .9rem; margin: .65rem 0; font-size: .9rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.concordances mark { background: #fff0b8; color: var(--ink); padding: .05rem .12rem; border-radius: 3px; }
+@media (max-width: 640px) {
+  .lexicon-header { display: none; }
+  .lexicon-list { border-top: 1px solid var(--line); border-radius: 12px; }
+  .lexicon-entry > summary { grid-template-columns: 1fr 1fr; gap: .6rem; padding: .9rem; }
+  .lexicon-stat { display: flex; gap: .35rem; align-items: baseline; }
+  .concordances { padding-inline: .9rem; }
+}

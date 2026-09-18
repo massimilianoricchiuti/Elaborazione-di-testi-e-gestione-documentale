@@ -1,0 +1,39 @@
+<section id="lessico" class="container section report-section" aria-labelledby="lessico-title">
+  <div class="section-heading">
+    <div><p class="eyebrow">Testi</p><h2 id="lessico-title">Il lessico dei contratti</h2></div>
+    <a href="data/text_analysis.json" download>Scarica i dati del lessico →</a>
+  </div>
+  <p>Le parole degli oggetti di gara, ricondotte alla forma base: il <strong>lemma</strong> «servizio» riunisce, per esempio, «servizio» e «servizi». Apri una riga per leggere gli estratti originali con le parole evidenziate.</p>
+  <p class="note"><strong>{{ text_analysis.documents_with_text }} oggetti di gara analizzati.</strong> Sono mostrati i {{ text_analysis.top_terms|length }} lemmi più frequenti tra nomi comuni e aggettivi. Le occorrenze contano le ripetizioni; i contratti contano i CIG distinti. Il raggruppamento è automatico e può contenere errori: gli estratti consentono di verificarlo.</p>
+  {% if text_analysis.top_terms %}
+  <div class="lexicon-header" aria-hidden="true"><span>Lemma</span><span>Forme nel testo</span><span>Occorrenze</span><span>Contratti</span></div>
+  <ol class="lexicon-list">
+    {% for term in text_analysis.top_terms %}
+    <li>
+      <details class="lexicon-entry">
+        <summary>
+          <span class="lexicon-lemma"><span class="lexicon-arrow" aria-hidden="true"></span>{{ term.lemma }}</span>
+          <span class="lexicon-forms"><span class="visually-hidden">Forme nel testo: </span>{{ term.forms|join(', ') }}</span>
+          <span class="lexicon-stat"><strong>{{ term.count }}</strong><small>occorrenze</small></span>
+          <span class="lexicon-stat"><strong>{{ term.document_count }}</strong><small>contratti</small></span>
+        </summary>
+        <div class="concordances">
+          <h3>Estratti per «{{ term.lemma }}»</h3>
+          <ul>
+            {% for item in term.concordances %}
+            <li>
+              <p class="concordance-heading"><a href="cig/{{ item.cig }}.html#scheda">{{ item.cig }}</a> · {{ item.authority }}</p>
+              <p class="concordance-source">{{ item.field }} · {{ item.count }} {{ 'occorrenza' if item.count == 1 else 'occorrenze' }}</p>
+              <blockquote>{% for part in item.parts %}{% if part.match %}<mark>{{ part.text }}</mark>{% else %}{{ part.text }}{% endif %}{% endfor %}</blockquote>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </details>
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p>Non sono disponibili termini da mostrare per gli oggetti di gara presenti.</p>
+  {% endif %}
+</section>

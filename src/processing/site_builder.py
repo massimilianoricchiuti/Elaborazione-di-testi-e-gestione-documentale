@@ -194,7 +194,7 @@ def build_site(paths: ProjectPaths, analysis: dict, pdf_analysis: list[dict], te
     pages = {
         "index.html": ("index.html", {"analysis": analysis, "records": records[:3], "pdf_analysis": pdf_analysis, "text_analysis": text_analysis, "base": "", **common}),
         "archivio.html": ("archive.html", {"records": records, "analysis": analysis, "base": "", **common}),
-        "report.html": ("report.html", {"analysis": analysis, "base": "", **common}),
+        "report.html": ("report.html", {"analysis": analysis, "text_analysis": text_analysis, "base": "", **common}),
         "progetto.html": ("project.html", {"analysis": analysis, "pdf_analysis": pdf_analysis, "text_analysis": text_analysis, "base": "", **common}),
         "qualita-dati.html": ("quality.html", {"analysis": analysis, "base": "", **common}),
     }
