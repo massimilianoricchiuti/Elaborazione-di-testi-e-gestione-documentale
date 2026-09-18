@@ -19,37 +19,37 @@
       },
       {
         "format": "html",
-        "available": 20,
-        "linked_files": 21,
-        "missing": 1,
-        "percent": 95.24
+        "available": 21,
+        "linked_files": 47,
+        "missing": 0,
+        "percent": 100.0
       },
       {
         "format": "pdf",
         "available": 21,
-        "linked_files": 28,
+        "linked_files": 46,
         "missing": 0,
         "percent": 100.0
       }
     ],
     "web_source_coverage": {
       "available": 21,
-      "linked_sources": 33,
+      "linked_sources": 55,
       "missing": 0,
       "percent": 100.0
     },
     "web_source_relations": [
       {
         "relation": "accordo-quadro",
-        "count": 2
+        "count": 6
       },
       {
         "relation": "cig-esatto",
-        "count": 12
+        "count": 17
       },
       {
         "relation": "cig-padre-lotto",
-        "count": 3
+        "count": 4
       },
       {
         "relation": "contesto-istituzionale",
@@ -57,19 +57,19 @@
       },
       {
         "relation": "contesto-tecnico",
-        "count": 1
+        "count": 3
       },
       {
         "relation": "cup-oggetto",
-        "count": 2
+        "count": 7
       },
       {
         "relation": "fase-antecedente",
-        "count": 2
+        "count": 3
       },
       {
         "relation": "oggetto-ente",
-        "count": 5
+        "count": 9
       },
       {
         "relation": "procedura-oggetto",
@@ -82,7 +82,15 @@
     ],
     "web_source_types": [
       {
+        "type": "allegato di gara",
+        "count": 1
+      },
+      {
         "type": "atto amministrativo",
+        "count": 1
+      },
+      {
+        "type": "avviso di avvio procedura",
         "count": 1
       },
       {
@@ -102,6 +110,10 @@
         "count": 1
       },
       {
+        "type": "decreto di concessione contributo",
+        "count": 2
+      },
+      {
         "type": "determina",
         "count": 1
       },
@@ -118,19 +130,39 @@
         "count": 1
       },
       {
+        "type": "determina di autorizzazione subappalto",
+        "count": 1
+      },
+      {
+        "type": "determina di contratto applicativo",
+        "count": 2
+      },
+      {
+        "type": "determina di indizione",
+        "count": 1
+      },
+      {
         "type": "determinazione dirigenziale",
         "count": 1
       },
       {
         "type": "documentazione tecnica del fornitore",
-        "count": 1
+        "count": 2
       },
       {
         "type": "documento tecnico",
-        "count": 1
+        "count": 2
       },
       {
         "type": "fascicolo di gara ed esito",
+        "count": 1
+      },
+      {
+        "type": "integrazione programma investimenti",
+        "count": 1
+      },
+      {
+        "type": "pagina di esiti",
         "count": 1
       },
       {
@@ -143,7 +175,7 @@
       },
       {
         "type": "pagina di procedura",
-        "count": 1
+        "count": 2
       },
       {
         "type": "pagina di progetto",
@@ -159,7 +191,7 @@
       },
       {
         "type": "programma degli investimenti",
-        "count": 1
+        "count": 3
       },
       {
         "type": "programma triennale",
@@ -167,6 +199,14 @@
       },
       {
         "type": "provvedimento di affidamento",
+        "count": 1
+      },
+      {
+        "type": "registro decreti",
+        "count": 1
+      },
+      {
+        "type": "registro dei contratti",
         "count": 1
       },
       {
@@ -178,11 +218,23 @@
         "count": 1
       },
       {
+        "type": "rimodulazione programma investimenti",
+        "count": 1
+      },
+      {
         "type": "scheda CIG",
         "count": 3
       },
       {
-        "type": "scheda di affidamento e documentazione dell'accordo quadro",
+        "type": "scheda CIG locale",
+        "count": 1
+      },
+      {
+        "type": "scheda di affidamento e documentazione dell’accordo quadro",
+        "count": 1
+      },
+      {
+        "type": "scheda di contratto applicativo",
         "count": 1
       },
       {
@@ -196,16 +248,24 @@
       {
         "type": "scheda di stipula del contratto applicativo",
         "count": 1
+      },
+      {
+        "type": "scheda evento",
+        "count": 1
+      },
+      {
+        "type": "variazione di bilancio",
+        "count": 1
       }
     ],
     "web_source_formats": [
       {
         "format": "application/pdf",
-        "count": 10
+        "count": 26
       },
       {
         "format": "text/html",
-        "count": 23
+        "count": 29
       }
     ]
   },
@@ -2318,6 +2378,12 @@
           "description": "Riga del CSV esportato dal cruscotto ANAC"
         },
         {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B387047A20_TurismoFVG_fiera_sapori_2026.html",
+          "description": "Documento HTML collegato al CIG: B387047A20 TurismoFVG fiera sapori 2026"
+        },
+        {
           "kind": "json",
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B387047A20.json",
@@ -2326,8 +2392,26 @@
         {
           "kind": "pdf",
           "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B387047A20_Carlino_variazione_bilancio_fiera_sapori_2025.pdf",
+          "description": "Documento PDF collegato al CIG: B387047A20 Carlino variazione bilancio fiera sapori 2025"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
           "path": "fonti_originali/pdf/B387047A20_determina.pdf",
           "description": "Documento PDF collegato al CIG: B387047A20 determina"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B387047A20_PromoTurismoFVG_contributo_fiera_sapori_2024.pdf",
+          "description": "Documento PDF collegato al CIG: B387047A20 PromoTurismoFVG contributo fiera sapori 2024"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B387047A20_PromoTurismoFVG_contributo_fiera_sapori_2025.pdf",
+          "description": "Documento PDF collegato al CIG: B387047A20 PromoTurismoFVG contributo fiera sapori 2025"
         }
       ],
       "web_sources": [
@@ -2340,8 +2424,56 @@
           "relation": "cig-esatto",
           "phase": "affidamento e impegno di spesa",
           "evidence": "La determina riporta il CIG B387047A20 e affida ad Arteventi Società Cooperativa i servizi per la Fiera dei Sapori del Comune di Carlino negli anni 2024, 2025 e 2026.",
-          "summary": "Il documento descrive coordinamento, promozione, safety e squadra antincendio, con motivazione dell'affidamento e ripartizione degli impegni di spesa.",
+          "summary": "Il documento descrive coordinamento, promozione, safety e squadra antincendio, con motivazione dell’affidamento e ripartizione degli impegni di spesa.",
           "verified_on": "2026-09-15"
+        },
+        {
+          "title": "Decreto PromoTurismoFVG — contributo per Fiera dei Sapori 2024",
+          "publisher": "PromoTurismoFVG",
+          "document_type": "decreto di concessione contributo",
+          "mime_type": "application/pdf",
+          "url": "https://www.promoturismo.fvg.it/ProxyVFS.axd?snode=415047&stream=",
+          "relation": "oggetto-ente",
+          "phase": "programmazione e finanziamento dell’evento",
+          "evidence": "Il decreto riguarda il Comune di Carlino e la Fiera dei Sapori 2024, evento per cui il CIG finanzia coordinamento, promozione e sicurezza.",
+          "summary": "Documenta la fase di finanziamento istituzionale dell’evento e il contributo concesso.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Variazione di bilancio 2025 — capitoli Fiera dei Sapori",
+          "publisher": "Comune di Carlino",
+          "document_type": "variazione di bilancio",
+          "mime_type": "application/pdf",
+          "url": "https://comune.carlino.ud.it/media/files/030018/attachment/20250904_DAD203_var_9.pdf",
+          "relation": "oggetto-ente",
+          "phase": "programmazione finanziaria 2025",
+          "evidence": "La variazione di bilancio contiene capitoli espressamente dedicati alla Fiera dei Sapori 2025.",
+          "summary": "Aggiunge la dimensione contabile della manifestazione pluriennale coperta dall’affidamento.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Decreto PromoTurismoFVG — contributo per Fiera dei Sapori 2025",
+          "publisher": "PromoTurismoFVG",
+          "document_type": "decreto di concessione contributo",
+          "mime_type": "application/pdf",
+          "url": "https://www.promoturismo.fvg.it/ProxyVFS.axd?snode=472511&stream=",
+          "relation": "oggetto-ente",
+          "phase": "programmazione e finanziamento dell’evento",
+          "evidence": "Il decreto concede al Comune di Carlino 30.000 euro per la Fiera dei Sapori 2025.",
+          "summary": "Documenta la continuità 2025 della manifestazione inclusa nell’affidamento triennale 2024–2026.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Fiera dei Sapori 2026 — scheda evento ufficiale",
+          "publisher": "PromoTurismoFVG / TurismoFVG",
+          "document_type": "scheda evento",
+          "mime_type": "text/html",
+          "url": "https://www.turismofvg.it/eventi/fiera-dei-sapori-2026?LangSetCMS=it",
+          "relation": "oggetto-ente",
+          "phase": "realizzazione dell’evento 2026",
+          "evidence": "La scheda ufficiale indica Comune di Carlino come organizzatore e le date della Fiera dei Sapori 2026.",
+          "summary": "Documenta la terza annualità dell’evento coperto dall’affidamento 2024–2026.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -2404,6 +2536,12 @@
           "mime_type": "text/html",
           "path": "fonti_originali/html/B474D3250C.html",
           "description": "Documento HTML collegato al CIG: B474D3250C"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B474D3250C_comune_grosseto_strillaie.html",
+          "description": "Documento HTML collegato al CIG: B474D3250C comune grosseto strillaie"
         },
         {
           "kind": "html",
@@ -2515,9 +2653,21 @@
           "url": "https://pubblicazioneatti.comune.cremona.it/jattipubblicazioni/AttiPubblicazioni?idDocumentale=393091&servizio=Allegato",
           "relation": "cig-esatto",
           "phase": "affidamento e approvazione della spesa",
-          "evidence": "L'atto 2/2025 riguarda il CIG B4B5B163A0 e la fornitura A2A Energia per i punti di prelievo comunali non previsti nelle convenzioni Consip, dal 1° gennaio al 30 giugno 2025. Il titolo, il numero e la data della pubblicazione sono stati confrontati con il PDF locale; durante la verifica il download remoto ha restituito HTTP 502.",
-          "summary": "La determina spiega il ricorso alla fornitura esterna alle convenzioni e dettaglia la spesa prevista per il primo semestre 2025, con i relativi capitoli di bilancio.",
+          "evidence": "L’atto 2/2025 riguarda il CIG B4B5B163A0 e la fornitura A2A Energia per i punti di prelievo comunali non previsti nelle convenzioni Consip, dal 1° gennaio al 30 giugno 2025.",
+          "summary": "La determina spiega il ricorso alla fornitura esterna alle convenzioni e dettaglia la spesa prevista per il primo semestre 2025.",
           "verified_on": "2026-09-15"
+        },
+        {
+          "title": "Registro contratti 2025 del Comune di Cremona — A2A Energia",
+          "publisher": "Comune di Cremona",
+          "document_type": "registro dei contratti",
+          "mime_type": "text/html",
+          "url": "https://pubblicazioneatti.comune.cremona.it/jattipubblicazioni/jattipubblicazioni/comune_cremona/trasparenza/2025_Elenco_Contratti_Pubblici.html",
+          "relation": "cig-esatto",
+          "phase": "tracciabilità e successive rideterminazioni",
+          "evidence": "Il registro 2025 include l’affidamento ad A2A Energia e richiama DD/2025/2; registra anche la successiva rideterminazione DD/2025/419 dello stesso servizio.",
+          "summary": "Aggiunge il contesto di tracciabilità amministrativa e l’evoluzione della spesa nel primo semestre 2025.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -2574,6 +2724,18 @@
           "mime_type": "text/csv",
           "path": "fonti_originali/csv/20260510_125151.csv",
           "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B55BB8E397_ANAC_pubblicita_legale_lotto14.html",
+          "description": "Documento HTML collegato al CIG: B55BB8E397 ANAC pubblicita legale lotto14"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B55BB8E397_START_procedura_lotto14.html",
+          "description": "Documento HTML collegato al CIG: B55BB8E397 START procedura lotto14"
         },
         {
           "kind": "html",
@@ -2685,6 +2847,12 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B5F0937C10_MASE_procedimento_TL800.html",
+          "description": "Documento HTML collegato al CIG: B5F0937C10 MASE procedimento TL800"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B5F0937C10.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -2693,6 +2861,18 @@
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B5F0937C10.json",
           "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B5F0937C10_MASE_documento_tecnico_TL800_1311973.pdf",
+          "description": "Documento PDF collegato al CIG: B5F0937C10 MASE documento tecnico TL800 1311973"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B5F0937C10_MASE_rischio_idrogeologico_TL800_1311982.pdf",
+          "description": "Documento PDF collegato al CIG: B5F0937C10 MASE rischio idrogeologico TL800 1311982"
         },
         {
           "kind": "pdf",
@@ -2725,6 +2905,18 @@
           "evidence": "Il documento tecnico riguarda la modifica della centrale di Turbigo mediante il nuovo condensatore ad aria collegato al TL800.",
           "summary": "Il PDF aggiunge contenuto tecnico-progettuale alla scheda contrattuale ANAC.",
           "verified_on": "2026-08-23"
+        },
+        {
+          "title": "Centrale di Turbigo TL800 — documento sul rischio idrogeologico",
+          "publisher": "Ministero dell’Ambiente e della Sicurezza Energetica",
+          "document_type": "documento tecnico",
+          "mime_type": "application/pdf",
+          "url": "https://va.mite.gov.it/File/Documento/1311982",
+          "relation": "contesto-tecnico",
+          "phase": "istruttoria tecnica del progetto TL800",
+          "evidence": "Il documento appartiene al medesimo procedimento MASE relativo alla modifica della centrale di Turbigo e al nuovo condensatore ad aria del TL800.",
+          "summary": "Integra la base tecnica collegata alle prestazioni progettuali del CIG.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -2785,6 +2977,12 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B5F77EC7CD_regione_lazio_lotto9_pasireotide.html",
+          "description": "Documento HTML collegato al CIG: B5F77EC7CD regione lazio lotto9 pasireotide"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B5F77EC7CD.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -2793,6 +2991,12 @@
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B5F77EC7CD.json",
           "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B5F77EC7CD_Regione_Lazio_allegato_CIG_elenco_prodotti.pdf",
+          "description": "Documento PDF collegato al CIG: B5F77EC7CD Regione Lazio allegato CIG elenco prodotti"
         },
         {
           "kind": "pdf",
@@ -2813,6 +3017,18 @@
           "evidence": "Il lotto 9, identificato dal CIG padre B1EB307B1E, riguarda il Pasireotide poi affidato a Recordati Rare Diseases Italy.",
           "summary": "La fonte ricostruisce la gara aggregata e il lotto farmaceutico da cui discende l’ordinativo presente nel campione.",
           "verified_on": "2026-08-23"
+        },
+        {
+          "title": "Allegato CIG ed elenco prodotti — lotto 9 Pasireotide",
+          "publisher": "Regione Lazio / STELLA",
+          "document_type": "allegato di gara",
+          "mime_type": "application/pdf",
+          "url": "https://stella.regione.lazio.it/application/CTL_Library/functions/field/DisplayAttach.ASP?FIELD=Allegato&FORMAT=I%2CN&OPERATION=DISPLAY&PATH=..%2F&TECHVALUE=Allegato+3_+CIG+Elenco+Prodotti.pdf%2Apdf%2A484553%2Ar8deb415fc7f420c8_20240531084412784%2ASHA256%2A1565B1DCA0295DF6BD8207CE5DB7E357BC9FF4278B3B4598ABEBEF9E78A66475%2A2024-05-31T10%3A44%3A16",
+          "relation": "cig-padre-lotto",
+          "phase": "documentazione di gara",
+          "evidence": "L’allegato identifica il lotto 9 Pasireotide nel quadro della procedura aggregata da cui deriva l’ordinativo del campione.",
+          "summary": "Aggiunge il documento tabellare di collegamento fra prodotti e CIG di lotto.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -2869,6 +3085,18 @@
           "mime_type": "text/csv",
           "path": "fonti_originali/csv/20260510_125151.csv",
           "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B5FDE25326_BDNCP.html",
+          "description": "Documento HTML collegato al CIG: B5FDE25326 BDNCP"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B5FDE25326_prefettura_buoni_pasto_10_lotto14.html",
+          "description": "Documento HTML collegato al CIG: B5FDE25326 prefettura buoni pasto 10 lotto14"
         },
         {
           "kind": "html",
@@ -2965,6 +3193,12 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B6646262E7_ENAV_portale_acquisti.html",
+          "description": "Documento HTML collegato al CIG: B6646262E7 ENAV portale acquisti"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B6646262E7.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -3005,6 +3239,18 @@
           "evidence": "Frequentis è il produttore dei Voice Communication Systems citato nell’oggetto del CIG.",
           "summary": "La pagina primaria del produttore integra la descrizione delle tecnologie VCS interessate dall’adeguamento di sicurezza.",
           "verified_on": "2026-08-23"
+        },
+        {
+          "title": "Frequentis — Capabilities Statement Defence",
+          "publisher": "Frequentis",
+          "document_type": "documentazione tecnica del fornitore",
+          "mime_type": "application/pdf",
+          "url": "https://www.frequentis.com/sites/default/files/support/2024-09/Capabilities-statement_Defence_FDI.pdf",
+          "relation": "contesto-tecnico",
+          "phase": "inquadramento tecnologico dei VCS",
+          "evidence": "Il documento del produttore descrive i Voice Communication Systems per impieghi militari e di controllo del traffico aereo.",
+          "summary": "Fornisce un documento tecnico PDF processabile per contestualizzare la tecnologia VCS citata nell’oggetto ENAV.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -3065,6 +3311,12 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B675CE0615_Innexta_finanzia_la_tua_impresa.html",
+          "description": "Documento HTML collegato al CIG: B675CE0615 Innexta finanzia la tua impresa"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B675CE0615.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -3091,7 +3343,7 @@
           "relation": "oggetto-ente",
           "phase": "rendicontazione",
           "evidence": "La relazione della stazione appaltante rendiconta il progetto 2025 realizzato con Innexta e le attività svolte.",
-          "summary": "Il documento aggiunge risultati e indicatori dell’intervento, inclusi webinar e imprese coinvolte.",
+          "summary": "Il documento aggiunge risultati e indicatori dell’intervento.",
           "verified_on": "2026-08-23"
         },
         {
@@ -3161,6 +3413,18 @@
           "mime_type": "text/csv",
           "path": "fonti_originali/csv/20260510_125151.csv",
           "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B6A106A32A_BDNCP.html",
+          "description": "Documento HTML collegato al CIG: B6A106A32A BDNCP"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B6A106A32A_comune_san_fratello_determine.html",
+          "description": "Documento HTML collegato al CIG: B6A106A32A comune san fratello determine"
         },
         {
           "kind": "html",
@@ -3265,6 +3529,12 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B6DD95EE23_citta_metropolitana_fascicolo_gara.html",
+          "description": "Documento HTML collegato al CIG: B6DD95EE23 citta metropolitana fascicolo gara"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B6DD95EE23.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -3321,7 +3591,7 @@
           "relation": "procedura-oggetto",
           "phase": "gara e aggiudicazione",
           "evidence": "Coincidono il numero PN VSF 15/25/SUA, il Comune di Frascati e il servizio di trattamento dei rifiuti EER 20.03.01.",
-          "summary": "Il fascicolo ufficiale espone la determina iniziale e gli atti successivi, compresi verbale, graduatoria e determina di aggiudicazione.",
+          "summary": "Il fascicolo ufficiale espone determina iniziale e atti successivi.",
           "verified_on": "2026-08-23"
         }
       ],
@@ -3387,6 +3657,12 @@
           "description": "Documento HTML collegato al CIG: B6E9DE9F63"
         },
         {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B6E9DE9F63_GdF_pagina_procedura.html",
+          "description": "Documento HTML collegato al CIG: B6E9DE9F63 GdF pagina procedura"
+        },
+        {
           "kind": "json",
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B6E9DE9F63.json",
@@ -3401,16 +3677,28 @@
       ],
       "web_sources": [
         {
-          "title": "Decisione a contrarre e affidamento — direzione lavori e sicurezza dell'hangar L",
+          "title": "Decisione a contrarre e affidamento — direzione lavori e sicurezza dell’hangar L",
           "publisher": "Guardia di Finanza — Centro di Aviazione",
           "document_type": "decisione a contrarre e determina di affidamento",
           "mime_type": "application/pdf",
           "url": "https://www.gdf.gov.it/it/stazioni-appaltanti/bandi-di-gara/archivio/anno-2025/centro-di-aviazione/giugno/affidamento-incarico-di-direzione-dei-lavori-e-coordinatore-della-sicurezza/esiti/decisione-a-contrarre-e-determina-di-affidamento.pdf/%40%40download/file",
           "relation": "cig-esatto",
-          "phase": "affidamento dell'incarico professionale",
-          "evidence": "Il PDF pubblicato dal Centro di Aviazione riporta il CIG B6E9DE9F63, la RDO 5347942 e l'incarico relativo agli impianti elettrici dell'hangar L a Pratica di Mare.",
-          "summary": "L'atto documenta la direzione lavori e il coordinamento della sicurezza in esecuzione, distinguendo il compenso di 48.000 euro dagli ulteriori oneri del quadro economico.",
+          "phase": "affidamento dell’incarico professionale",
+          "evidence": "Il PDF pubblicato dal Centro di Aviazione riporta il CIG B6E9DE9F63, la RDO 5347942 e l’incarico relativo agli impianti elettrici dell’hangar L a Pratica di Mare.",
+          "summary": "L’atto documenta la direzione lavori e il coordinamento della sicurezza in esecuzione.",
           "verified_on": "2026-09-15"
+        },
+        {
+          "title": "Pagina ufficiale della procedura — direzione lavori e sicurezza Hangar L",
+          "publisher": "Guardia di Finanza — Centro di Aviazione",
+          "document_type": "pagina di procedura",
+          "mime_type": "text/html",
+          "url": "https://amministrazionetrasparente.gdf.gov.it/it/stazioni-appaltanti/bandi-di-gara/archivio/anno-2025/centro-di-aviazione/giugno/affidamento-incarico-di-direzione-dei-lavori-e-coordinatore-della-sicurezza",
+          "relation": "cig-esatto",
+          "phase": "affidamento",
+          "evidence": "La pagina ufficiale riporta il CIG B6E9DE9F63, l’oggetto e allega la decisione a contrarre.",
+          "summary": "Aggiunge metadati procedurali e il contesto di pubblicazione dell’atto già conservato in PDF.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -3465,10 +3753,22 @@
           "description": "Documento HTML collegato al CIG: B6EDEAC0D4"
         },
         {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B6EDEAC0D4_Difesa_indice_esiti_2025.html",
+          "description": "Documento HTML collegato al CIG: B6EDEAC0D4 Difesa indice esiti 2025"
+        },
+        {
           "kind": "json",
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B6EDEAC0D4.json",
           "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B6EDEAC0D4_avviso_postinformazione_ctr1196.pdf",
+          "description": "Documento PDF collegato al CIG: B6EDEAC0D4 avviso postinformazione ctr1196"
         },
         {
           "kind": "pdf",
@@ -3480,15 +3780,27 @@
       "web_sources": [
         {
           "title": "Avviso di post-informazione — contratto 1196 del 31 ottobre 2025",
-          "publisher": "Ministero della Difesa — Direzione degli Armamenti Aeronautici e per l'Aeronavigabilità",
+          "publisher": "Ministero della Difesa — Direzione degli Armamenti Aeronautici e per l’Aeronavigabilità",
           "document_type": "avviso di post-informazione",
           "mime_type": "application/pdf",
           "url": "https://www.difesa.it/assets/allegati/68768/avviso_postinformazione_ctr1196.pdf",
           "relation": "cig-esatto",
-          "phase": "stipula e pubblicazione dell'esito",
-          "evidence": "L'avviso identifica espressamente il CIG B6EDEAC0D4 e il contratto 1196 del 31 ottobre 2025 per l'acquisizione di parti di ricambio PMG Dillon M-134D.",
-          "summary": "La fonte aggiunge i dati di stipula e il contraente Leonardo S.p.A., con importo di 143.146,50 euro IVA esente, integrando la fotografia iniziale della procedura conservata nei JSON ANAC.",
+          "phase": "stipula e pubblicazione dell’esito",
+          "evidence": "L’avviso identifica espressamente il CIG B6EDEAC0D4 e il contratto 1196 del 31 ottobre 2025 per l’acquisizione di parti di ricambio PMG Dillon M-134D.",
+          "summary": "La fonte aggiunge data di stipula, contraente Leonardo S.p.A. e importo di 143.146,50 euro IVA esente.",
           "verified_on": "2026-09-15"
+        },
+        {
+          "title": "Indice degli avvisi sui risultati delle procedure 2025 — voce B6EDEAC0D4",
+          "publisher": "Ministero della Difesa",
+          "document_type": "pagina di esiti",
+          "mime_type": "text/html",
+          "url": "https://www.difesa.it/amministrazione-trasparente/segredifesa/armaereo/avvisi-sui-risultati-delle-procedure-di-affidamento-anno-2025/68768.html",
+          "relation": "cig-esatto",
+          "phase": "pubblicazione dell’esito",
+          "evidence": "La pagina del Ministero indicizza l’avviso di post-informazione del CIG B6EDEAC0D4 e ne riepiloga oggetto e importo.",
+          "summary": "Aggiunge il contesto istituzionale di pubblicazione del PDF di post-informazione.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -3541,6 +3853,12 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B74941928B_PTV_procedura_arredi.html",
+          "description": "Documento HTML collegato al CIG: B74941928B PTV procedura arredi"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B74941928B.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -3555,6 +3873,12 @@
           "mime_type": "application/pdf",
           "path": "fonti_originali/pdf/B74941928B_annullamento_autotutela_DCS_935_2025.pdf",
           "description": "Documento PDF collegato al CIG: B74941928B annullamento autotutela DCS 935 2025"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B74941928B_indizione_DCS_830_2025.pdf",
+          "description": "Documento PDF collegato al CIG: B74941928B indizione DCS 830 2025"
         },
         {
           "kind": "pdf",
@@ -3587,6 +3911,18 @@
           "evidence": "L’atto conclude la prima procedura per lo stesso oggetto e spiega il presupposto della successiva riedizione cui appartiene il CIG del campione.",
           "summary": "La determina ricostruisce una fase amministrativa non visibile nella sola scheda ANAC del nuovo affidamento.",
           "verified_on": "2026-08-23"
+        },
+        {
+          "title": "DCS 830/2025 — indizione della procedura arredi PTV",
+          "publisher": "Fondazione PTV Policlinico Tor Vergata",
+          "document_type": "determina di indizione",
+          "mime_type": "application/pdf",
+          "url": "https://www.ptvonline.it/index.php/component/phocadownload/category/7-gare?Itemid=101&download=8670%3Adcs-830-2025-indizione",
+          "relation": "fase-antecedente",
+          "phase": "indizione della prima procedura",
+          "evidence": "La DCS 830/2025 indice la procedura per la fornitura di arredi sanitari e non sanitari, successivamente annullata con DCS 935/2025.",
+          "summary": "Insieme all’atto di annullamento già presente consente di ricostruire indizione → annullamento → riedizione.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -3658,10 +3994,22 @@
           "description": "Documento HTML collegato al CIG: B7A3D70B00"
         },
         {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B7A3D70B00_traspare_fascicolo_gara.html",
+          "description": "Documento HTML collegato al CIG: B7A3D70B00 traspare fascicolo gara"
+        },
+        {
           "kind": "json",
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B7A3D70B00.json",
           "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B7A3D70B00_avviso_avvio_procedura_negoziata.pdf",
+          "description": "Documento PDF collegato al CIG: B7A3D70B00 avviso avvio procedura negoziata"
         },
         {
           "kind": "pdf",
@@ -3679,9 +4027,21 @@
           "url": "https://castiglionecosentino.traspare.com/announcements/39",
           "relation": "cig-esatto",
           "phase": "gara e aggiudicazione",
-          "evidence": "La scheda espone il CIG B7A3D70B00, il CUP H24D25000660001, l'intervento in via Lanza e l'aggiudicatario Consorzio Stabile Ganosis.",
-          "summary": "Il fascicolo raccoglie determina a contrarre, DGUE XML, comunicazioni, verbali, determina di aggiudicazione 407 del 5 agosto 2025 ed esito; permette di seguire la sequenza documentale della gara.",
+          "evidence": "La scheda espone il CIG B7A3D70B00, il CUP H24D25000660001, l’intervento in via Lanza e l’aggiudicatario Consorzio Stabile Ganosis.",
+          "summary": "Il fascicolo raccoglie determina a contrarre, comunicazioni, verbali, determina di aggiudicazione ed esito.",
           "verified_on": "2026-09-15"
+        },
+        {
+          "title": "Avviso di avvio della procedura negoziata — Villaggio Scolastico P. De Stefano",
+          "publisher": "Comune di Castiglione Cosentino",
+          "document_type": "avviso di avvio procedura",
+          "mime_type": "application/pdf",
+          "url": "https://castiglione-cosentino-api.municipiumapp.it/s3/1786/allegati/prot_n_0005931_2025-avviso-avvio-procedura-negoziata-gse-scuole.pdf",
+          "relation": "cup-oggetto",
+          "phase": "avvio della gara",
+          "evidence": "L’avviso riguarda l’intervento di efficientamento energetico del Villaggio Scolastico P. De Stefano e il CUP H24D25000660001.",
+          "summary": "Aggiunge una fase anteriore alla determina di aggiudicazione già presente nel corpus.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -3742,6 +4102,12 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B7B0353822_UniTo_procedura_G09464.html",
+          "description": "Documento HTML collegato al CIG: B7B0353822 UniTo procedura G09464"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B7B0353822.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -3750,6 +4116,18 @@
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B7B0353822.json",
           "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B7B0353822_UniTo_programma_triennale_2025_2027.pdf",
+          "description": "Documento PDF collegato al CIG: B7B0353822 UniTo programma triennale 2025 2027"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B7B0353822_UniTo_registro_decreti_commissione_2025.pdf",
+          "description": "Documento PDF collegato al CIG: B7B0353822 UniTo registro decreti commissione 2025"
         },
         {
           "kind": "pdf",
@@ -3782,6 +4160,18 @@
           "evidence": "Il programma riporta il CUP D83C22002330001 e l’intervento della biobanca presso l’AOU San Luigi Gonzaga.",
           "summary": "Il documento aggiunge il quadro programmatorio e finanziario dell’opera.",
           "verified_on": "2026-08-23"
+        },
+        {
+          "title": "Registro decreti II semestre 2025 — nomina Commissione Giudicatrice biobanca",
+          "publisher": "Università degli Studi di Torino",
+          "document_type": "registro decreti",
+          "mime_type": "application/pdf",
+          "url": "https://www.unito.it/sites/default/files/2026-03/decreti_ediSos_ii_semestre_2025.pdf",
+          "relation": "cig-esatto",
+          "phase": "nomina della commissione giudicatrice",
+          "evidence": "Il registro riporta il decreto del 3 settembre 2025, repertorio DR^UNTOCLE-20250007895, per la nomina della Commissione Giudicatrice, con CUP D83C22002330001 e CIG B7B0353822.",
+          "summary": "Aggiunge una fase procedurale distinta dalla programmazione e dalla scheda di gara.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -3842,6 +4232,18 @@
         {
           "kind": "html",
           "mime_type": "text/html",
+          "path": "fonti_originali/html/B8297EE856_colleferro_albo_affidamento.html",
+          "description": "Documento HTML collegato al CIG: B8297EE856 colleferro albo affidamento"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B8297EE856_colleferro_scheda_cig.html",
+          "description": "Documento HTML collegato al CIG: B8297EE856 colleferro scheda cig"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
           "path": "fonti_originali/html/dati-cig-B8297EE856.html",
           "description": "Fonte originale HTML del CIG"
         },
@@ -3850,6 +4252,12 @@
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B8297EE856.json",
           "description": "Fonte originale JSON del CIG"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B8297EE856_colleferro_atto_cybersecurity.pdf",
+          "description": "Documento PDF collegato al CIG: B8297EE856 colleferro atto cybersecurity"
         },
         {
           "kind": "pdf",
@@ -3882,6 +4290,18 @@
           "evidence": "È il documento allegato alla pubblicazione dell’albo che identifica il CIG B8297EE856.",
           "summary": "Il PDF rende disponibile il testo dell’atto oltre alla scheda descrittiva dell’albo.",
           "verified_on": "2026-08-23"
+        },
+        {
+          "title": "Scheda CIG dell’albo del Comune di Colleferro",
+          "publisher": "Comune di Colleferro",
+          "document_type": "scheda CIG locale",
+          "mime_type": "text/html",
+          "url": "https://colleferro.soluzionipa.it/openweb/pratiche/scheda_cig.php?id=3262",
+          "relation": "cig-esatto",
+          "phase": "tracciabilità locale",
+          "evidence": "La scheda locale è collegata alla procedura di cybersecurity B8297EE856 dell’ente.",
+          "summary": "Aggiunge un secondo punto di accesso istituzionale locale oltre alla pubblicazione di albo e al PDF dell’atto.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -3938,6 +4358,18 @@
           "mime_type": "text/csv",
           "path": "fonti_originali/csv/20260510_125151.csv",
           "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B82A8FBA72_poggio_torriana_esito.html",
+          "description": "Documento HTML collegato al CIG: B82A8FBA72 poggio torriana esito"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B82A8FBA72_poggio_torriana_servizio_trasporto.html",
+          "description": "Documento HTML collegato al CIG: B82A8FBA72 poggio torriana servizio trasporto"
         },
         {
           "kind": "html",
@@ -4028,6 +4460,12 @@
           "mime_type": "text/csv",
           "path": "fonti_originali/csv/20260510_125151.csv",
           "description": "Riga del CSV esportato dal cruscotto ANAC"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B82CB38B8D_BDNCP.html",
+          "description": "Documento HTML collegato al CIG: B82CB38B8D BDNCP"
         },
         {
           "kind": "html",
@@ -4150,6 +4588,24 @@
         {
           "kind": "pdf",
           "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B85DEBAAC9_SABES_integrazione_programma_2024_2028.pdf",
+          "description": "Documento PDF collegato al CIG: B85DEBAAC9 SABES integrazione programma 2024 2028"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B85DEBAAC9_SABES_programma_investimenti_2023_2027.pdf",
+          "description": "Documento PDF collegato al CIG: B85DEBAAC9 SABES programma investimenti 2023 2027"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B85DEBAAC9_SABES_rimodulazione_programma_2023.pdf",
+          "description": "Documento PDF collegato al CIG: B85DEBAAC9 SABES rimodulazione programma 2023"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
           "path": "fonti_originali/pdf/CIG_B85DEBAAC9.pdf",
           "description": "Fonte originale PDF del CIG"
         }
@@ -4166,6 +4622,54 @@
           "evidence": "Il documento riporta il CUP I82C22001070003 e l’adattamento e ampliamento dell’impianto di evacuazione negli ospedali di Bressanone e Vipiteno.",
           "summary": "Il programma aggiunge importo, collocazione e quadro di finanziamento dell’intervento sanitario.",
           "verified_on": "2026-08-23"
+        },
+        {
+          "title": "Programma investimenti SABES 2023–2027 — progetto 23_3049",
+          "publisher": "Provincia autonoma di Bolzano / Azienda Sanitaria dell’Alto Adige",
+          "document_type": "programma degli investimenti",
+          "mime_type": "application/pdf",
+          "url": "https://home.sabes.it/download/BS_243_20.03.23_Invest.Programm_SABES.pdf",
+          "relation": "cup-oggetto",
+          "phase": "programmazione antecedente",
+          "evidence": "Il programma riporta progetto 23_3049, CUP I82C22001070003 e l’adattamento/ampliamento dell’impianto di evacuazione negli ospedali di Bressanone e Vipiteno.",
+          "summary": "Documenta la fase iniziale di programmazione e il costo previsto dell’intervento.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Rimodulazione programma investimenti SABES — ottobre 2023",
+          "publisher": "Provincia autonoma di Bolzano / Azienda Sanitaria dell’Alto Adige",
+          "document_type": "rimodulazione programma investimenti",
+          "mime_type": "application/pdf",
+          "url": "https://home.sabes.it/download/2023_10_17_BS_899_Rimod.PNRR.pdf",
+          "relation": "cup-oggetto",
+          "phase": "rimodulazione della programmazione",
+          "evidence": "Il documento conserva progetto 23_3049 e CUP I82C22001070003 nel quadro della rimodulazione del programma.",
+          "summary": "Permette di seguire longitudinalmente l’evoluzione amministrativa dell’intervento.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Integrazione programma investimenti SABES 2024–2028",
+          "publisher": "Provincia autonoma di Bolzano / Azienda Sanitaria dell’Alto Adige",
+          "document_type": "integrazione programma investimenti",
+          "mime_type": "application/pdf",
+          "url": "https://home.sabes.it/download/BS_1189-17.12.2024_Integr._Programma_Invest._SABES_24-28.PDF",
+          "relation": "cup-oggetto",
+          "phase": "programmazione antecedente alla gara",
+          "evidence": "La deliberazione mantiene progetto 23_3049 e CUP I82C22001070003 nel programma 2024–2028.",
+          "summary": "Aggiunge la fase programmatoria immediatamente precedente alla procedura di progettazione/DL/sicurezza.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Programma investimenti SABES 2025–2029 — progetto 23_3049",
+          "publisher": "Provincia autonoma di Bolzano",
+          "document_type": "programma degli investimenti",
+          "mime_type": "application/pdf",
+          "url": "https://api.integrations.services.siag.it/delibere/v1/delibere/eeHS1FjMupZyLxOBVDoP%2Bg%3D%3D/document?tstmp=1764619933624",
+          "relation": "cup-oggetto",
+          "phase": "programmazione e aggiornamento finanziario",
+          "evidence": "Il programma successivo conserva progetto 23_3049 e CUP I82C22001070003, con aggiornamento del quadro economico.",
+          "summary": "Completa la serie documentale longitudinale 2023–2025/2029 dello stesso intervento.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,
@@ -4230,6 +4734,24 @@
           "description": "Documento HTML collegato al CIG: B860168925"
         },
         {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B860168925_comune_verona_accordo_quadro.html",
+          "description": "Documento HTML collegato al CIG: B860168925 comune verona accordo quadro"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B860168925_verona_primo_contratto_applicativo_B8E24C68E3.html",
+          "description": "Documento HTML collegato al CIG: B860168925 verona primo contratto applicativo B8E24C68E3"
+        },
+        {
+          "kind": "html",
+          "mime_type": "text/html",
+          "path": "fonti_originali/html/B860168925_verona_secondo_contratto_applicativo_B91E10AB89.html",
+          "description": "Documento HTML collegato al CIG: B860168925 verona secondo contratto applicativo B91E10AB89"
+        },
+        {
           "kind": "json",
           "mime_type": "application/json",
           "path": "fonti_originali/json/CIG_B860168925.json",
@@ -4240,32 +4762,98 @@
           "mime_type": "application/pdf",
           "path": "fonti_originali/pdf/B860168925_determina.pdf",
           "description": "Documento PDF collegato al CIG: B860168925 determina"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B860168925_determina_3152_subappalto_secondo_contratto.pdf",
+          "description": "Documento PDF collegato al CIG: B860168925 determina 3152 subappalto secondo contratto"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B860168925_determina_5124_primo_contratto_applicativo_B8E24C68E3.pdf",
+          "description": "Documento PDF collegato al CIG: B860168925 determina 5124 primo contratto applicativo B8E24C68E3"
+        },
+        {
+          "kind": "pdf",
+          "mime_type": "application/pdf",
+          "path": "fonti_originali/pdf/B860168925_determina_5556_secondo_contratto_applicativo_B91E10AB89.pdf",
+          "description": "Documento PDF collegato al CIG: B860168925 determina 5556 secondo contratto applicativo B91E10AB89"
         }
       ],
       "web_sources": [
         {
           "title": "Accordo quadro per pneumatici e prestazioni tecniche correlate — CIG B860168925",
           "publisher": "Comune di Verona",
-          "document_type": "scheda di affidamento e documentazione dell'accordo quadro",
+          "document_type": "scheda di affidamento e documentazione dell’accordo quadro",
           "mime_type": "text/html",
           "url": "https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-accordo-quadro-per-la-fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-CIG-B860168925",
           "relation": "cig-esatto",
-          "phase": "affidamento dell'accordo quadro",
-          "evidence": "La pubblicazione comunale del 31 ottobre 2025 indica il CIG B860168925 e l'accordo quadro per i mezzi comunali con B.R. Pneumatici S.p.A.",
-          "summary": "La scheda istituzionale collega la procedura alla BDNCP e rende consultabile la documentazione dell'accordo quadro per la fornitura di pneumatici e i servizi tecnici correlati.",
+          "phase": "affidamento dell’accordo quadro",
+          "evidence": "La pubblicazione comunale indica il CIG B860168925 e l’accordo quadro per i mezzi comunali con B.R. Pneumatici S.p.A.",
+          "summary": "La scheda istituzionale collega la procedura alla BDNCP e alla determinazione di affidamento.",
           "verified_on": "2026-09-15"
         },
         {
-          "title": "Primo contratto applicativo dell'accordo quadro — CIG derivato B8E24C68E3",
+          "title": "Primo contratto applicativo dell’accordo quadro — CIG derivato B8E24C68E3",
           "publisher": "Comune di Verona",
           "document_type": "scheda di stipula del contratto applicativo",
           "mime_type": "text/html",
           "url": "https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-Fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-primo-contratto-applicativo-accordo-quadro-CIG-DERIVATO-B8E24C68E3",
           "relation": "accordo-quadro",
           "phase": "attuazione mediante contratto applicativo",
-          "evidence": "La scheda del 17 novembre 2025 collega esplicitamente il CIG derivato B8E24C68E3 al CIG padre B860168925 e allo stesso fornitore.",
-          "summary": "La fonte documenta il primo contratto applicativo e rende visibile il rapporto fra accordo quadro e ordinativi successivi. Il CIG derivato identifica un contratto collegato distinto dal record del campione.",
+          "evidence": "La scheda collega esplicitamente il CIG derivato B8E24C68E3 al CIG padre B860168925 e allo stesso fornitore.",
+          "summary": "La fonte documenta il primo contratto applicativo e il rapporto fra accordo quadro e ordinativi successivi.",
           "verified_on": "2026-09-15"
+        },
+        {
+          "title": "Determina 5124/2025 — primo contratto applicativo B8E24C68E3",
+          "publisher": "Comune di Verona",
+          "document_type": "determina di contratto applicativo",
+          "mime_type": "application/pdf",
+          "url": "https://www.comune.verona.it/content/download/15274/329712/file/determina_5124_del_30.10.2025.pdf",
+          "relation": "accordo-quadro",
+          "phase": "primo contratto applicativo",
+          "evidence": "La determina cita il CIG padre B860168925 e conclude il primo contratto applicativo, CIG derivato B8E24C68E3, per 12.000 euro IVA esclusa.",
+          "summary": "Documenta concretamente l’attuazione dell’accordo quadro mediante un contratto derivato.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Secondo contratto applicativo dell’accordo quadro — CIG derivato B91E10AB89",
+          "publisher": "Comune di Verona",
+          "document_type": "scheda di contratto applicativo",
+          "mime_type": "text/html",
+          "url": "https://www.comune.verona.it/Amministrazione-Trasparente/Bandi-di-gara-e-contratti/Atti-e-documenti-relativi-alle-singole-procedure-e-link-alla-BDNCP/Fase-Affidamento/Affidamenti-Negoziate-Link-BDNCP/A24-Fornitura-di-pneumatici-e-prestazioni-tecniche-correlate-secondo-contratto-applicativo-accordo-quadro-CIG-DERIVATO-B91E10AB89",
+          "relation": "accordo-quadro",
+          "phase": "secondo contratto applicativo",
+          "evidence": "La pagina indica CIG padre B860168925, CIG derivato B91E10AB89 e pubblica determina 5556/2025; nel 2026 aggiunge la determina di subappalto 3152.",
+          "summary": "Documenta una seconda attuazione dell’accordo quadro e una successiva fase esecutiva.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Determina 5556/2025 — secondo contratto applicativo B91E10AB89",
+          "publisher": "Comune di Verona",
+          "document_type": "determina di contratto applicativo",
+          "mime_type": "application/pdf",
+          "url": "https://www.comune.verona.it/content/download/15453/333904/file/det_5556_del_18.11.2025.pdf",
+          "relation": "accordo-quadro",
+          "phase": "secondo contratto applicativo",
+          "evidence": "La determina cita il CIG padre B860168925 e conclude il secondo contratto applicativo B91E10AB89.",
+          "summary": "Aggiunge il secondo atto applicativo all’evoluzione dell’accordo quadro.",
+          "verified_on": "2026-09-18"
+        },
+        {
+          "title": "Determina 3152/2026 — autorizzazione subappalto sul secondo contratto applicativo",
+          "publisher": "Comune di Verona",
+          "document_type": "determina di autorizzazione subappalto",
+          "mime_type": "application/pdf",
+          "url": "https://www.comune.verona.it/ocmultibinary/download/15453/333905/3/f14501417841f54f34fdd33f713de9bc.pdf/file/determina%2B3152.pdf",
+          "relation": "accordo-quadro",
+          "phase": "esecuzione e subappalto",
+          "evidence": "La determina è pubblicata come aggiornamento del secondo contratto applicativo collegato all’accordo quadro B860168925.",
+          "summary": "Documenta una fase esecutiva successiva alla stipula del contratto derivato.",
+          "verified_on": "2026-09-18"
         }
       ],
       "xml_valid": true,

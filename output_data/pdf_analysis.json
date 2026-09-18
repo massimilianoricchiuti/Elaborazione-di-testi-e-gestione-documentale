@@ -1,15 +1,57 @@
 [
   {
+    "file": "B387047A20_Carlino_variazione_bilancio_fiera_sapori_2025.pdf",
+    "pages": 5,
+    "text_chars": 9110,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B387047A20_PromoTurismoFVG_contributo_fiera_sapori_2024.pdf",
+    "pages": 3,
+    "text_chars": 5822,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B387047A20_PromoTurismoFVG_contributo_fiera_sapori_2025.pdf",
+    "pages": 3,
+    "text_chars": 6665,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
     "file": "B387047A20_determina.pdf",
     "pages": 12,
-    "text_chars": 33607,
+    "text_chars": 33611,
     "method": "pypdf",
     "note": ""
   },
   {
     "file": "B4B5B163A0_determina.pdf",
     "pages": 4,
-    "text_chars": 10305,
+    "text_chars": 10257,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B5F0937C10_MASE_documento_tecnico_TL800_1311973.pdf",
+    "pages": 8,
+    "text_chars": 16334,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B5F0937C10_MASE_rischio_idrogeologico_TL800_1311982.pdf",
+    "pages": 1,
+    "text_chars": 446,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B5F77EC7CD_Regione_Lazio_allegato_CIG_elenco_prodotti.pdf",
+    "pages": 15,
+    "text_chars": 46198,
     "method": "pypdf",
     "note": ""
   },
@@ -23,7 +65,7 @@
   {
     "file": "B6DD95EE23_determina_aggiudicazione_2475.pdf",
     "pages": 5,
-    "text_chars": 11690,
+    "text_chars": 11467,
     "method": "pypdf",
     "note": ""
   },
@@ -49,6 +91,13 @@
     "note": ""
   },
   {
+    "file": "B6EDEAC0D4_avviso_postinformazione_ctr1196.pdf",
+    "pages": 1,
+    "text_chars": 1239,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
     "file": "B6EDEAC0D4_determina.pdf",
     "pages": 1,
     "text_chars": 1239,
@@ -63,9 +112,65 @@
     "note": ""
   },
   {
+    "file": "B74941928B_indizione_DCS_830_2025.pdf",
+    "pages": 5,
+    "text_chars": 16753,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B7A3D70B00_avviso_avvio_procedura_negoziata.pdf",
+    "pages": 1,
+    "text_chars": 3112,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
     "file": "B7A3D70B00_determina.pdf",
     "pages": 5,
     "text_chars": 13925,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B7B0353822_UniTo_programma_triennale_2025_2027.pdf",
+    "pages": 14,
+    "text_chars": 42248,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B7B0353822_UniTo_registro_decreti_commissione_2025.pdf",
+    "pages": 22,
+    "text_chars": 93269,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B8297EE856_colleferro_atto_cybersecurity.pdf",
+    "pages": 6,
+    "text_chars": 19786,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B85DEBAAC9_SABES_integrazione_programma_2024_2028.pdf",
+    "pages": 21,
+    "text_chars": 74768,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B85DEBAAC9_SABES_programma_investimenti_2023_2027.pdf",
+    "pages": 25,
+    "text_chars": 72430,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B85DEBAAC9_SABES_rimodulazione_programma_2023.pdf",
+    "pages": 29,
+    "text_chars": 92030,
     "method": "pypdf",
     "note": ""
   },
@@ -79,7 +184,28 @@
   {
     "file": "B860168925_determina.pdf",
     "pages": 7,
-    "text_chars": 19614,
+    "text_chars": 19611,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B860168925_determina_3152_subappalto_secondo_contratto.pdf",
+    "pages": 4,
+    "text_chars": 10216,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B860168925_determina_5124_primo_contratto_applicativo_B8E24C68E3.pdf",
+    "pages": 4,
+    "text_chars": 11048,
+    "method": "pypdf",
+    "note": ""
+  },
+  {
+    "file": "B860168925_determina_5556_secondo_contratto_applicativo_B91E10AB89.pdf",
+    "pages": 5,
+    "text_chars": 12955,
     "method": "pypdf",
     "note": ""
   },

@@ -2,13 +2,17 @@
 <contratto cig="B8297EE856" fonte="ANAC">
   <fonti>
     <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B8297EE856_colleferro_albo_affidamento.html">Documento HTML collegato al CIG: B8297EE856 colleferro albo affidamento</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B8297EE856_colleferro_scheda_cig.html">Documento HTML collegato al CIG: B8297EE856 colleferro scheda cig</fonte>
     <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/dati-cig-B8297EE856.html">Fonte originale HTML del CIG</fonte>
     <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B8297EE856.json">Fonte originale JSON del CIG</fonte>
+    <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/B8297EE856_colleferro_atto_cybersecurity.pdf">Documento PDF collegato al CIG: B8297EE856 colleferro atto cybersecurity</fonte>
     <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/CIG_B8297EE856.pdf">Fonte originale PDF del CIG</fonte>
   </fonti>
   <approfondimentiWeb>
     <fonteWeb tipo="determina a contrarre e affidamento" formato="text/html" url="https://colleferro.soluzionipa.it/openweb/albo/albo_dettagli_full.php?id=40634" relazione="cig-esatto" verificataIl="2026-08-23">La fonte <titoloFonte>Determina per servizi di cybersecurity — CIG B8297EE856</titoloFonte>, pubblicata da <enteFonte>Comune di Colleferro</enteFonte>, riguarda la fase <faseFonte>affidamento</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>La pagina dell’albo pretorio riporta espressamente CIG, oggetto e affidatario Engage S.p.A.</nessoFonte>. In sintesi, <datoFonte>La fonte completa la scheda ANAC con il provvedimento amministrativo e i relativi allegati.</datoFonte>.</fonteWeb>
     <fonteWeb tipo="atto amministrativo" formato="application/pdf" url="https://colleferro.soluzionipa.it/openweb/portal/doc.php?id=pfile%7Cid%7C18281%7C2025-10-02T13%3A55%3A37%7Cfile" relazione="cig-esatto" verificataIl="2026-08-23">La fonte <titoloFonte>Atto digitale relativo ai servizi di cybersecurity</titoloFonte>, pubblicata da <enteFonte>Comune di Colleferro</enteFonte>, riguarda la fase <faseFonte>affidamento</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>È il documento allegato alla pubblicazione dell’albo che identifica il CIG B8297EE856.</nessoFonte>. In sintesi, <datoFonte>Il PDF rende disponibile il testo dell’atto oltre alla scheda descrittiva dell’albo.</datoFonte>.</fonteWeb>
+    <fonteWeb tipo="scheda CIG locale" formato="text/html" url="https://colleferro.soluzionipa.it/openweb/pratiche/scheda_cig.php?id=3262" relazione="cig-esatto" verificataIl="2026-09-18">La fonte <titoloFonte>Scheda CIG dell’albo del Comune di Colleferro</titoloFonte>, pubblicata da <enteFonte>Comune di Colleferro</enteFonte>, riguarda la fase <faseFonte>tracciabilità locale</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>La scheda locale è collegata alla procedura di cybersecurity B8297EE856 dell’ente.</nessoFonte>. In sintesi, <datoFonte>Aggiunge un secondo punto di accesso istituzionale locale oltre alla pubblicazione di albo e al PDF dell’atto.</datoFonte>.</fonteWeb>
   </approfondimentiWeb>
   <informazioniGara>
     <numeroGara>CONSIP_RDO_5593375</numeroGara>

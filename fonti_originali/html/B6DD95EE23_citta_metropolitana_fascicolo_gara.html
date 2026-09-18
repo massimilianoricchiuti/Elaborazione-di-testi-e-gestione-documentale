@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="it-it" dir="ltr">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+
+	<meta charset="utf-8" />
+	<base href="https://portalegare.cittametropolitanaroma.it/portalegare/index.php/bandi" />
+	<meta name="author" content="Super User" />
+	<title>Avvisi e Bandi</title>
+	<link href="/portalegare/templates/aflinktemplate3/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/portalegare/media/system/css/modal.css?157e2b47f609a8af3d7916bb869523b9" rel="stylesheet" />
+	<link href="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/css/aflink_style.css?Friday 18th of September 2026 08:11:08 PM" rel="stylesheet" media="screen,projection" />
+	<link href="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/css/aflink_style_print.css?Friday 18th of September 2026 08:11:08 PM" rel="stylesheet" media="print" />
+	<link href="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/css/aflink_style_base.css?Friday 18th of September 2026 08:11:08 PM" rel="stylesheet" media="screen,projection" />
+	<link href="/portalegare/templates/aflinktemplate3/css/layout.css?157e2b47f609a8af3d7916bb869523b9" rel="stylesheet" />
+	<link href="/portalegare/templates/aflinktemplate3/css/template.css?157e2b47f609a8af3d7916bb869523b9" rel="stylesheet" />
+	<link href="/portalegare/templates/aflinktemplate3/css/general.css?157e2b47f609a8af3d7916bb869523b9" rel="stylesheet" />
+	<link href="/portalegare/templates/aflinktemplate3/css/personal.css?157e2b47f609a8af3d7916bb869523b9" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link href="/portalegare/media/mod_vvisit_counter/stats/default.css" rel="stylesheet" />
+	<style>
+
+	h1, h2, h3, h4, h5, h6, .site-title {
+		font-family: 'Open Sans', sans-serif;
+	}
+	body.site {
+		/* border-top: 3px solid #0088cc*/;
+		background-color: #f4f6f7;
+	}
+	a {
+		color: #0088cc;
+	}
+	.nav-list > .active > a,
+	.nav-list > .active > a:hover,
+	.dropdown-menu li > a:hover,
+	.dropdown-menu .active > a,
+	.dropdown-menu .active > a:hover,
+	.nav-pills > .active > a,
+	.nav-pills > .active > a:hover,
+	.btn-primary {
+		background: #0088cc;
+	}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"e4ce7dec537b5f3062974f2241e15548","system.paths":{"root":"\/portalegare","base":"\/portalegare"},"system.keepalive":{"interval":840000,"uri":"\/portalegare\/index.php\/component\/ajax\/?format=json"}}</script>
+	<script src="/portalegare/media/system/js/core.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<!--[if lt IE 9]><script src="/portalegare/media/system/js/polyfill.event.js?157e2b47f609a8af3d7916bb869523b9"></script><![endif]-->
+	<script src="/portalegare/media/system/js/keepalive.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/system/js/mootools-core.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/system/js/mootools-more.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/system/js/modal.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/jui/js/jquery.min.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/jui/js/jquery-noconflict.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/jui/js/jquery-migrate.min.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/system/js/caption.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/media/jui/js/bootstrap.min.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script src="/portalegare/templates/aflinktemplate3/js/template.js?157e2b47f609a8af3d7916bb869523b9"></script>
+	<script>
+
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			initSqueezeBox();
+			$(document).on('subform-row-add', initSqueezeBox);
+
+			function initSqueezeBox(event, container)
+			{
+				SqueezeBox.assign($(container || document).find('a.modal').get(), {
+					parse: 'rel'
+				});
+			}
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+	</script>
+	<!-- INIZIO D.P.C.M. Meta Tags -->
+	<LINK rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<LINK rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<META NAME="DC.Description" CONTENT="Bandi di gara">
+	<link rel="alternate" type="application/rss+xml" title="Feed bandi" href="/portale/rss_bandi.asp?FilterHide=bScaduto=0+and+tipo%3C%3E%27Esito%27+&numRowForPag=20&nPag=1" />
+	<!-- FINE D.P.C.M. Meta Tags -->
+
+	<link rel="stylesheet" href="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/css/aflink_style.css" type="text/css" media="screen,projection"  />
+	<link rel="stylesheet" href="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/css/aflink_style_print.css" type="text/css" media="print"  />
+	<link rel="stylesheet" href="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/css/aflink_style_chromefix.css" type="text/css" media="screen,projection"  />
+	<link rel="stylesheet" href="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/css/last_style.css" type="text/css" />
+
+	<script type="text/javascript" src="https://portalegare.cittametropolitanaroma.it/portalegare/templates/aflinktemplate3/js/md_stylechanger.js"></script>
+	<!--[if lt IE 9]><script src="/portalegare/media/jui/js/html5.js"></script><![endif]-->
+</head>
+<body class="site com_content view-article no-layout no-task itemid-294">
+
+	<!-- link accessibilità -->
+	<ul class="skiplinks">
+			<li><a href="#main" class="u2">Vai ai contenuti</a></li>
+			<li><a href="#nav" class="u2">Vai al menu</a></li>
+	</ul>
+
+	<!-- Body -->
+	<div class="body">
+		<div class="container">
+			<!-- Header -->
+           <div class="HeaderTools">
+           			<div class="HeaderMenu">
+                    								<nav class="navigation" role="navigation">
+                                <div class="navbar pull-left">
+                                    <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </a>
+                                </div>
+					<div class="nav-collapse">
+						<ul class="nav menu nav-pills mod-list">
+<li class="item-464"><a href="/portalegare/index.php" >Home</a></li><li class="item-473"><a href="/portalegare/index.php/registrazione" >Registrazione Operatori Economici</a></li><li class="item-478"><a href="/portalegare/index.php/contatti" >Contatti</a></li></ul>
+
+					</div>
+				</nav>
+			                    </div>
+                    <div class="header-search pull-right" id="links_top_access">
+                        
+                    </div>
+           </div>
+            
+            
+            
+			<div id="header">
+            	<header class="header" role="banner">
+				
+										
+					<div class="header-inner clearfix">
+                      
+                      <a class="brand pull-left" href="https://www.cittametropolitanaroma.it/">
+                         
+							<img src="/portalegare/templates/aflinktemplate3//images/i_logo.png" alt="  " />													</a>
+					</div>
+				</header>
+			</div>
+					<div class="moduletable">
+						<div aria-label="Breadcrumbs" role="navigation">
+	<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+					<li>
+				Sei qui: &#160;
+			</li>
+		
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/portalegare/index.php" class="pathway"><span itemprop="name">Home</span></a>
+					
+											<span class="divider">
+							<img src="/portalegare/media/system/images/arrow.png" alt="" />						</span>
+										<meta itemprop="position" content="1">
+				</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/portalegare/index.php/bandi" class="pathway"><span itemprop="name">Avvisi e Bandi</span></a>
+					
+											<span class="divider">
+							<img src="/portalegare/media/system/images/arrow.png" alt="" />						</span>
+										<meta itemprop="position" content="2">
+				</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+					<span itemprop="name">
+						Dettaglio					</span>
+					<meta itemprop="position" content="3">
+				</li>
+				</ul>
+</div>
+		</div>
+	
+			<div class="row-fluid" id ="nav">
+									<!-- Begin Sidebar -->
+					<div id="sidebar" class="span3">
+						<div class="sidebar-nav">
+									<div class="moduletable_menu">
+							<h3>Area Pubblica</h3>
+						<ul class="nav menu mod-list">
+<li class="item-435 default"><a href="/portalegare/index.php" >Home</a></li><li class="item-294 current active"><a href="/portalegare/index.php/bandi" >Avvisi e Bandi</a></li><li class="item-489"><a href="/portalegare/index.php/consultazioni-preliminari-di-mercato" >Consultazioni Preliminari di Mercato</a></li><li class="item-477"><a href="/portalegare/index.php/albo" >Albo Forniture e Servizi</a></li><li class="item-487"><a href="/portalegare/index.php/albo-lavori" >Albo Lavori Pubblici</a></li><li class="item-488"><a href="/portalegare/index.php/albo-professionisti" >Albo Servizi Ingegneria e Architettura</a></li><li class="item-483"><a href="/portalegare/index.php/feed-rss" >Feed rss</a></li></ul>
+		</div>
+			<div class="moduletable">
+							<h3>Area Privata</h3>
+						
+
+	<script type="text/javascript">
+		function vacio(q) {   
+        for ( i = 0; i < q.length; i++ ) {   
+                if ( q.charAt(i) != " " ) {   
+                        return true   
+                }   
+        }   
+        return false   
+		}   
+		
+		function evidenziaCampo(obj)
+		{
+			obj.setAttribute("class","txt required fieldError");
+		}
+		
+
+		function resetCampo(obj)
+		{
+			obj.style.background="";
+			obj.setAttribute("class","txt required");
+		}
+		
+		// Tutto il campi completi.   
+   
+	   function valida(form) 
+	   {   
+			var totCampiOk = 0;
+			
+			try
+			{
+				document.getElementById('msg-errore-login').style.display = 'none';
+			}
+			catch(e)
+			{
+			}
+			
+			if( vacio(document.getElementById('login_idazienda').value) == false) 
+			{   
+				evidenziaCampo(document.getElementById('login_idazienda'));
+			} 
+			else
+			{
+				totCampiOk++;
+				resetCampo(document.getElementById('login_idazienda'));
+			}
+
+			if( vacio(document.getElementById('login_username').value) == false) 
+			{   
+				evidenziaCampo(document.getElementById('login_username'));
+			} 
+			else
+			{   
+				resetCampo(document.getElementById('login_username'));
+				totCampiOk++;
+			}  	
+
+			if( vacio(document.getElementById('login_password').value) == false) 
+			{   
+				evidenziaCampo(document.getElementById('login_password'));
+			} 
+			else
+			{   
+				resetCampo(document.getElementById('login_password'));
+				totCampiOk++;
+			}  	
+			
+		    if (totCampiOk == 3)
+			{
+				return true;
+			}
+			else
+			{
+				document.getElementById('messaggio_errore').innerHTML = "<b>Attenzione</b>: I campi evidenziati non sono stati compilati correttamente!";
+				return false;  
+			}   	
+		}
+		
+		function TomaCampo(obj)
+		{
+			document.write (totCampiOK);
+		}
+		
+							
+	</script>  
+
+	<form name="form" action="/application/login.asp?redirectback=yes&amp;chiamante=/portalegare/index.php" method="post" id="login" autocomplete="off" onSubmit="return valida(this);" >
+		
+		
+		<div>
+		
+			<span id="messaggio_errore"></span>
+		
+		
+		</div>
+
+		<div>
+
+			<label for="login_idazienda">Codice di accesso</label>
+			<input type="text" name="IDAZIENDA" class="txt required" id="login_idazienda" style="" autocomplete="off" />
+			<label for="login_username">Nome Utente</label>
+			<input type="text" name="USERNAME" class="txt required" id="login_username" style="" autocomplete="off" />
+			<label for="login_password">Password</label>
+			<input type="password" name="PASSWORD" class="txt required" id="login_password" style="" autocomplete="off" />
+			<input type="submit" value="Accedi" class="button" id="submit1" name="submit1"/>
+
+			<input type="hidden" name="strMnemonicoMP" value="PA"/>
+			<input type="hidden" value="1" name="strCheckIscrizione"/>
+			<input type="hidden" id="URL_APP" name="URL_APP" value="/application/"/>
+			<input type="hidden" name="SYS_INSERISCIQUESITIDALPORTALE" id="SYS_INSERISCIQUESITIDALPORTALE" value="" />
+
+		</div>
+
+	</form>	
+	
+	<div class="moduletable_menu">
+		<ul class="nav menu">
+		
+			<li>
+				<a class="modal"  rel="{handler: 'iframe', size: {x: 600, y: 400}}"  href="/application/modal/recuperopwd_joomla.asp"  title="Hai dimenticato la password?">
+					Hai dimenticato la password?				</a>
+			</li>
+		
+						
+			<li>
+			
+				<a class="modal"  rel="{handler: 'iframe', size: {x: 600, y: 400}}" href="/application/modal/recuperouser_joomla.asp" title="Hai dimenticato Codice di Accesso e Nome Utente ?">
+					Hai dimenticato Codice di Accesso e Nome Utente ?				</a>
+			</li>
+			
+			
+			<li>
+				<a href="/portalegare/index.php/registrazione" title="<h2>Registrazione Operatori Economici</h2>">
+				<h2>Registrazione Operatori Economici</h2></a>
+			</li>
+		
+			<li style="display:none;">
+				<a id="modalerequisiti" href="//portale/requisitiminimi.asp" rel="modal[620|350| ]" title="IE6 non supportato">
+					IE6 non supportato				</a>
+			</li>
+			
+			
+						
+			<li id="moduletable_menu_0">
+				<li>
+					<a href="https://portalegare.cittametropolitanaroma.it/samllogin/login">
+						<img src="/portalegare/images/spid.png" alt="Accesso tramite SPID-CIE-CNS" title="Accesso tramite SPID-CIE-CNS" style="max-width: 100%;
+">
+					</a>
+				</li>			
+			</li>
+		</ul>
+	</div>
+
+		</div>
+			<div class="moduletable">
+							<h3>Statistiche</h3>
+						<!-- Vinaora Visitors Counter >> http://vinaora.com/ -->
+<style type="text/css">
+	.vfleft{float:left;}.vfright{float:right;}.vfclear{clear:both;}.valeft{text-align:left;}.varight{text-align:right;}.vacenter{text-align:center;}
+	#vvisit_counter105 .vstats_counter{margin-top: 5px;}
+	#vvisit_counter105 .vrow{height:24px;}
+	#vvisit_counter105 .vstats_icon{margin-right:5px;}
+	#vvisit_counter105{padding:5px;}</style>
+<div id="vvisit_counter105" class="vvisit_counter vacenter">
+	<div class="vstats_counter">
+		<div class="vstats_icon vfleft varight">
+			<div class="vrow vstats-vtoday" title="2026-09-18"></div><div class="vfclear"></div><div class="vrow vstats-vyesterday" title="2026-09-17"></div><div class="vfclear"></div><div class="vrow vstats-vxmonth" title="2026-09-01"></div><div class="vfclear"></div><div class="vrow vstats-vlmonth" title="2026-08-01"></div><div class="vfclear"></div><div class="vrow vstats-vall" title=""></div><div class="vfclear"></div>		</div>
+		<div class="vstats_title vfleft valeft">
+			<div class="vrow" title="">Oggi</div><div class="vfclear"></div><div class="vrow" title="">Ieri</div><div class="vfclear"></div><div class="vrow" title="">Questo Mese</div><div class="vfclear"></div><div class="vrow" title="">Ultimo Mese</div><div class="vfclear"></div><div class="vrow" title="">Totale</div><div class="vfclear"></div>		</div>
+		<div class="vstats_number varight">
+			<div class="vrow" title="">3762</div><div class="vrow" title="">5330</div><div class="vrow" title="">99485</div><div class="vrow" title="">218501</div><div class="vrow" title="">5141079</div>		</div>
+		<div class="vfclear"></div>
+	</div>
+	<hr style="margin-bottom: 5px;"/>
+</div>		</div>
+	
+						</div>
+					</div>
+					<!-- End Sidebar -->
+								
+			<div id="main">
+				<main id="content" role="main" class="span9">
+					<!-- Begin Content -->
+					
+					<div id="system-message-container">
+	</div>
+
+					<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="it-IT" />
+	
+		
+						
+		
+	
+	
+		
+								<div itemprop="articleBody">
+		<h1 id="titolo_pagina" style="text-align: center;"><span style="font-family: arial black,avant garde;"><strong><span style="font-size: x-large;">Bandi</span></strong></span></h1>
+<div id="div_rss_lista" style="font-size: 12.16px; line-height: 15.808px;">		<div class="moduletable">
+						<script src="/portalegare/modules/mod_rss_aflink/aflink_js_util.js?Friday 18th of September 2026 08:11:08 PM" type="text/javascript"></script><script src="/portalegare/modules/mod_rss_aflink/aflink_js_lista.js?Friday 18th of September 2026 08:11:08 PM" type="text/javascript"></script>			
+				<input type="hidden" id="text_dettaglio" value="SI"/>
+			
+				<h3 class="aflink_link_suggerimenti" >
+					<a href="#" id="hide_show_suggerimenti">
+						Nascondi suggerimenti
+						
+					</a>
+				</h3>
+
+				<div class="aflink_div_suggerimenti" id="vertical_slide">
+					
+Per salvare o leggere il contenuto degli allegati &egrave; sufficiente cliccare sul link. <br/>
+Per la stampa della pagina cliccare sull'icona della stampante. <br/>
+Per partecipare al bando, quando la modalità di partecipazione &egrave; telematica, <br/>
+clicca sul pulsante Partecipa e segui le istruzioni contenute nel disciplinare di gara. <br/>
+Per partecipare al bando o richiedere chiarimenti &egrave; necessaria la registrazione al Portale. <br/>
+Se non sei registrato clicca su <a href='./registrazione' title='registrati ora'>Registrati ora!</a>
+				</div>
+				
+			  <a onclick="javascript:window.print();" style="cursor:pointer" class="stampa_dettaglio" title="Stampa">
+				<img src="/portalegare/images/printer.gif" />
+			  </a>
+			  
+			  <a id="icona_download_allegati" onclick="document.getElementById('DownloadAllegati').onclick();" style="cursor:pointer;display:none" class="stampa_dettaglio" title="Download allegati"><img src="/portalegare/images/download.jpg" /></a>				
+	<div id="accordion">
+				
+		<input type="hidden" id="text_dominio" value="cittametropolitanaroma.it"/><input type="hidden" id="text_tipo_bando" value="Bando"/><h2 xmlns="http://www.w3.org/1999/xhtml">Dettaglio</h2>
+<div xmlns="http://www.w3.org/1999/xhtml" class="content">
+	<div style="display:none;">
+		<a id="modale" href="https://portalegare.cittametropolitanaroma.it/portalegare/modal/partecipa_joomla.asp?STRURLPARTECIPA=..%2F..%2F..%2F..%2FCtl_Library%2FDOCUMENT%2FPartecipa.asp%3FTIPODOC=OFFERTA%26IdMsgPar%3D###ID-MSG###" class="modal" title="Partecipa" rel="">
+                Iscriviti
+              </a>
+	</div>
+	<table id="template_doc">
+		<thead>
+			<tr>
+				<th colspan="4" align="left">
+					<h1>Invito (
+                PI014004-25 )
+              </h1>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Descrizione breve</th>
+				<td>PN VSF 15/25/SUA - Città di Frascati (RM) - Affidamento del servizio di trattamento e recupero dei rifiuti urbani non differenziati EER 20.03.01 “secco residuo”, prodotti dal Comune di Frascati.</td>
+			</tr>
+			<tr>
+				<th>Id Appalto ANAC</th>
+				<td>fcfa8b1f-2686-4816-892c-2964a6c5f845</td>
+			</tr>
+			<tr>
+				<th>CIG</th>
+				<td>B6DD95EE23</td>
+			</tr>
+			<tr>
+				<th>
+                Informazioni Tecniche
+              </th>
+				<td>
+					<table>
+						<tr>
+							<td class="CellIntestGrid" align="center" width="25%">
+                      Numero Lotto
+                    </td>
+							<td class="CellIntestGrid" align="center" width="25%">
+                      CIG
+                    </td>
+							<td class="CellIntestGrid" align="center" width="25%">
+                      Descrizione Lotto
+                    </td>
+							<td class="CellIntestGrid" align="center" width="25%">
+                      Link
+                    </td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>B6DD95EE23</td>
+							<td>PN VSF 15/25/SUA</td>
+							<td style="word-break: break-word;">https://dati.anticorruzione.it/superset/dashboard/dettaglio_cig/?cig=B6DD95EE23</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<th>Ente appaltante</th>
+				<td>Città metropolitana di Roma Capitale</td>
+			</tr>
+			<tr>
+				<th>Importo Appalto</th>
+				<td>872.727,27
+                  (Iva Esclusa)
+                </td>
+			</tr>
+			<tr>
+				<th>Criterio Aggiudicazione</th>
+				<td>Prezzo più basso</td>
+			</tr>
+			<tr>
+				<th>Tipo Appalto</th>
+				<td>Servizi</td>
+			</tr>
+			<tr>
+				<th>Termine Richiesta Quesiti</th>
+				<td>29/05/2025
+
+                    &nbsp; ore &nbsp;
+
+                    08:00:00
+
+                    [Ora Italiana]
+                  </td>
+			</tr>
+			<tr>
+				<th>
+                        Presentare le offerte entro il
+                      </th>
+				<td>29/05/2025
+
+                    &nbsp; ore &nbsp;
+
+                    09:00:00
+
+                    [Ora Italiana]
+                  </td>
+			</tr>
+			<tr>
+				<th>
+                        Data I Seduta
+                      </th>
+				<td>29/05/2025
+
+                        &nbsp; ore &nbsp;
+
+                        09:30:00
+
+                        [Ora Italiana]
+
+                      </td>
+			</tr>
+			<tr>
+				<th>Motivazione Appalto Verde </th>
+				<td>applicati i CAM di riferimento</td>
+			</tr>
+			<tr>
+				<th>
+                Enti Proponenti
+              </th>
+				<td>
+					<table>
+						<tr>
+							<td class="CellGridPrintProducts">Comune di Frascati</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<th>
+              Documentazione
+            </th>
+				<td>
+                  La presente procedura è riservata ai soli operatori invitati dalla Stazione Appaltante. Gli inviti sono visualizzabili nella sezione "Inviti", se invitati.
+                </td>
+			</tr>
+			<tr>
+				<th>
+                Importi
+              </th>
+				<td>
+					<table>
+						<tr>
+							<td class="CellIntestGrid" align="center" width="50%">
+                      Descrizione
+                    </td>
+							<td class="CellIntestGrid" align="center" width="50%">
+                      €
+                    </td>
+						</tr>
+						<tr>
+							<td>Stima Manodopera</td>
+							<td class="CellNumeric">214.052,18</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<th>Note</th>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+	<div style="padding-bottom:80px"></div>
+</div>
+<h2 xmlns="http://www.w3.org/1999/xhtml">Esiti e Pubblicazioni</h2>
+<div xmlns="http://www.w3.org/1999/xhtml" class="content">
+	<table id="template_doc">
+		<tr class="">
+			<td class="CellIntestGrid">
+				<font class="PrintCols">Tipologia</font>
+			</td>
+			<td class="CellIntestGrid">
+				<font class="PrintCols">Data Pubblicazione</font>
+			</td>
+			<td class="CellIntestGrid">
+				<font class="PrintCols">Descrizione</font>
+			</td>
+			<td class="CellIntestGrid">
+				<font class="PrintCols">Allegato</font>
+			</td>
+		</tr>
+		<tr>
+			<td class="CellGridPrintProducts">Altro</td>
+			<td class="CellGridPrintProducts">29/05/2025
+
+                &nbsp; ore &nbsp;
+
+                22:52
+
+                [Ora Italiana]
+
+              </td>
+			<td class="CellGridPrintProducts">DOCUMENTI DI GARA</td>
+			<td class="linkAttachment">
+				<input type="hidden" name="Allegato" id="Allegato" value="pn vsf15-25-sua_lettera inv.-disciplinare_indifferenziata_2025-26_frascati.pdf*pdf*920487*r2efc8b6cc844a5d9_20250529205045939*SHA256*CF7E5C4CB5AAC92A6881B49C35B35739C02F871B555575531343EA15115A8171*2025-05-29T22:52:27"></input>
+				<div id="DIV_Allegato">
+					<label name="Allegato_V_N" id="Allegato_V_N" class="Attach_label" onclick="window.open('https://portalegare.cittametropolitanaroma.it/application/CTL_Library/functions/field/DisplayAttach.ASP?OPERATION=DISPLAY&amp;FIELD=Allegato&amp;PATH=%2E%2E%2F&amp;TECHVALUE=' + escape('pn vsf15-25-sua_lettera inv.-disciplinare_indifferenziata_2025-26_frascati.pdf*pdf*920487*r2efc8b6cc844a5d9_20250529205045939*SHA256*CF7E5C4CB5AAC92A6881B49C35B35739C02F871B555575531343EA15115A8171*2025-05-29T22:52:27') + '&amp;FORMAT=I%2CN');" title="">pn vsf15-25-sua_lettera inv.-disciplinare_indifferenziata_2025-26_frascati.pdf</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="CellGridPrintProducts">Altro</td>
+			<td class="CellGridPrintProducts">29/05/2025
+
+                &nbsp; ore &nbsp;
+
+                22:52
+
+                [Ora Italiana]
+
+              </td>
+			<td class="CellGridPrintProducts">DOCUMENTI DI GARA</td>
+			<td class="linkAttachment">
+				<input type="hidden" name="Allegato" id="Allegato" value="determina_num_65_atto originale.pdf*pdf*165292*r80aa9974d75467ca_20250529205014653*SHA256*1050C49996A6D354F3620A5A5EAC1AC7777419D82D9A8ADBBE326E5E467A4B56*2025-05-29T22:51:55"></input>
+				<div id="DIV_Allegato">
+					<label name="Allegato_V_N" id="Allegato_V_N" class="Attach_label" onclick="window.open('https://portalegare.cittametropolitanaroma.it/application/CTL_Library/functions/field/DisplayAttach.ASP?OPERATION=DISPLAY&amp;FIELD=Allegato&amp;PATH=%2E%2E%2F&amp;TECHVALUE=' + escape('determina_num_65_atto originale.pdf*pdf*165292*r80aa9974d75467ca_20250529205014653*SHA256*1050C49996A6D354F3620A5A5EAC1AC7777419D82D9A8ADBBE326E5E467A4B56*2025-05-29T22:51:55') + '&amp;FORMAT=I%2CN');" title="">determina_num_65_atto originale.pdf</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="CellGridPrintProducts">Esito</td>
+			<td class="CellGridPrintProducts">29/05/2025
+
+                &nbsp; ore &nbsp;
+
+                10:31
+
+                [Ora Italiana]
+
+              </td>
+			<td class="CellGridPrintProducts">ESITO GARA_PN VSF 15.25.SUA_Graduatoria</td>
+			<td class="linkAttachment">
+				<input type="hidden" name="Allegato" id="Allegato" value="ESITO GARA_PN VSF 15.25.SUA_Graduatoria.pdf*pdf*241758*fe5c32b10cde48ab8_20250529082920835*SHA256*A808408D7E7A55411A3B827D0C7FF334AAAA62A3D8BF702E13EA8E0D29737E87*2025-05-29T10:31:01"></input>
+				<div id="DIV_Allegato">
+					<label name="Allegato_V_N" id="Allegato_V_N" class="Attach_label" onclick="window.open('https://portalegare.cittametropolitanaroma.it/application/CTL_Library/functions/field/DisplayAttach.ASP?OPERATION=DISPLAY&amp;FIELD=Allegato&amp;PATH=%2E%2E%2F&amp;TECHVALUE=' + escape('ESITO GARA_PN VSF 15.25.SUA_Graduatoria.pdf*pdf*241758*fe5c32b10cde48ab8_20250529082920835*SHA256*A808408D7E7A55411A3B827D0C7FF334AAAA62A3D8BF702E13EA8E0D29737E87*2025-05-29T10:31:01') + '&amp;FORMAT=I%2CN');" title="">ESITO GARA_PN VSF 15.25.SUA_Graduatoria.pdf</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="CellGridPrintProducts">Esito</td>
+			<td class="CellGridPrintProducts">29/05/2025
+
+                &nbsp; ore &nbsp;
+
+                14:34
+
+                [Ora Italiana]
+
+              </td>
+			<td class="CellGridPrintProducts">verbale proposta di aggiudicazione</td>
+			<td class="linkAttachment">
+				<input type="hidden" name="Allegato" id="Allegato" value="PN VSF15-25-SUA_verbale prop. di aggiudicazione_29-05-2025-signed.pdf*pdf*317844*r528d2b895294ab88_20250529123245934*SHA256*71E9C365BEEF63307CD4496B4A5726CE7AA5BACE69FB8CB5BA2EDD88E334EE1E*2025-05-29T14:34:27"></input>
+				<div id="DIV_Allegato">
+					<label name="Allegato_V_N" id="Allegato_V_N" class="Attach_label" onclick="window.open('https://portalegare.cittametropolitanaroma.it/application/CTL_Library/functions/field/DisplayAttach.ASP?OPERATION=DISPLAY&amp;FIELD=Allegato&amp;PATH=%2E%2E%2F&amp;TECHVALUE=' + escape('PN VSF15-25-SUA_verbale prop. di aggiudicazione_29-05-2025-signed.pdf*pdf*317844*r528d2b895294ab88_20250529123245934*SHA256*71E9C365BEEF63307CD4496B4A5726CE7AA5BACE69FB8CB5BA2EDD88E334EE1E*2025-05-29T14:34:27') + '&amp;FORMAT=I%2CN');" title="">PN VSF15-25-SUA_verbale prop. di aggiudicazione_29-05-2025-signed.pdf</label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="CellGridPrintProducts">Esito</td>
+			<td class="CellGridPrintProducts">24/06/2025
+
+                &nbsp; ore &nbsp;
+
+                12:35
+
+                [Ora Italiana]
+
+              </td>
+			<td class="CellGridPrintProducts">Determina di aggiudicazione R.U. n. 2475 del 24.06.2025</td>
+			<td class="linkAttachment">
+				<input type="hidden" name="Allegato" id="Allegato" value="PN VSF15-25-SUA_DD di aggiudicazione RU n. 2475 del 24.06.2025.pdf*pdf*176924*b92eb0a38f9d42ec9_20250624103216161*SHA256*57B4532C537AFFCA803F9315C14C16AD2B46EC3BA3B2F7FB952AB4C9EB7C25D4*2025-06-24T12:32:16"></input>
+				<div id="DIV_Allegato">
+					<label name="Allegato_V_N" id="Allegato_V_N" class="Attach_label" onclick="window.open('https://portalegare.cittametropolitanaroma.it/application/CTL_Library/functions/field/DisplayAttach.ASP?OPERATION=DISPLAY&amp;FIELD=Allegato&amp;PATH=%2E%2E%2F&amp;TECHVALUE=' + escape('PN VSF15-25-SUA_DD di aggiudicazione RU n. 2475 del 24.06.2025.pdf*pdf*176924*b92eb0a38f9d42ec9_20250624103216161*SHA256*57B4532C537AFFCA803F9315C14C16AD2B46EC3BA3B2F7FB952AB4C9EB7C25D4*2025-06-24T12:32:16') + '&amp;FORMAT=I%2CN');" title="">PN VSF15-25-SUA_DD di aggiudicazione RU n. 2475 del 24.06.2025.pdf</label>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>		
+		<h2>Chiarimenti </h2>
+		<div class="content">
+		<div id="CHIARIMENTI" class="div_chiarimenti">
+			
+		<script src="/portalegare/modules/mod_rss_aflink/ajaxsbmt.js" type="text/javascript"></script>
+		
+		
+		<table id="template_doc" >
+			
+			<!--
+			<thead>
+				<tr>
+					<th colspan="4" align=left nowrap >Chiarimenti</th>
+				</tr>
+			</thead>
+			-->
+			
+			<tbody>
+			
+			<!--area per inserire un quesito se il bando ancora incorso-->
+						
+			<!--l'area di ricerca e la lista dei quesiti deve essere inserita in funzione di un attributo del documento-->
+			<!--area per cercare un quesito -->
+			<tr id="arearicercaquesiti">
+			<th colspan="1" align=left nowrap>
+			
+				Chiarimenti Pubblicati			
+			</th>
+			
+			<th colspan="1" nowrap align="right">	
+			
+				<label for="FiltroQuesito">Cerca nei quesiti</label>
+
+			<!-- <form name="FormCercaQuesito" id="FormCercaQuesito" action="" method="get" onsubmit="javascript:CercaQuesito();return false;"> -->
+				<input class="txt" type="text" id="FiltroQuesito" name="FiltroQuesito" value="" onkeydown="if (event.keyCode == 13) CercaQuesito();">
+				<img  src="/portalegare/images/lente.png" style="cursor:pointer;" alt="Cerca protocollo o quesito" onclick="javascript:CercaQuesito();"/>
+			<!-- </form> -->
+			</th>
+			</tr>
+		
+			<tr>
+			
+				<td colspan="4">
+				
+					<div id="esitoquesito" style="display:none;">
+					</div>
+					
+					<!--area lista dei quesiti -->
+					<div id="grigliaquesiti"  name="grigliaquesiti">
+					</div>
+				</td>
+			 
+			</tr>
+		
+					
+			</tbody>
+		</table>
+
+		<script type="text/javascript">
+		
+		function getObj(strId) 
+		{
+			
+			if (document.all != null)
+			{
+				return document.all(strId);
+			}
+			else
+			{
+				return document.getElementById(strId);
+			}
+		}
+		
+		function HideFormInvioQuesito()
+		{
+		  
+			if ( document.getElementById('campi_invio_quesito').style.display  == 'none' ) 
+			{
+				document.getElementById('campi_invio_quesito').style.display='';
+				//document.getElementById('esitoquesito').style.display='none';
+			}
+			else
+			{
+				document.getElementById('campi_invio_quesito').style.display='none';
+			}
+		
+			try
+			{    
+				document.getElementById('errormsg').style.display='none';
+			}
+			catch(e)
+			{
+			
+			}
+		  
+		}
+		
+		window.addEvent('domready', function(){
+			
+			var RichiestaQuesito='YES';
+			
+			Locale.use("it-IT");
+			
+			/* Nascondo l'area quesiti se richiesto dal template */
+			try
+			{
+				try 
+				{
+					CodificaRichiestaQuesito =  getObj('RichiestaQuesito').value;
+					
+					//1=SI,2=NO,3=solo per invitati
+					if (CodificaRichiestaQuesito == '2' || CodificaRichiestaQuesito == '3' )
+						RichiestaQuesito='NO';
+
+					//se stiamo su un messaggio invito e RichiestaQuesito= solo per invitati allora visualizzo solo dall'interno i quesiti sugli inviti
+					if (CodificaRichiestaQuesito == '3' && Number(MessaggioPrivato) > 0 )
+						RichiestaQuesito='YES'; 
+					  
+				}catch(e)
+				{
+					try
+					{
+						console.log("info. err: " + e.message);
+					}
+					catch(e){}
+				}	
+				
+				if ( RichiestaQuesito != 'YES') 
+				{
+					document.getElementById('blocco_div_quesiti').style.display='none';
+				}
+				
+				
+			}
+			catch(e)
+			{
+				try
+				{
+					console.log("info. err: " + e.message);
+				}
+				catch(e){}
+			}
+			
+			try
+			{
+				var myForm = document.id('FormInsQuesito');
+				var myFormValidator = new Form.Validator(myForm , {
+						onFormValidate: myFormHandler,
+						useTitles: false
+					});
+			}
+			catch(e) {}
+
+			/* Controllo se mostrare i nuovi quesiti o i vecchi(tramite documento generico)
+				il controllo avviene verificando la presenza del campo hidden PARAM, che viene inserito
+				nei template che necessitano dei vecchi quesiti */
+			
+			var checkQuesiti = '';
+			
+			try
+			{
+				checkQuesiti = getObj('PARAM').value;
+			}
+			catch(e)
+			{
+				checkQuesiti = '';
+			}
+			
+			if (checkQuesiti == '')
+			{
+				CercaQuesito();
+			}
+			else
+			{
+				try
+				{
+					document.getElementById("FiltroQuesito").disabled=true;
+				}catch(e){}
+				
+				xmlhttpPost('/application/report/grigliaquesitiGD.asp?backoffice=yes&PARAM=' + checkQuesiti, '', 'grigliaquesiti', '<img src=\'/portalegare/images/ajax-loading.gif\'>');
+			}
+			
+		});
+		
+			function myFormHandler(isValid, element, event)
+			{
+				if ( isValid ) 
+				{
+					xmlhttpPost('/portalegare/modules/mod_rss_aflink/mod_rss_aflink.php?inserisciquesito=yes', 'FormInsQuesito', 'esitoquesito', '<img src=\'/portalegare/images/ajax-loading.gif\'>'); 
+					
+					RefreshImageCatcha('imgCaptcha');
+					
+					HideFormInvioQuesito();
+					
+					getObj('grigliaquesiti').innerHTML='';
+					
+					CercaQuesito();
+					return false;
+				}
+				else
+				{
+					//alert('validazione not ok');
+				}
+
+				return false;
+				
+			}
+
+			function CercaQuesito() 
+			{
+				var ricerca = "";
+				
+				try
+				{
+					ricerca = getObj('FiltroQuesito').value;
+				}
+				catch(e)
+				{
+					ricerca = "";
+				}
+				
+				//if ( ricerca != '')
+				//{
+					var feed_quesiti = getObj('rss_quesiti').value + '&FilterHide=';
+
+					ricerca = ricerca.replace(" ","%");
+					ricerca = ricerca.replace("'","''");
+
+					feed_quesiti = feed_quesiti +  encodeURIComponent(" ChiarimentoPubblico=1 and (protocol like '%" + ricerca + "%' or domanda like '%" + ricerca + "%')"); 
+					
+					xmlhttpPost('/portalegare/modules/mod_rss_aflink/mod_rss_aflink.php?grigliaQuesiti=yes&feed_quesiti=' + encodeURIComponent(feed_quesiti), '', 'grigliaquesiti', '<img src=\'/portalegare/images/ajax-loading.gif\'>');
+				//}
+				
+			}
+			
+			function RefreshImageCatcha(valImageId) 
+			{
+				var objImage = document.images[valImageId];
+				if (objImage == undefined) {
+					return;
+				}
+				var now = new Date();
+				//objImage.src = objImage.src.split('?')[0] + '?_RELOAD&x=' + now.toUTCString() + objImage.src.split('?')[1];
+				
+				objImage.src = objImage.src + '&_RELOAD';
+				
+			}
+				
+		
+		</script>
+		
+		</div></div>		
+	<h2>Tabella informativa di indicizzazione</h2>
+	<div class="content">
+		
+		<!--
+		<div id="area_dpcm" class="div_area_dpcm">
+		
+			<ul>
+				<li>
+					<a href="#" onclick="document.getElementById('table_dpcm').style.display='block';return false;">Visualizza tabella DPCM</a>
+				</li>
+				<li>
+					<a href="#" onclick="document.getElementById('table_dpcm').style.display='none';return false;">Nascondi tabella DPCM</a>
+				</li>
+			</ul>
+		</div>
+		-->
+		
+		<div class="table_dpcm" id="table_dpcm" style="overflow:auto; display:block">
+
+			<table summary="Tabella informativa d'indicizzazione per: bandi, esiti ed avvisi" class="list infoIndicizzazione tabella">
+				
+				<tbody>
+					<tr>
+						<th colspan="18" scope="colgroup">Tabella informativa d'indicizzazione per: bandi, esiti ed avvisi</th>
+					</tr>
+					
+					<tr> <!--  riga per le intestazioni -->
+				
+				
+		<th scope="col" abbr="Tipo">Tipo</th><th scope="col" abbr="Contratto">Contratto</th><th scope="col" abbr="DenominazioneEnte">Denominazione dell'Amministrazione Aggiudicatrice</th><th scope="col" abbr="TipoEnte">Tipo di Amministrazione</th><th scope="col" abbr="Provincia">Provincia Sede di Gara</th><th scope="col" abbr="Comune">Comune Sede di Gara</th><th scope="col" abbr="Indirizzo">Indirizzo Sede di Gara</th><th scope="col" abbr="SenzaImporto">Senza Importo</th><th scope="col" abbr="a base asta">Valore Importo a base asta</th><th scope="col" abbr="di aggiudicazione">Valore Importo di aggiudicazione</th><th scope="col" abbr="DtPubblicazione">Data Pubblicazione</th><th scope="col" abbr="DtScadenzaBando">Data Scadenza Bando</th><th scope="col" abbr="DtScadenzaPubblEsito">Data Scadenza Pubblicazione Esito</th><th scope="col" abbr="RequisitiQualificazione">Requisiti di Qualificazione</th><th scope="col" abbr="CPV">Codice CPV</th><th scope="col" abbr="SCP">Codice SCP</th><th scope="col" abbr="URL">URL di pubblicazione su www.serviziocontrattipubblici.it</th><th scope="col" abbr="CIG">Codice CIG</th></tr><tr><td scope="row">Bando</td><td scope="row">Servizi</td><td scope="row">Città metropolitana di Roma Capitale</td><td scope="row">PROVINCE</td><td scope="row">Roma</td><td scope="row">Roma</td><td scope="row"></td><td scope="row">NO</td><td scope="row">872.727,27</td><td scope="row"></td><td scope="row">14/05/2025</td><td scope="row">29/05/2025</td><td scope="row"></td><td scope="row"></td><td scope="row">90513000-6 - Servizi di trattamento e smaltimento di rifiuti urbani e domestici non pericolosi</td><td scope="row"></td><td scope="row"></td><td scope="row">B6DD95EE23</td>					</tr>
+					
+				</tbody>
+			</table> 
+		</div>
+		
+	</div>
+		
+		<input type="hidden" name="rss_quesiti" id="rss_quesiti" value="http://portalegare.cittametropolitanaroma.it/portale/rss_quesiti.asp?1=1&amp;Filter=ID_ORIGIN=556469+and+document%3D%27BANDO_GARA%27"></div>		</div>
+	</div>
+<p style="font-size: 12.16px; line-height: 15.808px;"> </p> 	</div>
+
+	
+							</div>
+					
+					<!-- End Content -->
+				</main>
+			</div>
+			
+				<!-- <div id="close"><a href="#" onClick="auf('right')"><span id="bild">Chiudi Menu</span></a></div> -->
+				
+							</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="footer" role="contentinfo">
+		<div class="container">
+			<hr />
+			
+			<p class="pull-right">
+				<a href="#top" id="back-top">
+					Back to Top				</a>
+			</p>
+			<p>
+				<div class="div_site_name">
+					  				</div>
+			</p>
+		</div>
+		
+		<div id="main_bottom_div" class="bottom">
+			<div class="Footer_01">
+				<table class="FooterBottom">
+                 
+					<tr>
+						<th colspan="1" class="NOpx"></th>
+						<th colspan="1" class="NOpx"></th>
+						<td class="FooterCol1">
+                        	<p><a href="/portalegare/images/normative_manuali/ALL_6_Informativa_sulla_Privacy_PORTALE_GARE_Agg_2025_uv.pdf" target="_blank">Privacy</a></p>
+							<p>Portale Fornitori Città Metropolitana di Roma Capitale (Cod. Fiscale 80034390585)</p>
+							<p>Via IV Novembre, 119/a &ndash; 00187 Roma &ndash; tel: (+39) 0667661 &ndash; fax: (+39) 066766 </p></br>
+                            <p class="poweredby"><a href="http://www.afsoluzioni.it"><img src="/portalegare/images/poweredby.png"></a></p>
+						</td>
+					</tr>   
+				</table>
+			</div>
+		</div>
+		
+	</footer>
+	
+</body>
+</html>

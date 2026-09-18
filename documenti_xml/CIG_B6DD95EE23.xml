@@ -2,6 +2,7 @@
 <contratto cig="B6DD95EE23" fonte="ANAC">
   <fonti>
     <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B6DD95EE23_citta_metropolitana_fascicolo_gara.html">Documento HTML collegato al CIG: B6DD95EE23 citta metropolitana fascicolo gara</fonte>
     <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/dati-cig-B6DD95EE23.html">Fonte originale HTML del CIG</fonte>
     <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B6DD95EE23.json">Fonte originale JSON del CIG</fonte>
     <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/B6DD95EE23_determina_65.pdf">Documento PDF collegato al CIG: B6DD95EE23 determina 65</fonte>
@@ -12,7 +13,7 @@
     <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/pn vsf15-25-sua_lettera inv.-disciplinare_indifferenziata_2025-26_frascati.pdf">Documento PDF collegato al CIG: pn vsf15 25 sua lettera inv. disciplinare indifferenziata 2025 26 frascati</fonte>
   </fonti>
   <approfondimentiWeb>
-    <fonteWeb tipo="fascicolo di gara ed esito" formato="text/html" url="https://portalegare.cittametropolitanaroma.it/portalegare/index.php/bandi?RicQ=YES&amp;VisQ=SI&amp;bando=556469&amp;getdettaglio=yes&amp;scadenzaBando=2025-05-29T09%3A00%3A00&amp;tipoDoc=BANDO_GARA_PORTALE&amp;tipobando=Bando&amp;xslt=XSLT_BANDO_GARA_PORTALE" relazione="procedura-oggetto" verificataIl="2026-08-23">La fonte <titoloFonte>Gara PN VSF 15/25/SUA: determina, disciplinare, verbale, graduatoria ed esito</titoloFonte>, pubblicata da <enteFonte>Città metropolitana di Roma Capitale</enteFonte>, riguarda la fase <faseFonte>gara e aggiudicazione</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>Coincidono il numero PN VSF 15/25/SUA, il Comune di Frascati e il servizio di trattamento dei rifiuti EER 20.03.01.</nessoFonte>. In sintesi, <datoFonte>Il fascicolo ufficiale espone la determina iniziale e gli atti successivi, compresi verbale, graduatoria e determina di aggiudicazione.</datoFonte>.</fonteWeb>
+    <fonteWeb tipo="fascicolo di gara ed esito" formato="text/html" url="https://portalegare.cittametropolitanaroma.it/portalegare/index.php/bandi?RicQ=YES&amp;VisQ=SI&amp;bando=556469&amp;getdettaglio=yes&amp;scadenzaBando=2025-05-29T09%3A00%3A00&amp;tipoDoc=BANDO_GARA_PORTALE&amp;tipobando=Bando&amp;xslt=XSLT_BANDO_GARA_PORTALE" relazione="procedura-oggetto" verificataIl="2026-08-23">La fonte <titoloFonte>Gara PN VSF 15/25/SUA: determina, disciplinare, verbale, graduatoria ed esito</titoloFonte>, pubblicata da <enteFonte>Città metropolitana di Roma Capitale</enteFonte>, riguarda la fase <faseFonte>gara e aggiudicazione</faseFonte>. Il nesso verificato con la gara è il seguente: <nessoFonte>Coincidono il numero PN VSF 15/25/SUA, il Comune di Frascati e il servizio di trattamento dei rifiuti EER 20.03.01.</nessoFonte>. In sintesi, <datoFonte>Il fascicolo ufficiale espone determina iniziale e atti successivi.</datoFonte>.</fonteWeb>
   </approfondimentiWeb>
   <informazioniGara>
     <numeroGara>25d6b440-5146-49e4-94d8-10f3eb8fae1f</numeroGara>

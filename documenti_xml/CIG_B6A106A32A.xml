@@ -2,6 +2,8 @@
 <contratto cig="B6A106A32A" fonte="ANAC">
   <fonti>
     <fonte tipo="csv" formato="text/csv" percorso="fonti_originali/csv/20260510_125151.csv">Riga del CSV esportato dal cruscotto ANAC</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B6A106A32A_BDNCP.html">Documento HTML collegato al CIG: B6A106A32A BDNCP</fonte>
+    <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/B6A106A32A_comune_san_fratello_determine.html">Documento HTML collegato al CIG: B6A106A32A comune san fratello determine</fonte>
     <fonte tipo="html" formato="text/html" percorso="fonti_originali/html/dati-cig-B6A106A32A.html">Fonte originale HTML del CIG</fonte>
     <fonte tipo="json" formato="application/json" percorso="fonti_originali/json/CIG_B6A106A32A.json">Fonte originale JSON del CIG</fonte>
     <fonte tipo="pdf" formato="application/pdf" percorso="fonti_originali/pdf/CIG_B6A106A32A.pdf">Fonte originale PDF del CIG</fonte>

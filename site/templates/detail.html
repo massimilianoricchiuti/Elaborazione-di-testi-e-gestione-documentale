@@ -29,13 +29,6 @@
         </dl>
       </section>
       {% endfor %}
-      {% if record.web_source_links %}
-      <section id="fonti-web" class="panel" aria-labelledby="fonti-web-title"><h3 id="fonti-web-title">Fonti web</h3><p>Apri le risorse collegate e consulta il nesso dichiarato con questo CIG.</p><div class="web-source-list">
-        {% for source in record.web_source_links %}
-        <article class="web-source-card"><p class="source-kicker"><span class="badge source-relation">{{ source.relation_label }}</span> {{ source.document_type }} · {{ source.mime_type }}</p><h4><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }} <span aria-hidden="true">↗</span></a></h4><p>{{ source.summary }}</p><dl class="source-details"><div><dt>Ente</dt><dd>{{ source.publisher }}</dd></div><div><dt>Fase</dt><dd>{{ source.phase }}</dd></div><div><dt>Riscontro</dt><dd>{{ source.evidence }}</dd></div><div><dt>Verifica</dt><dd><time datetime="{{ source.verified_on }}">{{ source.verified_on }}</time></dd></div></dl></article>
-        {% endfor %}
-      </div></section>
-      {% endif %}
     </section>
     <section id="struttura-xml" class="document-view" data-view-panel aria-labelledby="tab-struttura-xml">
       <div class="view-heading"><h2>Esplora la struttura XML</h2><p>{{ xml_document.element_count }} elementi e {{ xml_document.attribute_count }} attributi.</p></div>
@@ -43,15 +36,76 @@
       <div class="xml-tree" aria-label="Struttura del documento XML">{{ render_xml_node(xml_document.root) }}</div>
     </section>
     <section id="documenti" class="document-view" data-view-panel aria-labelledby="tab-documenti">
-      <div class="view-heading"><h2>Documenti</h2></div>
-      {% if record.source_downloads %}
-      <ul class="attached-documents">
-        {% for source in record.source_downloads %}
-        <li><a href="{{ source.href }}" aria-describedby="documento-file-{{ loop.index }}">{{ source.label }}</a><small id="documento-file-{{ loop.index }}">{{ source.filename }}</small></li>
-        {% endfor %}
-      </ul>
-      {% else %}<p>Nessun documento collegato.</p>{% endif %}
-    </section>
+  <div class="view-heading">
+    <h2>Documenti</h2>
+  </div>
+
+  {% if record.source_downloads %}
+  <ul class="attached-documents">
+    {% for source in record.source_downloads %}
+    <li>
+      <a href="{{ source.href }}" aria-describedby="documento-file-{{ loop.index }}">
+        {{ source.label }}
+      </a>
+      <small id="documento-file-{{ loop.index }}">
+        {{ source.filename }}
+      </small>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>Nessun documento locale collegato.</p>
+  {% endif %}
+
+  {% if record.web_source_links %}
+  <section id="fonti-web" class="panel web-sources-section" aria-labelledby="fonti-web-title">
+    <h3 id="fonti-web-title">Fonti web</h3>
+    <p>Apri le risorse collegate e consulta il nesso dichiarato con questo CIG.</p>
+
+    <div class="web-source-list">
+      {% for source in record.web_source_links %}
+      <article class="web-source-card">
+        <p class="source-kicker">
+          <span class="badge source-relation">{{ source.relation_label }}</span>
+          {{ source.document_type }} · {{ source.mime_type }}
+        </p>
+
+        <h4>
+          <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+            {{ source.title }} <span aria-hidden="true">↗</span>
+          </a>
+        </h4>
+
+        <p>{{ source.summary }}</p>
+
+        <dl class="source-details">
+          <div>
+            <dt>Ente</dt>
+            <dd>{{ source.publisher }}</dd>
+          </div>
+          <div>
+            <dt>Fase</dt>
+            <dd>{{ source.phase }}</dd>
+          </div>
+          <div>
+            <dt>Riscontro</dt>
+            <dd>{{ source.evidence }}</dd>
+          </div>
+          <div>
+            <dt>Verifica</dt>
+            <dd>
+              <time datetime="{{ source.verified_on }}">
+                {{ source.verified_on }}
+              </time>
+            </dd>
+          </div>
+        </dl>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</section>
   </div>
   <aside class="document-sidebar">
     <section class="panel"><p class="eyebrow">Il documento</p><h2 class="file-heading">{{ record.xml_filename }}</h2><p>{{ xml_document.element_count }} elementi · {{ xml_document.attribute_count }} attributi</p><a class="button" href="../downloads/xml/{{ record.xml_filename }}" download>Scarica XML ↓</a><a class="document-action" href="../downloads/documentazione/contratto_cig.dtd">Consulta lo schema DTD ↗</a>
